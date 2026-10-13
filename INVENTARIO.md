@@ -6,9 +6,11 @@
 
 | Arquivo | Bytes | SHA-256 |
 | --- | ---: | --- |
-| [Metha-Mensagens-por-Etapa.xlsx](Metha-Mensagens-por-Etapa.xlsx) | 11397 | `410e29e68c381e2984a108d646646dbc40964a3c7895a026d66b76860076e075` |
+| [Metha-Mensagens-por-Etapa.xlsx](Metha-Mensagens-por-Etapa.xlsx) | 788850 | `364fc82f4a619342d6dff327a937e32f1db351b8023f4a3b61e279000ce50393` |
 
-A matriz reúne 6 alternativas e 16 etapas. Suas mensagens são adaptações para revisão; os documentos originais abaixo permanecem preservados.
+A matriz cobre todos os 14 documentos originais, com 149 linhas na matriz e 1.600 registros de origem. Mensagens, falas simuladas dos leads, instruções e exemplos estão identificados. As 96 adaptações da primeira entrega permanecem em aba separada. Os documentos originais abaixo permanecem preservados.
+
+[Cobertura e critérios da extração](MATRIZ_COBERTURA.md)
 
 ## Documentos originais
 

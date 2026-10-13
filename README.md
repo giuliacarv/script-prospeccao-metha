@@ -6,16 +6,32 @@ O início de tudo está na **matriz de mensagens**. Comece por ela para comparar
 
 **[Abrir ou baixar a matriz de mensagens por etapa](Metha-Mensagens-por-Etapa.xlsx)**
 
-A planilha está na raiz do repositório e organiza **6 alternativas em linhas** — Karnage V1/V2, Copydrill V1/V2 e Doug V1/V2 — e **16 etapas em colunas**, da abordagem ao encerramento. Cada célula contém uma mensagem daquela alternativa para a etapa correspondente. São 96 mensagens adaptadas para revisão.
+A planilha está na raiz do repositório e reúne o conteúdo original dos **14 documentos do acervo: 7 Markdown, 4 HTML e 3 PDF**. A matriz organiza as fontes, versões e conversas de exemplo em linhas, com o texto integral nas colunas de etapa correspondentes.
 
-1. Compare as mensagens da mesma etapa entre as alternativas.
+São **149 linhas na matriz e 1.600 registros de origem**, incluindo mensagens da Metha, falas simuladas dos leads, instruções, tabelas e exemplos. Os tipos estão identificados para distinguir o que é mensagem, fala de lead, conduta interna ou exemplo. As repetições entre arquivos e as diferenças entre versões foram preservadas.
+
+### Organização da planilha
+
+- **Matriz integral:** ponto de partida. Contém todos os registros organizados por fonte, variante e etapa. Falas de leads e instruções possuem colunas próprias. Partes numeradas distribuem várias mensagens da mesma fonte sem criar uma nova sequência comercial.
+- **Mensagens integrais:** um registro por bloco de origem, com código, texto completo, tipo, título, arquivo, localização, ID original, contexto e hash. Os códigos M da matriz identificam o registro correspondente nessa aba.
+- **Fontes e cobertura:** inventário dos 14 documentos, contagens, hashes e critérios de extração e uso.
+- **Contexto integral:** os Markdown completos, o texto visível completo dos HTMLs e todas as 148 páginas dos PDFs, para conferir instruções e passagens no contexto original.
+- **Adaptações iniciais:** preserva separadamente as 96 mensagens adaptadas da primeira entrega. Essas adaptações não são a extração literal das fontes.
+
+Os blocos de mensagem delimitados nos Markdown foram mantidos integralmente. Quando a fonte mistura copy e conduta na mesma seção, a seção completa foi preservada e identificada como **Mensagem e conduta da fonte**. Nos HTMLs, as ênfases foram convertidas para a formatação de WhatsApp e os links foram mantidos. Nos PDFs, foram preservadas as quebras de linha da extração das caixas originais.
+
+Os PDFs V7.0 Final e V8 são idênticos, mas ambos estão representados com seus nomes originais. Diferenças entre fontes, como a mensagem 051 do PDF e do catálogo IA, também foram mantidas.
+
+1. Compare as mensagens da mesma etapa entre as fontes e versões.
 2. Escolha a abordagem que combina com o cenário e a resposta do advogado.
 3. Revise o texto e preencha os campos entre colchetes com informações reais.
 4. Defina os nomes e cadastre os modelos escolhidos no Kommo.
 
-As colunas são um repertório: use a próxima etapa conforme a conversa. Prova, Raio X, devolutiva, convite, proposta e formalização entram quando houver contexto. Os critérios de uso e as fontes estão na própria planilha.
+As colunas são um repertório: use a próxima etapa conforme a conversa. Prova, Raio X, devolutiva, convite, proposta e formalização entram quando houver contexto. Consulte o tipo do conteúdo e a conduta original antes de usar um bloco.
 
-V1 e V2 identificam alternativas criadas para esta matriz; não renumeram as versões originais. A matriz é o ponto de partida para organizar o trabalho. Os documentos abaixo são as bases para consultar contexto e aprofundar os textos. O cadastro no Kommo ainda não foi realizado.
+A matriz é o ponto de partida para organizar o trabalho. Os documentos abaixo são as bases originais para consulta. V1 e V2 na aba Adaptações iniciais identificam apenas as alternativas da primeira entrega; as demais abas mantêm os nomes e as versões das fontes. O cadastro no Kommo ainda não foi realizado.
+
+[Conferir a cobertura da extração](MATRIZ_COBERTURA.md)
 
 ## Bases do acervo
 
