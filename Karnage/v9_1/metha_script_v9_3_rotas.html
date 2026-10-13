@@ -1,0 +1,1464 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Metha Jurídica — Script V9 aplicado</title>
+  <style>
+    :root{
+      --bg:#0b0d10;
+      --panel:#12151a;
+      --panel-2:#171b21;
+      --border:#252b33;
+      --text:#f4f6f8;
+      --muted:#9aa4af;
+      --green:#27d17f;
+      --green-soft:#173c2c;
+      --lead:#232933;
+      --agency:#145c40;
+      --agency-2:#1a704f;
+      --accent:#88f2ba;
+      --danger:#ff6b6b;
+      --warning:#ffd166;
+      --shadow:0 24px 70px rgba(0,0,0,.35);
+    }
+
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      background:
+        radial-gradient(circle at 15% 0%, rgba(39,209,127,.08), transparent 28%),
+        radial-gradient(circle at 85% 0%, rgba(67,97,238,.06), transparent 24%),
+        var(--bg);
+      color:var(--text);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      min-height:100vh;
+    }
+
+    .page{
+      max-width:1680px;
+      margin:0 auto;
+      padding:34px 28px 42px;
+    }
+
+    .hero{
+      display:flex;
+      justify-content:space-between;
+      gap:28px;
+      align-items:flex-end;
+      margin-bottom:24px;
+    }
+
+    .hero-copy{
+      max-width:900px;
+    }
+
+    .eyebrow{
+      color:var(--green);
+      text-transform:uppercase;
+      letter-spacing:.16em;
+      font-weight:800;
+      font-size:12px;
+      margin-bottom:10px;
+    }
+
+    h1{
+      margin:0;
+      font-size:clamp(30px,4vw,58px);
+      line-height:.98;
+      letter-spacing:-.045em;
+      max-width:900px;
+    }
+
+    .subtitle{
+      margin:16px 0 0;
+      color:#b7c0ca;
+      max-width:880px;
+      font-size:15px;
+      line-height:1.6;
+    }
+
+    .legend{
+      display:flex;
+      gap:10px;
+      flex-wrap:wrap;
+      justify-content:flex-end;
+      align-items:center;
+    }
+
+    .legend span{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      border:1px solid var(--border);
+      background:#11151a;
+      padding:9px 12px;
+      border-radius:999px;
+      color:#c8d0d8;
+      font-size:12px;
+      white-space:nowrap;
+    }
+
+    .dot{
+      width:9px;height:9px;border-radius:50%;
+      display:inline-block;
+    }
+    .dot.agency{background:var(--green)}
+    .dot.lead{background:#8793a0}
+
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(3,minmax(0,1fr));
+      gap:18px;
+    }
+
+    .route{
+      min-width:0;
+      border:1px solid var(--border);
+      border-radius:24px;
+      overflow:hidden;
+      background:linear-gradient(180deg,rgba(255,255,255,.012),transparent), var(--panel);
+      box-shadow:var(--shadow);
+    }
+
+    .route-head{
+      position:sticky;
+      top:0;
+      z-index:3;
+      background:rgba(17,21,26,.94);
+      backdrop-filter:blur(12px);
+      border-bottom:1px solid var(--border);
+      padding:16px 17px 14px;
+    }
+
+    .route-no{
+      color:var(--green);
+      text-transform:uppercase;
+      font-size:10px;
+      letter-spacing:.16em;
+      font-weight:900;
+      margin-bottom:6px;
+    }
+
+    .route-title{
+      font-size:17px;
+      line-height:1.25;
+      font-weight:800;
+      letter-spacing:-.02em;
+      margin:0 0 7px;
+    }
+
+    .route-meta{
+      display:flex;
+      flex-wrap:wrap;
+      gap:6px;
+    }
+
+    .chip{
+      color:#b9c2cb;
+      border:1px solid #2b323b;
+      background:#15191f;
+      padding:5px 8px;
+      border-radius:999px;
+      font-size:10px;
+    }
+
+    .chat{
+      height:780px;
+      overflow:auto;
+      padding:18px 13px 26px;
+      background:
+        linear-gradient(rgba(11,13,16,.94),rgba(11,13,16,.94)),
+        radial-gradient(circle at 20% 10%, rgba(39,209,127,.12), transparent 28%);
+      scrollbar-width:thin;
+      scrollbar-color:#39424d transparent;
+    }
+
+    .date{
+      width:max-content;
+      max-width:90%;
+      margin:4px auto 14px;
+      color:#aab4be;
+      font-size:10px;
+      border:1px solid #2b3138;
+      background:#15191e;
+      padding:5px 9px;
+      border-radius:8px;
+    }
+
+    .msg-row{
+      display:flex;
+      margin:9px 0;
+      align-items:flex-end;
+      gap:7px;
+    }
+
+    .msg-row.agency{justify-content:flex-end}
+    .msg-row.lead{justify-content:flex-start}
+
+    .avatar{
+      width:25px;height:25px;
+      border-radius:50%;
+      display:grid;
+      place-items:center;
+      flex:0 0 auto;
+      font-size:9px;
+      font-weight:900;
+      border:1px solid rgba(255,255,255,.08);
+    }
+
+    .lead .avatar{background:#2b323b;color:#d9e0e6}
+    .agency .avatar{background:var(--green);color:#07120d;order:2}
+
+    .bubble{
+      max-width:84%;
+      padding:10px 11px 8px;
+      border-radius:15px;
+      font-size:12px;
+      line-height:1.48;
+      position:relative;
+      word-wrap:break-word;
+    }
+
+    .lead .bubble{
+      background:var(--lead);
+      color:#f2f4f6;
+      border-bottom-left-radius:5px;
+      border:1px solid rgba(255,255,255,.025);
+    }
+
+    .agency .bubble{
+      background:linear-gradient(180deg,var(--agency-2),var(--agency));
+      color:white;
+      border-bottom-right-radius:5px;
+      border:1px solid rgba(255,255,255,.035);
+    }
+
+    .bubble strong{
+      color:white;
+      font-weight:800;
+    }
+
+    .agency .bubble strong{
+      color:#dcffe9;
+    }
+
+    .time{
+      display:block;
+      margin-top:5px;
+      font-size:9px;
+      opacity:.65;
+      text-align:right;
+      letter-spacing:.01em;
+    }
+
+    .proof{
+      margin:9px 32px 11px;
+      padding:10px 11px;
+      border:1px solid #294938;
+      background:linear-gradient(180deg,rgba(39,209,127,.08),rgba(39,209,127,.03));
+      border-radius:12px;
+      color:#ccebd9;
+      font-size:10px;
+      line-height:1.45;
+    }
+
+    .proof b{
+      color:var(--accent);
+    }
+
+    .turn{
+      margin:15px 5px 10px;
+      display:flex;
+      align-items:center;
+      gap:8px;
+      color:#7f8994;
+      font-size:9px;
+      text-transform:uppercase;
+      letter-spacing:.12em;
+      font-weight:800;
+    }
+
+    .turn::before,.turn::after{
+      content:"";
+      height:1px;
+      background:#242a31;
+      flex:1;
+    }
+
+    .note{
+      margin:10px 5px;
+      padding:9px 10px;
+      background:#171b20;
+      border-left:2px solid var(--warning);
+      border-radius:7px;
+      color:#aeb8c3;
+      font-size:9.5px;
+      line-height:1.45;
+    }
+
+    .note b{color:#f6d983}
+
+    .footer{
+      display:flex;
+      justify-content:space-between;
+      gap:20px;
+      align-items:center;
+      margin-top:18px;
+      border-top:1px solid #20262d;
+      padding-top:15px;
+      color:#7f8994;
+      font-size:11px;
+    }
+
+    .footer strong{color:#bfc8d0}
+
+    @media(max-width:1150px){
+      .grid{grid-template-columns:1fr}
+      .chat{height:auto;max-height:none}
+      .hero{align-items:flex-start;flex-direction:column}
+      .legend{justify-content:flex-start}
+    }
+
+    @media(max-width:680px){
+      .page{padding:22px 12px 28px}
+      .route{border-radius:18px}
+      .chat{padding:14px 9px 20px}
+      .bubble{max-width:88%;font-size:12px}
+      .hero{margin-bottom:18px}
+      .footer{flex-direction:column;align-items:flex-start}
+    }
+
+    @media print{
+      body{background:white;color:black}
+      .page{max-width:none;padding:0}
+      .hero,.footer{display:none}
+      .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+      .route{box-shadow:none;border:1px solid #bbb}
+      .chat{height:auto;overflow:visible;background:white}
+      .route-head{position:static;background:white;color:black}
+      .lead .bubble{background:#eee;color:black}
+      .agency .bubble{background:#dff5e7;color:black}
+      .agency .bubble strong,.bubble strong{color:black}
+    }
+  
+    .tabs{
+      display:flex;
+      gap:8px;
+      margin:0 0 20px;
+      position:sticky;
+      top:0;
+      z-index:20;
+      padding:10px 0;
+      background:linear-gradient(180deg, rgba(11,13,16,.98), rgba(11,13,16,.88), transparent);
+      backdrop-filter:blur(10px);
+    }
+    .tab-btn{
+      appearance:none;
+      border:1px solid var(--border);
+      background:#11151a;
+      color:#aeb8c3;
+      padding:10px 15px;
+      border-radius:999px;
+      font:inherit;
+      font-size:12px;
+      font-weight:800;
+      cursor:pointer;
+      transition:.2s ease;
+    }
+    .tab-btn:hover{border-color:#3b4651;color:white}
+    .tab-btn.active{
+      background:var(--green);
+      border-color:var(--green);
+      color:#06110c;
+    }
+    .tab-panel{display:none}
+    .tab-panel.active{display:block}
+    .playbook{
+      display:grid;
+      grid-template-columns:minmax(220px, .72fr) minmax(0, 2.28fr);
+      gap:18px;
+      align-items:start;
+    }
+    .playbook-nav{
+      position:sticky;
+      top:72px;
+      border:1px solid var(--border);
+      background:var(--panel);
+      border-radius:20px;
+      padding:14px;
+    }
+    .playbook-nav h3{
+      margin:0 0 10px;
+      font-size:13px;
+      color:white;
+    }
+    .playbook-nav a{
+      display:block;
+      color:#9faab5;
+      text-decoration:none;
+      padding:8px 9px;
+      border-radius:9px;
+      font-size:11px;
+      line-height:1.35;
+    }
+    .playbook-nav a:hover{background:#191f25;color:white}
+    .playbook-content{
+      min-width:0;
+      display:flex;
+      flex-direction:column;
+      gap:14px;
+    }
+    .pb-card{
+      border:1px solid var(--border);
+      background:linear-gradient(180deg,rgba(255,255,255,.015),transparent),var(--panel);
+      border-radius:20px;
+      padding:20px;
+      box-shadow:0 18px 50px rgba(0,0,0,.22);
+    }
+    .pb-kicker{
+      color:var(--green);
+      font-size:10px;
+      text-transform:uppercase;
+      letter-spacing:.16em;
+      font-weight:900;
+      margin-bottom:6px;
+    }
+    .pb-card h2{
+      font-size:20px;
+      letter-spacing:-.02em;
+      margin:0 0 12px;
+    }
+    .pb-card p,.pb-card li{
+      color:#b7c0ca;
+      font-size:12px;
+      line-height:1.6;
+    }
+    .pb-card ul{padding-left:18px;margin:9px 0 0}
+    .script-msg{
+      margin:10px 0;
+      padding:13px 14px;
+      background:linear-gradient(180deg,var(--agency-2),var(--agency));
+      color:white;
+      border-radius:14px;
+      font-size:12px;
+      line-height:1.55;
+      max-width:760px;
+    }
+    .script-msg strong{color:#dcffe9}
+    .script-msg.leadstyle{
+      background:var(--lead);
+    }
+    .sequence{
+      display:flex;
+      gap:8px;
+      flex-wrap:wrap;
+      margin-top:10px;
+    }
+    .seq{
+      border:1px solid #2b323b;
+      background:#15191f;
+      color:#c1cad3;
+      padding:7px 9px;
+      border-radius:999px;
+      font-size:10px;
+      font-weight:700;
+    }
+    .approved{
+      border-left:3px solid var(--green);
+      padding-left:12px;
+    }
+    .removed{
+      border-left:3px solid var(--danger);
+      padding-left:12px;
+      color:#aeb6be;
+    }
+    .pb-alert{
+      padding:12px 14px;
+      border:1px solid #39424c;
+      background:#15191e;
+      border-radius:12px;
+      color:#c7d0d8;
+      font-size:11px;
+      line-height:1.5;
+    }
+    .pb-alert strong{color:white}
+    @media(max-width:900px){
+      .playbook{grid-template-columns:1fr}
+      .playbook-nav{position:static}
+    }
+
+  
+    .xref{
+      display:inline-flex;
+      align-items:center;
+      gap:5px;
+      margin-top:7px;
+      padding:4px 7px;
+      border-radius:999px;
+      border:1px solid rgba(255,255,255,.12);
+      background:rgba(0,0,0,.16);
+      color:#d6ffe7 !important;
+      text-decoration:none;
+      font-size:9px;
+      font-weight:800;
+      letter-spacing:.01em;
+      transition:.18s ease;
+    }
+    .lead .xref{color:#d9e3ec !important}
+    .xref:hover{
+      transform:translateY(-1px);
+      border-color:rgba(255,255,255,.28);
+      background:rgba(0,0,0,.28);
+    }
+    .pb-xrefs{
+      display:flex;
+      flex-wrap:wrap;
+      gap:6px;
+      margin-top:8px;
+    }
+    .pb-xref{
+      display:inline-flex;
+      align-items:center;
+      gap:5px;
+      padding:5px 8px;
+      border-radius:999px;
+      border:1px solid #2e5d45;
+      background:#14261d;
+      color:#bff4d4;
+      text-decoration:none;
+      font-size:9.5px;
+      font-weight:800;
+    }
+    .pb-xref:hover{
+      border-color:var(--green);
+      color:white;
+    }
+    .anchor-flash{
+      animation:anchorFlash 1.8s ease;
+    }
+    @keyframes anchorFlash{
+      0%{box-shadow:0 0 0 0 rgba(39,209,127,0)}
+      20%{box-shadow:0 0 0 4px rgba(39,209,127,.28)}
+      100%{box-shadow:0 0 0 0 rgba(39,209,127,0)}
+    }
+
+  </style>
+</head>
+<body>
+  <main class="page">
+
+    <nav class="tabs" aria-label="Navegação do material">
+      <button class="tab-btn active" data-tab="preview">Preview — 3 rotas</button>
+      <button class="tab-btn" data-tab="playbook">Playbook V9</button>
+    </nav>
+
+    <section id="preview" class="tab-panel active">
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow">Metha Jurídica · Script V9 aplicado</div>
+        <h1>3 rotas. 3 objeções. 1 conversa que não parece pitch.</h1>
+        <p class="subtitle">
+          Simulações práticas do roteiro em WhatsApp. Cada coluna força uma rota diferente:
+          advogado que já anuncia e recebe lead ruim, advogado traumatizado por agência e advogado
+          que vive de indicação e quer empurrar tudo para janeiro.
+        </p>
+      </div>
+      <div class="legend">
+        <span><i class="dot lead"></i> Lead / advogado</span>
+        <span><i class="dot agency"></i> Giulia / Metha</span>
+      </div>
+    </section>
+
+    <section class="grid">
+
+      <!-- ROTA 1 -->
+      <article class="route">
+        <header class="route-head">
+          <div class="route-no">Rota 01</div>
+          <h2 class="route-title">Já anuncia, mas o WhatsApp enche de contato errado</h2>
+          <div class="route-meta">
+            <span class="chip">anúncio ativo</span>
+            <span class="chip">lead sem aderência</span>
+            <span class="chip">prova Bicalho</span>
+          </div>
+        </header>
+        <div class="chat">
+          <div class="date">SEGUNDA · 10:12</div>
+
+          <div class="msg-row agency">
+            <div class="bubble" id="chat-r1-abertura">
+              Dr. Marcelo, vi que vocês estão anunciando <strong>gestante demitida</strong> e fiquei com uma dúvida objetiva:<br><br>
+              os contatos que chegam têm o perfil de caso que vocês procuram ou ainda entra bastante gente sem aderência?
+              <span class="time">10:12 ✓✓</span>
+              <br><a class="xref" href="#pb-msg-abertura" data-tab-target="playbook">↗ ver no playbook</a>
+            </div>
+            <div class="avatar">GM</div>
+          </div>
+
+          <div class="msg-row lead">
+            <div class="avatar">MD</div>
+            <div class="bubble">
+              Entra bastante coisa nada a ver. Esse é justamente o problema.
+              <span class="time">10:19</span>
+            </div>
+          </div>
+
+          <div class="turn">apresentação sem pitch</div>
+
+          <div class="msg-row agency">
+            <div class="bubble" id="chat-r1-apresentacao">
+              Sou a Giulia, da <strong>Metha Jurídica</strong>.<br><br>
+              Somos especializados em <strong>captação para advocacias trabalhistas</strong>.
+              <span class="time">10:21 ✓✓</span>
+              <br><a class="xref" href="#pb-msg-apresentacao" data-tab-target="playbook">↗ ver no playbook</a>
+            </div>
+            <div class="avatar">GM</div>
+          </div>
+
+          <div class="msg-row agency">
+            <div class="bubble" id="chat-r1-proposta">
+              <strong>Nosso trabalho é fazer a captação partir do caso que vocês querem contratar — e não simplesmente gerar mais contatos.</strong><br><br>
+              Por isso te perguntei sobre a qualidade do que está chegando.
+              <span class="time">10:22 ✓✓</span>
+              <br><a class="xref" href="#pb-msg-proposta" data-tab-target="playbook">↗ ver no playbook</a>
+            </div>
+            <div class="avatar">GM</div>
+          </div>
+
+          <div class="msg-row agency">
+            <div class="bubble" id="chat-r1-diagnostico">
+              Primeiro: <strong>qual tese ou perfil de caso vocês mais querem fechar mais contratos hoje?</strong>
+              <span class="time">10:23 ✓✓</span>
+              <br><a class="xref" href="#pb-msg-diagnostico" data-tab-target="playbook">↗ ver no playbook</a>
+            </div>
+            <div class="avatar">GM</div>
+          </div>
+
+          <div class="msg-row lead">
+            <div class="avatar">MD</div>
+            <div class="bubble">
+              Entendi. O problema é que agência sempre fala isso e depois vem um monte de curiosos.
+              <span class="time">10:23</span>
+            </div>
+          </div>
+
+          <div class="msg-row lead">
+            <div class="avatar">MD</div>
+            <div class="bubble">
+              Gestante e acidente de trabalho. Principalmente gestante.
+              <span class="time">10:28</span>
+            </div>
+          </div>
+
+          <div class="msg-row agency">
+            <div class="bubble" id="chat-r1-devolutiva">
+              Então o problema não é simplesmente fazer o WhatsApp tocar.<br><br>
+              Vocês estão pagando para conversar com gente que não serve, quando o objetivo é contratar <strong>gestante e acidente</strong>.<br><br>
+              <strong>É aí que eu mudaria a lógica: a captação nascer da tese que vocês querem atender — e não de uma campanha genérica de “trabalhista”.</strong>
+              <span class="time">10:31 ✓✓</span>
+              <br><a class="xref" href="#pb-msg-devolutiva" data-tab-target="playbook">↗ ver no playbook</a>
+            </div>
+            <div class="avatar">GM</div>
+          </div>
+
+          <div class="proof">
+            <b>PROVA USADA:</b> caso mais parecido com a tese desejada. O Bicalho & Dias entra aqui porque o contexto é reclamante + tese específica.
+          </div>
+
+          <div class="msg-row agency">
+            <div class="bubble" id="chat-r1-prova">
+              E para você não precisar acreditar na minha palavra:<br><br>
+              o <strong>Bicalho & Dias</strong> também atua no trabalhista reclamante.<br><br>
+              No depoimento, eles relatam um contrato de <strong>gestante demitida fechado no primeiro dia de anúncio ativo conosco</strong>.<br><br>
+              Não é promessa de prazo para o seu escritório. É só um caso real do mesmo mercado para você analisar.<br><br>
+              <strong>Pode abrir, olhar o perfil do próprio advogado e julgar.</strong>
+              <span class="time">10:34 ✓✓</span>
+              <br><a class="xref" href="#pb-msg-prova-bicalho" data-tab-target="playbook">↗ ver no playbook</a>
+            </div>
+            <div class="avatar">GM</div>
+          </div>
+
+          <div class="msg-row lead">
+            <div class="avatar">MD</div>
+            <div class="bubble">
+              Me manda.
+              <span class="time">10:35</span>
+            </div>
+          </div>
+
+          <div class="msg-row agency">
+            <div class="bubble">
+              Claro. Te mando o depoimento e o perfil.<br><br>
+              E tem outro ponto: <strong>o recesso só começa dia 20 de dezembro</strong>.<br><br>
+              Ainda existe tempo para buscar contratos agora e, paralelamente, ajustar a operação antes de janeiro.
+              <span class="time">10:37 ✓✓</span>
+            </div>
+            <div class="avatar">GM</div>
+          </div>
+
+          <div class="msg-row lead">
+            <div class="avatar">MD</div>
+            <div class="bubble">
+              Eu estava pensando em mexer nisso só em janeiro.
+              <span class="time">10:42</span>
+            </div>
+          </div>
+
+          <div class="msg-row agency">
+            <div class="bubble" id="chat-r1-timing">
+              Aí eu faria o contrário.<br><br>
+              <strong>Janeiro deveria ser mês de operação rodando.</strong> Não de descobrir qualidade dos contatos, ajustar campanha e corrigir atendimento.<br><br>
+              Esperar janeiro não elimina essa fase.<br>
+              <strong>Só transfere essa fase para janeiro.</strong>
+              <span class="time">10:44 ✓✓</span>
+              <br><a class="xref" href="#pb-msg-timing" data-tab-target="playbook">↗ ver no playbook</a>
+            </div>
+            <div class="avatar">GM</div>
+          </div>
+
+          <div class="turn">síntese + CTA</div>
+
+          <div class="msg-row agency">
+            <div class="bubble" id="chat-r1-cta">
+              Hoje vocês querem mais <strong>gestante e acidente</strong>, mas estão desperdiçando verba com contato sem aderência.<br><br>
+              <strong>É esse ponto que eu atacaria.</strong><br><br>
+              Em 30 minutos eu te mostro como estruturaria isso para buscar esses casos ainda em 2026 e entrar em janeiro com a operação já funcionando.<br><br>
+              Você olha, compara com o que já conhece e decide se existe motivo para avançar.<br><br>
+              Tenho <strong>terça às 14h</strong> ou <strong>quarta às 11h</strong>. Qual funciona melhor?
+              <span class="time">10:47 ✓✓</span>
+              <br><a class="xref" href="#pb-msg-cta" data-tab-target="playbook">↗ ver no playbook</a>
+            </div>
+            <div class="avatar">GM</div>
+          </div>
+
+          <div class="msg-row lead">
+            <div class="avatar">MD</div>
+            <div class="bubble">
+              Quarta 11h.
+              <span class="time">10:50</span>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- ROTA 2 -->
+      <article class="route">
+        <header class="route-head">
+          <div class="route-no">Rota 02</div>
+          <h2 class="route-title">Já teve agência, se frustrou e acha que “é tudo igual”</h2>
+          <div class="route-meta">
+            <span class="chip">trauma de agência</span>
+            <span class="chip">comparação</span>
+            <span class="chip">prova Renan</span>
+          </div>
+        </header>
+        <div class="chat">
+          <div class="date">TERÇA · 15:04</div>
+
+          <div class="msg-row agency">
+            <div class="bubble">
+              Dra. Fernanda, vi a atuação de vocês no trabalhista e sei que vocês já conhecem mídia paga.<br><br>
+              Hoje o digital já traz o tipo de caso que vocês querem ou a entrada ainda depende bastante de indicação/orgânico?
+              <span class="time">15:04 ✓✓</span>
+            </div>
+            <div class="avatar">GM</div>
+          </div>
+
+          <div class="msg-row lead">
+            <div class="avatar">FS</div>
+            <div class="bubble">
+              Já fizemos anúncio. Parei porque cansei de agência prometendo lead e entregando porcaria.
+              <span class="time">15:11</span>
+            </div>
+          </div>
+
+          <div class="msg-row agency">
+            <div class="bubble" id="chat-r2-apresentacao">
+              Sou a Giulia, da <strong>Metha Jurídica</strong>.<br><br>
+              Somos especializados em <strong>captação para advocacias trabalhistas</strong>.
+              <span class="time">15:13 ✓✓</span>
+              <br><a class="xref" href="#pb-msg-apresentacao" data-tab-target="playbook">↗ ver no playbook</a>
+            </div>
+            <div class="avatar">GM</div>
+          </div>
+
+          <div class="msg-row agency">
+            <div class="bubble" id="chat-r2-proposta">
+              <strong>Nosso trabalho é fazer a captação partir do caso que vocês querem contratar — e não simplesmente gerar mais contatos.</strong><br><br>
+              Por isso te perguntei sobre o que fez vocês pararem.
+              <span class="time">15:14 ✓✓</span>
+              <br><a class="xref" href="#pb-msg-proposta" data-tab-target="playbook">↗ ver no playbook</a>
+            </div>
+            <div class="avatar">GM</div>
+          </div>
+
+          <div class="msg-row agency">
+            <div class="bubble" id="chat-r2-diagnostico">
+              Primeiro: <strong>qual tese ou perfil de caso vocês mais querem fechar mais contratos hoje?</strong>
+              <span class="time">15:15 ✓✓</span>
+              <br><a class="xref" href="#pb-msg-diagnostico" data-tab-target="playbook">↗ ver no playbook</a>
+            </div>
+            <div class="avatar">GM</div>
+          </div>
+
+          <div class="msg-row lead">
+            <div class="avatar">FS</div>
+            <div class="bubble">
+              Hoje eu queria fechar mais casos de rescisão indireta e doença ocupacional.
+              <span class="time">15:17</span>
+            </div>
+          </div>
+
+          <div class="msg-row agency">
+            <div class="bubble">
+              E hoje o que mais trava isso: <strong>contato ruim, custo ou pouca contratação?</strong>
+              <span class="time">15:18 ✓✓</span>
+            </div>
+            <div class="avatar">GM</div>
+          </div>
+
+          <div class="note">
+            <b>Regra:</b> depois da apresentação, primeiro define a tese/perfil desejado. Só depois aprofunda o gargalo.
+          </div>
+
+          <div class="msg-row lead">
+            <div class="avatar">FS</div>
+            <div class="bubble">
+              Muito contato ruim e pouca contratação. A conta não fechava.
+              <span class="time">15:20</span>
+            </div>
+          </div>
+
+          <div class="msg-row agency">
+            <div class="bubble">
+              Isso muda bastante a leitura.<br><br>
+              <strong>Talvez o problema nunca tenha sido “anúncio não funciona”.</strong><br><br>
+              Pode ter sido simplesmente que a operação que você conheceu até hoje não foi construída para o trabalhista da forma que precisava.<br><br>
+              Por isso eu não estou tentando te convencer a “tentar anúncio de novo”.<br><br>
+              <strong>Estou te mostrando outro modelo para você comparar.</strong>
+              <span class="time">15:23 ✓✓</span>
+            </div>
+            <div class="avatar">GM</div>
+          </div>
+
+          <div class="msg-row lead">
+            <div class="avatar">FS</div>
+            <div class="bubble">
+              E o que vocês fazem de diferente?
+              <span class="time">15:27</span>
+            </div>
+          </div>
+
+          <div class="msg-row agency">
+            <div class="bubble" id="chat-r2-diferenciacao">
+              A diferença principal não é uma configuração secreta de anúncio.<br><br>
+              <strong>É o ponto de partida.</strong><br><br>
+              A maioria começa com: “como gerar lead trabalhista?”<br><br>
+              Nós começamos com: <strong>“qual tipo de caso esse escritório quer contratar?”</strong><br><br>
+              Campanha, qualificação e atendimento precisam responder a isso.
+              <span class="time">15:30 ✓✓</span>
+              <br><a class="xref" href="#pb-msg-diferenciacao" data-tab-target="playbook">↗ ver no playbook</a>
+            </div>
+            <div class="avatar">GM</div>
+          </div>
+
+          <div class="proof">
+            <b>PROVA USADA:</b> Renan, porque o gatilho aqui é escala sustentável + contratos + capacidade operacional, não uma tese isolada.
+          </div>
+
+          <div class="msg-row agency">
+            <div class="bubble" id="chat-r2-prova">
+              Um caso que vale você analisar é o Renan.<br><br>
+              De maio a setembro, ele relata <strong>55 contratos fechados</strong>.<br><br>
+              A operação cresceu a ponto de ele precisar pausar a prospecção enquanto buscava alguém para ajudar no escritório.<br><br>
+              E, segundo o próprio relato, os acordos parcelados deixaram <strong>mais de 24 meses de honorários contratados entrando</strong>.<br><br>
+              Não precisa acreditar na nossa copy.<br>
+              <strong>O próprio advogado explica.</strong>
+              <span class="time">15:34 ✓✓</span>
+              <br><a class="xref" href="#pb-msg-prova-renan" data-tab-target="playbook">↗ ver no playbook</a>
+            </div>
+            <div class="avatar">GM</div>
+          </div>
+
+          <div class="msg-row lead">
+            <div class="avatar">FS</div>
+            <div class="bubble">
+              Tá. Isso eu quero ver.
+              <span class="time">15:36</span>
+            </div>
+          </div>
+
+          <div class="msg-row agency">
+            <div class="bubble">
+              Te mando.<br><br>
+              E se depois de olhar você entender que não existe diferença relevante para o que já fez, continua exatamente onde está.<br><br>
+              <strong>Eu não preciso que você acredite na Metha. Preciso que compare.</strong>
+              <span class="time">15:38 ✓✓</span>
+            </div>
+            <div class="avatar">GM</div>
+          </div>
+
+          <div class="msg-row lead">
+            <div class="avatar">FS</div>
+            <div class="bubble">
+              Quanto custa?
+              <span class="time">15:41</span>
+            </div>
+          </div>
+
+          <div class="msg-row agency">
+            <div class="bubble" id="chat-r2-valor">
+              Te explico.<br><br>
+              Só não quero jogar um número solto sem saber qual operação faria sentido para vocês.<br><br>
+              Em uma conversa curta eu te mostro o que atacaria, como estruturaria e, havendo encaixe, <strong>escopo, investimento e início</strong>.<br><br>
+              Sem enrolação.
+              <span class="time">15:43 ✓✓</span>
+              <br><a class="xref" href="#pb-msg-valor" data-tab-target="playbook">↗ ver no playbook</a>
+            </div>
+            <div class="avatar">GM</div>
+          </div>
+
+          <div class="msg-row lead">
+            <div class="avatar">FS</div>
+            <div class="bubble">
+              Só não quero call comercial de 1 hora.
+              <span class="time">15:45</span>
+            </div>
+          </div>
+
+          <div class="msg-row agency">
+            <div class="bubble">
+              Nem eu.<br><br>
+              <strong>20 a 30 minutos resolvem.</strong><br><br>
+              Você olha a estrutura, compara e decide se existe motivo para continuar.<br><br>
+              Tenho <strong>quinta às 16h</strong> ou <strong>sexta às 9h30</strong>.
+              <span class="time">15:47 ✓✓</span>
+            </div>
+            <div class="avatar">GM</div>
+          </div>
+
+          <div class="msg-row lead">
+            <div class="avatar">FS</div>
+            <div class="bubble">
+              Quinta 16h.
+              <span class="time">15:49</span>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- ROTA 3 -->
+      <article class="route">
+        <header class="route-head">
+          <div class="route-no">Rota 03</div>
+          <h2 class="route-title">Depende de indicação e quer “ver isso só em janeiro”</h2>
+          <div class="route-meta">
+            <span class="chip">indicação</span>
+            <span class="chip">timing 2027</span>
+            <span class="chip">CTA sem pressão</span>
+          </div>
+        </header>
+        <div class="chat">
+          <div class="date">QUARTA · 09:07</div>
+
+          <div class="msg-row agency">
+            <div class="bubble" id="chat-r3-abertura">
+              Dr. Ricardo, vi que vocês atuam no trabalhista empresarial.<br><br>
+              Hoje os novos clientes dessa frente chegam principalmente por indicação ou vocês já usam o digital para chegar em empresas específicas?
+              <span class="time">09:07 ✓✓</span>
+              <br><a class="xref" href="#pb-msg-abertura-emp" data-tab-target="playbook">↗ ver no playbook</a>
+            </div>
+            <div class="avatar">GM</div>
+          </div>
+
+          <div class="msg-row lead">
+            <div class="avatar">RB</div>
+            <div class="bubble">
+              Quase tudo indicação. Digital a gente nunca estruturou de verdade.
+              <span class="time">09:15</span>
+            </div>
+          </div>
+
+          <div class="msg-row agency">
+            <div class="bubble" id="chat-r3-apresentacao">
+              Sou a Giulia, da <strong>Metha Jurídica</strong>.<br><br>
+              Somos especializados em <strong>captação para advocacias trabalhistas</strong>.
+              <span class="time">09:17 ✓✓</span>
+              <br><a class="xref" href="#pb-msg-apresentacao" data-tab-target="playbook">↗ ver no playbook</a>
+            </div>
+            <div class="avatar">GM</div>
+          </div>
+
+          <div class="msg-row agency">
+            <div class="bubble" id="chat-r3-proposta">
+              <strong>Nosso trabalho é fazer a captação partir do caso que vocês querem contratar — e não simplesmente gerar mais contatos.</strong><br><br>
+              Por isso te perguntei de onde vêm os novos clientes hoje.
+              <span class="time">09:18 ✓✓</span>
+              <br><a class="xref" href="#pb-msg-proposta" data-tab-target="playbook">↗ ver no playbook</a>
+            </div>
+            <div class="avatar">GM</div>
+          </div>
+
+          <div class="msg-row agency">
+            <div class="bubble" id="chat-r3-diagnostico">
+              Primeiro: <strong>qual perfil de empresa ou serviço vocês mais querem fechar mais contratos hoje?</strong>
+              <span class="time">09:19 ✓✓</span>
+              <br><a class="xref" href="#pb-msg-diagnostico-emp" data-tab-target="playbook">↗ ver no playbook</a>
+            </div>
+            <div class="avatar">GM</div>
+          </div>
+
+          <div class="msg-row lead">
+            <div class="avatar">RB</div>
+            <div class="bubble">
+              Pequenas e médias empresas. Preventivo, defesa e consultivo recorrente.
+              <span class="time">09:21</span>
+            </div>
+          </div>
+
+          <div class="msg-row lead">
+            <div class="avatar">RB</div>
+            <div class="bubble">
+              Mas agora fim de ano eu não queria mexer nisso. Pensava em janeiro.
+              <span class="time">09:23</span>
+            </div>
+          </div>
+
+          <div class="msg-row agency">
+            <div class="bubble">
+              Então eu não mexeria na indicação que já funciona.<br><br>
+              O problema é quando o crescimento depende de alguém lembrar de vocês.<br><br>
+              <strong>A ideia seria construir uma segunda origem de clientes para chegar em PMEs com esse perfil específico.</strong>
+              <span class="time">09:27 ✓✓</span>
+            </div>
+            <div class="avatar">GM</div>
+          </div>
+
+          <div class="turn">objeção “janeiro”</div>
+
+          <div class="msg-row agency">
+            <div class="bubble" id="chat-r3-timing">
+              E sobre deixar para janeiro: o recesso só começa em <strong>20 de dezembro</strong>.<br><br>
+              Ainda existe uma janela inteira para construir isso com calma.<br><br>
+              <strong>Janeiro deveria ser mês de operação rodando.</strong><br>
+              Não de escolher público, montar campanha, entender os contatos e descobrir o que precisa ser corrigido.
+              <span class="time">09:30 ✓✓</span>
+              <br><a class="xref" href="#pb-msg-timing" data-tab-target="playbook">↗ ver no playbook</a>
+            </div>
+            <div class="avatar">GM</div>
+          </div>
+
+          <div class="msg-row lead">
+            <div class="avatar">RB</div>
+            <div class="bubble">
+              Mas dezembro sempre fica morto.
+              <span class="time">09:33</span>
+            </div>
+          </div>
+
+          <div class="msg-row agency">
+            <div class="bubble" id="chat-r3-dupla">
+              Pode até haver mudança de ritmo.<br><br>
+              Mas esse não é o único ganho.<br><br>
+              São <strong>duas estratégias ao mesmo tempo</strong>:<br><br>
+              1. disputar contratos ainda em 2026;<br>
+              2. usar esse período para entrar em janeiro com campanha, qualificação e atendimento já sendo ajustados por dados reais.<br><br>
+              <strong>Não é escolher entre ganhar agora ou preparar 2027. É fazer os dois.</strong>
+              <span class="time">09:36 ✓✓</span>
+              <br><a class="xref" href="#pb-msg-dupla" data-tab-target="playbook">↗ ver no playbook</a>
+            </div>
+            <div class="avatar">GM</div>
+          </div>
+
+          <div class="msg-row lead">
+            <div class="avatar">RB</div>
+            <div class="bubble">
+              Meu receio é começar agora e gastar dois meses testando.
+              <span class="time">09:40</span>
+            </div>
+          </div>
+
+          <div class="msg-row agency">
+            <div class="bubble">
+              Só que essa fase vai existir de qualquer maneira.<br><br>
+              <strong>Esperar janeiro não elimina o período de ajuste. Só transfere esse período para janeiro.</strong><br><br>
+              Se alguma coisa precisar ser corrigida, eu prefiro descobrir ainda em 2026 do que consumir o primeiro trimestre aprendendo o básico da operação.
+              <span class="time">09:42 ✓✓</span>
+            </div>
+            <div class="avatar">GM</div>
+          </div>
+
+          <div class="msg-row lead">
+            <div class="avatar">RB</div>
+            <div class="bubble">
+              E eu tenho que decidir alguma coisa nessa conversa?
+              <span class="time">09:45</span>
+            </div>
+          </div>
+
+          <div class="msg-row agency">
+            <div class="bubble" id="chat-r3-semcompromisso">
+              Não.<br><br>
+              <strong>Conversar conosco não é contratar.</strong><br><br>
+              É só você olhar como estruturaríamos isso para PMEs, comparar com o que já conhece e decidir se existe motivo para avançar.<br><br>
+              Se não fizer sentido, encerramos ali.
+              <span class="time">09:47 ✓✓</span>
+              <br><a class="xref" href="#pb-msg-semcompromisso" data-tab-target="playbook">↗ ver no playbook</a>
+            </div>
+            <div class="avatar">GM</div>
+          </div>
+
+          <div class="turn">síntese + CTA</div>
+
+          <div class="msg-row agency">
+            <div class="bubble" id="chat-r3-cta">
+              Hoje vocês querem crescer com <strong>PMEs no preventivo, defesa e consultivo recorrente</strong>, mas a entrada ainda depende quase totalmente de indicação.<br><br>
+              <strong>É essa segunda origem de clientes que eu te mostraria como construir.</strong><br><br>
+              Em 30 minutos você vê a estrutura e decide se vale usar outubro, novembro e dezembro para chegar em janeiro na frente — e não começando do zero.<br><br>
+              Tenho <strong>quarta às 17h</strong> ou <strong>sexta às 10h</strong>.
+              <span class="time">09:50 ✓✓</span>
+              <br><a class="xref" href="#pb-msg-cta" data-tab-target="playbook">↗ ver no playbook</a>
+            </div>
+            <div class="avatar">GM</div>
+          </div>
+
+          <div class="msg-row lead">
+            <div class="avatar">RB</div>
+            <div class="bubble">
+              Sexta 10h pode ser.
+              <span class="time">09:53</span>
+            </div>
+          </div>
+        </div>
+      </article>
+
+    </section>
+
+    <footer class="footer">
+      <div><strong>Uso:</strong> treinamento comercial, revisão de cadência e simulação de objeções.</div>
+      <div>V9 · Metha Jurídica · Outubro/2026</div>
+    </footer>
+    </section>
+
+
+    <section id="playbook" class="tab-panel">
+      <div class="hero">
+        <div class="hero-copy">
+          <div class="eyebrow">Metha Jurídica · Playbook V9</div>
+          <h1>O roteiro por trás das conversas.</h1>
+          <p class="subtitle">
+            Sequência operacional para conduzir o advogado da primeira resposta até a reunião.
+            O foco é definir o caso desejado cedo, devolver leitura específica e só então aprofundar diferenciação, prova e timing.
+          </p>
+        </div>
+      </div>
+
+      <div class="playbook">
+        <aside class="playbook-nav">
+          <h3>Fluxo</h3>
+          <a href="#pb1">01 · Abertura</a>
+          <a href="#pb2">02 · Sem resposta</a>
+          <a href="#pb3">03 · Apresentação Metha</a>
+          <a href="#pb4">04 · Primeiro diagnóstico</a>
+          <a href="#pb5">05 · Devolutiva</a>
+          <a href="#pb6">06 · Diferenciação</a>
+          <a href="#pb7">07 · Prova</a>
+          <a href="#pb8">08 · Timing 2026 → 2027</a>
+          <a href="#pb9">09 · Objeções</a>
+          <a href="#pb10">10 · CTA</a>
+        </aside>
+
+        <div class="playbook-content">
+
+          <section class="pb-card" id="pb1">
+            <div class="pb-kicker">Fase 01</div>
+            <h2>Abertura</h2>
+            <p>Começar no cenário do escritório. Nada de apresentação antes de o advogado responder.</p>
+
+            <div class="script-msg" id="pb-msg-abertura">
+              <strong>Dr. [NOME], vi que vocês estão anunciando [TESE/FRENTE] e fiquei com uma dúvida objetiva:</strong><br><br>
+              os contatos que chegam têm o perfil de caso que vocês procuram ou ainda entra bastante gente sem aderência?
+            </div>
+            <div class="pb-xrefs"><a class="pb-xref" href="#chat-r1-abertura" data-tab-target="preview">↗ ver na Rota 01</a></div>
+
+            <div class="script-msg" id="pb-msg-abertura-emp">
+              <strong>Dr. [NOME], vi que vocês atuam no trabalhista empresarial.</strong><br><br>
+              Hoje os novos clientes dessa frente chegam principalmente por indicação ou vocês já usam o digital para chegar em empresas específicas?
+            </div>
+            <div class="pb-xrefs"><a class="pb-xref" href="#chat-r3-abertura" data-tab-target="preview">↗ ver na Rota 03</a></div>
+          </section>
+
+          <section class="pb-card" id="pb2">
+            <div class="pb-kicker">Fase 02</div>
+            <h2>Se não respondeu</h2>
+            <p>Retomar uma vez. Não transformar ausência de resposta em autorização para despejar pitch.</p>
+            <div class="script-msg">
+              Dr. [NOME], é você quem acompanha a parte de captação do escritório?<br><br>
+              Se não for, me indica quem cuida disso e eu não tomo seu tempo.
+            </div>
+          </section>
+
+          <section class="pb-card" id="pb3">
+            <div class="pb-kicker">Fase 03 · Ajustada</div>
+            <h2>Apresentação da Metha</h2>
+
+            <div class="pb-alert">
+              <strong>Regra nova:</strong> apresentação e proposta de valor são mensagens separadas. Não colocar “como vocês já conhecem anúncios, não vim te explicar o que é tráfego”.
+            </div>
+
+            <p class="approved"><strong>Mensagem 1 — bloco isolado:</strong></p>
+            <div class="script-msg" id="pb-msg-apresentacao">
+              Sou a Giulia, da <strong>Metha Jurídica</strong>.<br><br>
+              Somos especializados em <strong>captação para advocacias trabalhistas</strong>.
+            </div>
+            <div class="pb-xrefs"><a class="pb-xref" href="#chat-r1-apresentacao" data-tab-target="preview">↗ Rota 01</a><a class="pb-xref" href="#chat-r2-apresentacao" data-tab-target="preview">↗ Rota 02</a><a class="pb-xref" href="#chat-r3-apresentacao" data-tab-target="preview">↗ Rota 03</a></div>
+
+            <p class="approved"><strong>Mensagem 2 — logo depois:</strong></p>
+            <div class="script-msg" id="pb-msg-proposta">
+              <strong>Nosso trabalho é fazer a captação partir do caso que vocês querem contratar — e não simplesmente gerar mais contatos.</strong><br><br>
+              Por isso te perguntei sobre <strong>[QUALIDADE / ORIGEM / PROBLEMA CITADO]</strong>.
+            </div>
+            <div class="pb-xrefs"><a class="pb-xref" href="#chat-r1-proposta" data-tab-target="preview">↗ Rota 01</a><a class="pb-xref" href="#chat-r2-proposta" data-tab-target="preview">↗ Rota 02</a><a class="pb-xref" href="#chat-r3-proposta" data-tab-target="preview">↗ Rota 03</a></div>
+
+            <p class="approved"><strong>Mensagem 3 — imediatamente depois:</strong></p>
+            <div class="script-msg" id="pb-msg-diagnostico">
+              Primeiro: <strong>qual tese ou perfil de caso vocês mais querem fechar mais contratos hoje?</strong>
+            </div>
+            <div class="pb-xrefs"><a class="pb-xref" href="#chat-r1-diagnostico" data-tab-target="preview">↗ Rota 01</a><a class="pb-xref" href="#chat-r2-diagnostico" data-tab-target="preview">↗ Rota 02</a></div>
+
+            <div class="removed">
+              <p><strong>Removido:</strong> “Como vocês já conhecem anúncios, não vim te explicar o que é tráfego.”</p>
+            </div>
+
+            <div class="sequence">
+              <span class="seq">1 · Quem somos</span>
+              <span class="seq">2 · O que fazemos</span>
+              <span class="seq">3 · Qual caso quer fechar</span>
+            </div>
+          </section>
+
+          <section class="pb-card" id="pb4">
+            <div class="pb-kicker">Fase 04</div>
+            <h2>Primeiro diagnóstico: definir o caso desejado</h2>
+            <p>Depois da apresentação, o primeiro dado que queremos é o alvo comercial. O gargalo vem depois.</p>
+
+            <div class="script-msg">
+              Primeiro: <strong>qual tese ou perfil de caso vocês mais querem fechar mais contratos hoje?</strong>
+            </div>
+
+            <p><strong>Se empresarial:</strong></p>
+            <div class="script-msg" id="pb-msg-diagnostico-emp">
+              Primeiro: <strong>qual perfil de empresa ou serviço vocês mais querem fechar mais contratos hoje?</strong>
+            </div>
+            <div class="pb-xrefs"><a class="pb-xref" href="#chat-r3-diagnostico" data-tab-target="preview">↗ Rota 03</a></div>
+
+            <p>Depois que ele disser o alvo, aprofundar o bloqueio.</p>
+
+            <div class="script-msg">
+              E hoje o que mais trava isso: <strong>contato sem perfil, custo ou pouca contratação?</strong>
+            </div>
+          </section>
+
+          <section class="pb-card" id="pb5">
+            <div class="pb-kicker">Fase 05</div>
+            <h2>Devolutiva</h2>
+            <p>Mostrar que a conversa saiu de “marketing” e entrou no negócio específico do escritório.</p>
+
+            <div class="script-msg" id="pb-msg-devolutiva">
+              Então o problema não é simplesmente fazer o WhatsApp tocar.<br><br>
+              Vocês estão pagando para conversar com <strong>[PERFIL INDESEJADO]</strong>, quando o objetivo é contratar <strong>[FRENTE DESEJADA]</strong>.<br><br>
+              <strong>É exatamente aí que eu mudaria a lógica: a captação nascer do caso que vocês querem atender — e não de uma campanha genérica de “trabalhista”.</strong>
+            </div>
+            <div class="pb-xrefs"><a class="pb-xref" href="#chat-r1-devolutiva" data-tab-target="preview">↗ Rota 01</a></div>
+
+            <div class="script-msg">
+              <strong>Talvez o problema nunca tenha sido “anúncio não funciona”.</strong><br><br>
+              Pode ter sido simplesmente que a operação que você conheceu até hoje não foi construída para o trabalhista da forma que precisava.<br><br>
+              <strong>Estou te mostrando outro modelo para você comparar.</strong>
+            </div>
+          </section>
+
+          <section class="pb-card" id="pb6">
+            <div class="pb-kicker">Fase 06</div>
+            <h2>Diferenciação</h2>
+            <div class="script-msg" id="pb-msg-diferenciacao">
+              A diferença principal não é uma configuração secreta de anúncio.<br><br>
+              <strong>É o ponto de partida.</strong><br><br>
+              A maioria começa pensando: “como gerar leads trabalhistas?”<br><br>
+              Nós começamos pensando: <strong>“qual tipo de caso esse escritório quer contratar?”</strong>
+            </div>
+            <div class="pb-xrefs"><a class="pb-xref" href="#chat-r2-diferenciacao" data-tab-target="preview">↗ Rota 02</a></div>
+          </section>
+
+          <section class="pb-card" id="pb7">
+            <div class="pb-kicker">Fase 07</div>
+            <h2>Prova social</h2>
+            <p>Usar o caso mais parecido com o cenário. Não despejar depoimentos aleatórios.</p>
+
+            <div class="script-msg" id="pb-msg-prova-bicalho">
+              E para você não precisar acreditar na minha palavra:<br><br>
+              o <strong>Bicalho & Dias</strong> também atua no trabalhista reclamante.<br><br>
+              No depoimento, eles relatam um contrato de <strong>gestante demitida fechado no primeiro dia de anúncio ativo conosco</strong>.<br><br>
+              Não é promessa de prazo para o seu escritório. É um caso real do mesmo mercado para você analisar.<br><br>
+              <strong>Pode abrir, olhar o perfil do próprio advogado e julgar.</strong>
+            </div>
+            <div class="pb-xrefs"><a class="pb-xref" href="#chat-r1-prova" data-tab-target="preview">↗ Rota 01</a></div>
+
+            <div class="script-msg" id="pb-msg-prova-renan">
+              Outro cenário é o Renan.<br><br>
+              De maio até setembro, ele relata <strong>55 contratos fechados</strong>.<br><br>
+              Segundo o próprio relato, os acordos parcelados deixaram <strong>mais de 24 meses de honorários contratados entrando</strong>.<br><br>
+              <strong>Não precisa acreditar na nossa copy. O próprio advogado explica.</strong>
+            </div>
+            <div class="pb-xrefs"><a class="pb-xref" href="#chat-r2-prova" data-tab-target="preview">↗ Rota 02</a></div>
+          </section>
+
+          <section class="pb-card" id="pb8">
+            <div class="pb-kicker">Fase 08</div>
+            <h2>Timing: contratos agora + janeiro funcionando</h2>
+
+            <div class="script-msg">
+              <strong>O recesso só começa em 20 de dezembro.</strong><br><br>
+              Ainda existe tempo para buscar contratos agora e, paralelamente, ajustar a operação antes de janeiro.
+            </div>
+
+            <div class="script-msg" id="pb-msg-timing">
+              <strong>Janeiro deveria ser mês de operação rodando.</strong><br><br>
+              Não mês de escolher tese, criar campanha, descobrir qualidade dos contatos, corrigir atendimento e começar os primeiros testes.
+            </div>
+            <div class="pb-xrefs"><a class="pb-xref" href="#chat-r1-timing" data-tab-target="preview">↗ Rota 01</a><a class="pb-xref" href="#chat-r3-timing" data-tab-target="preview">↗ Rota 03</a></div>
+
+            <div class="script-msg">
+              Esperar janeiro não elimina essa etapa.<br><br>
+              <strong>Só transfere a etapa de aprendizado para janeiro.</strong>
+            </div>
+
+            <div class="script-msg" id="pb-msg-dupla">
+              <strong>Não é escolher entre fechar contratos agora ou preparar 2027. É fazer os dois.</strong>
+            </div>
+            <div class="pb-xrefs"><a class="pb-xref" href="#chat-r3-dupla" data-tab-target="preview">↗ Rota 03</a></div>
+          </section>
+
+          <section class="pb-card" id="pb9">
+            <div class="pb-kicker">Fase 09</div>
+            <h2>Objeções-chave</h2>
+
+            <p><strong>“Já tive agência.”</strong></p>
+            <div class="script-msg">
+              Você está certo em não querer repetir a experiência.<br><br>
+              Mas eu também não estou te pedindo para contratar a Metha pelo WhatsApp.<br><br>
+              <strong>Estou te pedindo para comparar.</strong>
+            </div>
+
+            <p><strong>“Quero deixar para janeiro.”</strong></p>
+            <div class="script-msg">
+              Se o objetivo é começar 2027 melhor, <strong>começar a construir a operação somente em 2027 já coloca janeiro como mês de preparação.</strong><br><br>
+              Eu prefiro usar outubro, novembro e dezembro para isso e entrar em janeiro com dados reais na mesa.
+            </div>
+
+            <p><strong>“Tenho medo de gastar testando.”</strong></p>
+            <div class="script-msg">
+              Essa fase vai existir de qualquer maneira.<br><br>
+              <strong>Esperar janeiro não elimina o período de ajuste. Só transfere esse período para janeiro.</strong>
+            </div>
+          </section>
+
+          
+          <section class="pb-card">
+            <div class="pb-kicker">Mensagem aplicada</div>
+            <h2>Conversar não é contratar</h2>
+            <div class="script-msg" id="pb-msg-semcompromisso">
+              <strong>Conversar conosco não é contratar.</strong><br><br>
+              É só você olhar como estruturaríamos isso para o seu cenário, comparar com o que já conhece e decidir se existe motivo para avançar.<br><br>
+              Se não fizer sentido, encerramos ali.
+            </div>
+            <div class="pb-xrefs"><a class="pb-xref" href="#chat-r3-semcompromisso" data-tab-target="preview">↗ ver na Rota 03</a></div>
+          </section>
+
+          <section class="pb-card">
+            <div class="pb-kicker">Mensagem aplicada</div>
+            <h2>Quando pede valor</h2>
+            <div class="script-msg" id="pb-msg-valor">
+              Te explico.<br><br>
+              Só não quero jogar um número solto sem saber qual operação faria sentido para vocês.<br><br>
+              Em uma conversa curta eu te mostro o que atacaria, como estruturaria e, havendo encaixe, <strong>escopo, investimento e início</strong>.<br><br>
+              Sem enrolação.
+            </div>
+            <div class="pb-xrefs"><a class="pb-xref" href="#chat-r2-valor" data-tab-target="preview">↗ ver na Rota 02</a></div>
+          </section>
+
+          <section class="pb-card" id="pb10">
+            <div class="pb-kicker">Fase 10</div>
+            <h2>Síntese + CTA</h2>
+
+            <div class="script-msg">
+              Vocês querem captar <strong>[FRENTE]</strong>, mas hoje <strong>[FATO CONFIRMADO]</strong>.<br><br>
+              <strong>É esse ponto que eu atacaria.</strong>
+            </div>
+
+            <div class="script-msg" id="pb-msg-cta">
+              <strong>Em 30 minutos, eu te mostro como eu atacaria [PROBLEMA] para disputar [FRENTE] ainda neste fim de ano e, ao mesmo tempo, entrar em janeiro com a operação já funcionando e sendo ajustada por dados reais.</strong><br><br>
+              Você olha, compara com o que já conhece e decide se existe motivo para avançar.<br><br>
+              Tenho <strong>[HORÁRIO 1]</strong> ou <strong>[HORÁRIO 2]</strong>. Qual funciona melhor?
+            </div>
+            <div class="pb-xrefs">
+              <a class="pb-xref" href="#chat-r1-cta" data-tab-target="preview">↗ ver na Rota 01</a>
+              <a class="pb-xref" href="#chat-r3-cta" data-tab-target="preview">↗ ver na Rota 03</a>
+            </div>
+          </section>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <script>
+    const buttons = document.querySelectorAll('.tab-btn');
+    const panels = document.querySelectorAll('.tab-panel');
+
+    function activateTab(target, goTop = false){
+      buttons.forEach(b => b.classList.toggle('active', b.dataset.tab === target));
+      panels.forEach(p => p.classList.toggle('active', p.id === target));
+      if(goTop) window.scrollTo({top: 0, behavior: 'smooth'});
+    }
+
+    buttons.forEach(btn => {
+      btn.addEventListener('click', () => activateTab(btn.dataset.tab, true));
+    });
+
+    document.querySelectorAll('[data-tab-target]').forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const tab = link.dataset.tabTarget;
+        const hash = link.getAttribute('href');
+        activateTab(tab, false);
+
+        requestAnimationFrame(() => {
+          const target = document.querySelector(hash);
+          if(target){
+            target.scrollIntoView({behavior:'smooth', block:'center'});
+            target.classList.remove('anchor-flash');
+            void target.offsetWidth;
+            target.classList.add('anchor-flash');
+            history.replaceState(null, '', hash);
+          }
+        });
+      });
+    });
+
+    // Support opening the file directly with a hash
+    if(location.hash){
+      const target = document.querySelector(location.hash);
+      if(target){
+        const panel = target.closest('.tab-panel');
+        if(panel) activateTab(panel.id, false);
+        setTimeout(() => target.scrollIntoView({block:'center'}), 60);
+      }
+    }
+  </script>
+
+</body>
+</html>
