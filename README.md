@@ -57,7 +57,7 @@ Os HTMLs podem ser baixados e abertos no navegador. No GitHub, o link apresenta 
 ## Copydrill
 
 - [copydrill_v9_1.html](Copydrill/v9_1/copydrill_v9_1.html)
-- [Pra quem se frustou com agência anterior (Copydrill).md](Pra%20quem%20se%20frustou%20com%20ag%C3%AAncia%20anterior%20%28Copydrill%29.md)
+- [Copydrill/Script - Versão Pra quem se frustou com agência anterior (Copydrill).md](Copydrill/Script%20-%20Vers%C3%A3o%20Pra%20quem%20se%20frustou%20com%20ag%C3%AAncia%20anterior%20%28Copydrill%29.md)
 
 ## Karnage
 

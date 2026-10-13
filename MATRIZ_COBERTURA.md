@@ -21,7 +21,7 @@ A [matriz de mensagens](Metha-Mensagens-por-Etapa.xlsx) reúne os 14 documentos 
 | [Outros/Playbook_Comercial_Metha_V8.pdf](Outros/Playbook_Comercial_Metha_V8.pdf) | PDF | 172 |
 | [Outros/Playbook_Comercial_Metha_V8_IA_WhatsApp.md](Outros/Playbook_Comercial_Metha_V8_IA_WhatsApp.md) | MD | 147 |
 | [Outros/Playbook_Comercial_Metha_V8_Salesbot_Kommo_Sem_IA.md](Outros/Playbook_Comercial_Metha_V8_Salesbot_Kommo_Sem_IA.md) | MD | 146 |
-| [Pra quem se frustou com agência anterior (Copydrill).md](Pra%20quem%20se%20frustou%20com%20ag%C3%AAncia%20anterior%20%28Copydrill%29.md) | MD | 43 |
+| [Copydrill/Script - Versão Pra quem se frustou com agência anterior (Copydrill).md](Copydrill/Script%20-%20Vers%C3%A3o%20Pra%20quem%20se%20frustou%20com%20ag%C3%AAncia%20anterior%20%28Copydrill%29.md) | MD | 43 |
 
 ## Tipos de conteúdo
 
