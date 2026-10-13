@@ -2,7 +2,7 @@
 
 A [matriz de mensagens](Metha-Mensagens-por-Etapa.xlsx) reúne os 14 documentos originais do acervo no snapshot `b507edaf39b596761e8aa58b1892d4afa9b22f5b`.
 
-**149 linhas de matriz, 1.600 registros de origem e 173 partes de texto integral de apoio.** O total de registros inclui mensagens da Metha, falas de leads em simulações, instruções, tabelas, exemplos e roteiros de reunião. Não representa 1.600 modelos prontos para envio.
+**14 linhas de matriz, uma por documento; 1.600 registros de origem; e 173 partes de texto integral de apoio.** O total de registros inclui mensagens da Metha, falas de leads em simulações, instruções, tabelas, exemplos e roteiros de reunião. Não representa 1.600 modelos prontos para envio.
 
 ## Fontes contempladas
 
@@ -56,7 +56,7 @@ A extração dos HTMLs preserva palavras, pontuação e links externos. Ênfases
 
 Nos PDFs, o texto foi extraído das caixas originais de mensagem, mantendo as quebras de linha físicas. As caixas de tabelas foram classificadas como instruções. O PDF original continua disponível para conferir o layout.
 
-Partes numeradas na matriz distribuem o conteúdo da mesma fonte ou conversa de exemplo. Elas não criam versões comerciais novas nem uma sequência obrigatória. Os títulos originais, IDs, tipo, arquivo e localização permitem consultar o contexto de cada bloco.
+Cada documento ocupa uma única linha na matriz. As mensagens integrais são reunidas na coluna da etapa atribuída, identificadas por código, tipo e título. Consulte a aba Mensagens integrais para ver localização, contexto e arquivo de cada ocorrência. A matriz não cria versões comerciais novas nem uma sequência obrigatória.
 
 Textos extensos permanecem completos no arquivo, mesmo quando excedem a altura máxima de linha do Excel. Use a barra de fórmulas ou abra a célula para leitura integral.
 

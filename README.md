@@ -6,13 +6,13 @@ O início de tudo está na **matriz de mensagens**. Comece por ela para comparar
 
 **[Abrir ou baixar a matriz de mensagens por etapa](Metha-Mensagens-por-Etapa.xlsx)**
 
-A planilha está na raiz do repositório e reúne o conteúdo original dos **14 documentos do acervo: 7 Markdown, 4 HTML e 3 PDF**. A matriz organiza as fontes, versões e conversas de exemplo em linhas, com o texto integral nas colunas de etapa correspondentes.
+A planilha está na raiz do repositório e reúne o conteúdo original dos **14 documentos do acervo: 7 Markdown, 4 HTML e 3 PDF**. A matriz tem **uma linha por documento**; cada coluna de etapa reúne todas as mensagens e trechos daquela fase, preservados integralmente e identificados por código.
 
-São **149 linhas na matriz e 1.600 registros de origem**, incluindo mensagens da Metha, falas simuladas dos leads, instruções, tabelas e exemplos. Os tipos estão identificados para distinguir o que é mensagem, fala de lead, conduta interna ou exemplo. As repetições entre arquivos e as diferenças entre versões foram preservadas.
+São **14 linhas de documentos na matriz e 1.600 registros de origem**, incluindo mensagens da Metha, falas simuladas dos leads, instruções, tabelas e exemplos. Os tipos estão identificados para distinguir o que é mensagem, fala de lead, conduta interna ou exemplo. As repetições entre arquivos e as diferenças entre versões foram preservadas.
 
 ### Organização da planilha
 
-- **Matriz integral:** ponto de partida. Contém todos os registros organizados por fonte, variante e etapa. Falas de leads e instruções possuem colunas próprias. Partes numeradas distribuem várias mensagens da mesma fonte sem criar uma nova sequência comercial.
+- **Matriz integral:** ponto de partida. Cada linha é um dos 14 documentos originais; as colunas são as etapas. Todas as ocorrências daquela fonte ficam na coluna correspondente, com ID, tipo e título para localizar cada mensagem.
 - **Mensagens integrais:** um registro por bloco de origem, com código, texto completo, tipo, título, arquivo, localização, ID original, contexto e hash. Os códigos M da matriz identificam o registro correspondente nessa aba.
 - **Fontes e cobertura:** inventário dos 14 documentos, contagens, hashes e critérios de extração e uso.
 - **Contexto integral:** os Markdown completos, o texto visível completo dos HTMLs e todas as 148 páginas dos PDFs, para conferir instruções e passagens no contexto original.
