@@ -1,0 +1,3841 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Metha Jurídica — Playbook V10.2 · doug.tensao</title>
+
+<style>
+:root{
+  --bg:#080a0e;
+  --panel:#101419;
+  --panel2:#151a21;
+  --panel3:#0c1015;
+  --border:rgba(255,255,255,.085);
+
+  --text:#f3f5f7;
+  --muted:#8f98a2;
+
+  --green:#20c879;
+  --green2:#31d98a;
+  --agency:#123d2e;
+  --agency2:#174f3b;
+  --lead:#232a33;
+
+  --gold:#e8bd5c;
+  --blue:#61c5ff;
+  --red:#ff8181;
+  --orange:#ffad66;
+}
+
+*{box-sizing:border-box}
+
+html{scroll-behavior:smooth}
+
+body{
+  margin:0;
+  min-height:100vh;
+  color:var(--text);
+
+  font-family:
+    Inter,
+    ui-sans-serif,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+
+  background:
+    radial-gradient(circle at 8% 0%,rgba(32,200,121,.08),transparent 25%),
+    radial-gradient(circle at 94% 0%,rgba(232,189,92,.04),transparent 20%),
+    var(--bg);
+}
+
+button,
+a{
+  -webkit-tap-highlight-color:transparent;
+}
+
+a{color:inherit}
+
+.page{
+  width:min(1760px,calc(100% - 30px));
+  margin:0 auto;
+  padding:28px 0 50px;
+}
+
+/* ======================================================
+   HERO
+====================================================== */
+
+.hero{
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-end;
+  gap:32px;
+  margin-bottom:20px;
+}
+
+.hero-main{max-width:1050px}
+
+.eyebrow{
+  margin-bottom:10px;
+  color:var(--green);
+  font-size:11px;
+  font-weight:950;
+  letter-spacing:.16em;
+  text-transform:uppercase;
+}
+
+h1{
+  margin:0;
+  font-size:clamp(38px,4.5vw,66px);
+  line-height:.95;
+  letter-spacing:-.055em;
+}
+
+.hero p{
+  max-width:950px;
+  margin:17px 0 0;
+  color:var(--muted);
+  font-size:14px;
+  line-height:1.7;
+}
+
+.hero-actions{
+  flex:0 0 auto;
+  display:flex;
+  flex-direction:column;
+  align-items:flex-end;
+  gap:10px;
+}
+
+.doug-btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:9px;
+
+  padding:13px 17px;
+
+  border-radius:12px;
+  color:#06150e;
+  background:var(--green);
+
+  text-decoration:none;
+
+  font-size:13px;
+  font-weight:950;
+
+  box-shadow:
+    0 12px 34px rgba(32,200,121,.18),
+    inset 0 1px 0 rgba(255,255,255,.33);
+
+  transition:.18s ease;
+}
+
+.doug-btn:hover{
+  transform:translateY(-2px);
+  background:var(--green2);
+}
+
+.legend{
+  display:flex;
+  gap:7px;
+  flex-wrap:wrap;
+  justify-content:flex-end;
+}
+
+.legend-item{
+  display:flex;
+  align-items:center;
+  gap:7px;
+
+  padding:7px 10px;
+
+  border:1px solid var(--border);
+  border-radius:999px;
+
+  color:#b9c1c8;
+  background:rgba(255,255,255,.025);
+
+  font-size:10px;
+}
+
+.legend-dot{
+  width:8px;
+  height:8px;
+  border-radius:50%;
+}
+
+.legend-dot.lead{background:#78838e}
+.legend-dot.agency{background:var(--green)}
+.legend-dot.emergency{background:var(--gold)}
+
+/* ======================================================
+   TABS
+====================================================== */
+
+.tabs-nav{
+  position:sticky;
+  top:0;
+  z-index:50;
+
+  display:flex;
+  gap:8px;
+
+  width:max-content;
+  max-width:100%;
+
+  margin:22px 0 18px;
+  padding:6px;
+
+  border:1px solid var(--border);
+  border-radius:14px;
+
+  background:rgba(8,10,14,.91);
+  backdrop-filter:blur(16px);
+}
+
+.tab-btn{
+  border:0;
+  border-radius:10px;
+  padding:10px 16px;
+  cursor:pointer;
+
+  color:#9da6af;
+  background:transparent;
+
+  font:inherit;
+  font-size:12px;
+  font-weight:900;
+
+  transition:.17s ease;
+}
+
+.tab-btn:hover{
+  color:#fff;
+  background:rgba(255,255,255,.04);
+}
+
+.tab-btn.active{
+  color:#06150e;
+  background:var(--green);
+}
+
+.tab-panel{display:none}
+.tab-panel.active{display:block}
+
+/* ======================================================
+   SECTION TITLE
+====================================================== */
+
+.section-title{
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-end;
+  gap:20px;
+
+  margin:4px 0 15px;
+  padding:0 2px;
+}
+
+.section-title h2{
+  margin:0;
+  font-size:18px;
+}
+
+.section-title p{
+  max-width:780px;
+  margin:4px 0 0;
+  color:var(--muted);
+  font-size:11px;
+  line-height:1.5;
+}
+
+.section-badge{
+  flex:0 0 auto;
+  padding:7px 10px;
+
+  border:1px solid rgba(32,200,121,.22);
+  border-radius:999px;
+
+  color:var(--green);
+  background:rgba(32,200,121,.055);
+
+  font-size:9px;
+  font-weight:950;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+}
+
+/* ======================================================
+   CHAT GRID
+====================================================== */
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:18px;
+}
+
+.chat-card{
+  min-width:0;
+  height:890px;
+
+  display:flex;
+  flex-direction:column;
+  overflow:hidden;
+
+  border:1px solid var(--border);
+  border-radius:23px;
+
+  background:var(--panel);
+
+  box-shadow:
+    0 22px 60px rgba(0,0,0,.29),
+    inset 0 1px 0 rgba(255,255,255,.025);
+}
+
+.chat-route{
+  padding:14px 15px;
+  border-bottom:1px solid var(--border);
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(255,255,255,.034),
+      rgba(255,255,255,.01)
+    );
+}
+
+.route-number{
+  display:flex;
+  align-items:center;
+  gap:6px;
+  margin-bottom:7px;
+
+  color:var(--green);
+  font-size:9px;
+  font-weight:950;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+}
+
+.route-number:before{
+  content:"";
+  width:6px;
+  height:6px;
+  border-radius:50%;
+  background:var(--green);
+  box-shadow:0 0 14px rgba(32,200,121,.7);
+}
+
+.chat-route h3{
+  margin:0;
+  font-size:16px;
+  line-height:1.25;
+}
+
+.chat-route p{
+  margin:6px 0 0;
+  color:var(--muted);
+  font-size:10.5px;
+  line-height:1.45;
+}
+
+.route-tags{
+  display:flex;
+  flex-wrap:wrap;
+  gap:5px;
+  margin-top:9px;
+}
+
+.route-tag{
+  padding:4px 7px;
+
+  border:1px solid rgba(255,255,255,.07);
+  border-radius:999px;
+
+  color:#aeb7be;
+  background:rgba(255,255,255,.025);
+
+  font-size:8px;
+  font-weight:800;
+}
+
+/* ======================================================
+   CHAT
+====================================================== */
+
+.chat-header{
+  flex:0 0 61px;
+
+  display:flex;
+  align-items:center;
+  gap:10px;
+
+  padding:0 13px;
+
+  background:#16201c;
+  border-bottom:1px solid rgba(255,255,255,.055);
+}
+
+.avatar{
+  flex:0 0 auto;
+
+  width:37px;
+  height:37px;
+
+  display:grid;
+  place-items:center;
+
+  border:1px solid rgba(255,255,255,.09);
+  border-radius:50%;
+
+  color:#fff;
+  background:linear-gradient(145deg,#29352f,#111a17);
+
+  font-size:11px;
+  font-weight:950;
+}
+
+.contact{
+  flex:1;
+  min-width:0;
+}
+
+.contact strong{
+  display:block;
+  overflow:hidden;
+  white-space:nowrap;
+  text-overflow:ellipsis;
+  font-size:13px;
+}
+
+.contact span{
+  display:block;
+  margin-top:2px;
+  color:#95a19c;
+  font-size:9px;
+}
+
+.online{
+  padding:5px 7px;
+
+  border:1px solid rgba(32,200,121,.17);
+  border-radius:999px;
+
+  color:var(--green);
+  background:rgba(32,200,121,.075);
+
+  font-size:8px;
+  font-weight:950;
+}
+
+.messages{
+  flex:1;
+  min-height:0;
+  overflow-y:auto;
+
+  padding:16px 11px 25px;
+
+  background:
+    linear-gradient(
+      rgba(12,15,19,.95),
+      rgba(12,15,19,.95)
+    ),
+    radial-gradient(
+      circle at 10px 10px,
+      rgba(255,255,255,.04) 1px,
+      transparent 1px
+    );
+
+  background-size:auto,24px 24px;
+
+  scrollbar-width:thin;
+  scrollbar-color:#39433e transparent;
+}
+
+.messages::-webkit-scrollbar{width:6px}
+
+.messages::-webkit-scrollbar-thumb{
+  border-radius:99px;
+  background:#39433e;
+}
+
+.day{
+  display:table;
+
+  margin:0 auto 16px;
+  padding:5px 8px;
+
+  border-radius:7px;
+
+  color:#8f9994;
+  background:rgba(255,255,255,.05);
+
+  font-size:8.5px;
+  font-weight:900;
+  letter-spacing:.07em;
+  text-transform:uppercase;
+}
+
+.msg-row{
+  display:flex;
+  width:100%;
+  margin-bottom:8px;
+}
+
+.msg-row.lead{justify-content:flex-start}
+.msg-row.agency{justify-content:flex-end}
+
+.bubble{
+  position:relative;
+
+  max-width:90%;
+  padding:9px 10px 7px;
+
+  font-size:11.6px;
+  line-height:1.5;
+
+  box-shadow:0 4px 10px rgba(0,0,0,.13);
+}
+
+.lead .bubble{
+  color:#eef0f2;
+  background:var(--lead);
+
+  border-radius:5px 13px 13px 13px;
+}
+
+.agency .bubble{
+  color:#f1f8f5;
+  background:linear-gradient(180deg,var(--agency2),var(--agency));
+
+  border:1px solid rgba(32,200,121,.085);
+  border-radius:13px 5px 13px 13px;
+}
+
+.bubble strong{color:#fff}
+.agency .bubble strong{color:#c1f7dc}
+
+.meta{
+  display:flex;
+  justify-content:flex-end;
+  align-items:center;
+  gap:4px;
+
+  margin-top:4px;
+
+  color:rgba(255,255,255,.42);
+  font-size:8px;
+}
+
+.check{
+  color:var(--blue);
+  font-weight:900;
+  letter-spacing:-3px;
+}
+
+.followup-divider{
+  display:flex;
+  align-items:center;
+  gap:7px;
+
+  margin:15px 4px 10px;
+
+  color:#81775d;
+
+  font-size:8px;
+  font-weight:950;
+  letter-spacing:.1em;
+  text-transform:uppercase;
+}
+
+.followup-divider:before,
+.followup-divider:after{
+  content:"";
+  flex:1;
+  height:1px;
+  background:rgba(232,189,92,.15);
+}
+
+.emergency{
+  margin:8px 7px 11px;
+  padding:9px 10px;
+
+  border:1px solid rgba(232,189,92,.16);
+  border-left:3px solid var(--gold);
+  border-radius:8px;
+
+  color:#b9b29f;
+  background:rgba(232,189,92,.04);
+
+  font-size:9px;
+  line-height:1.45;
+}
+
+.emergency strong{color:var(--gold)}
+
+.proof{
+  margin:9px 7px 11px;
+  padding:9px 10px;
+
+  border:1px solid rgba(32,200,121,.16);
+  border-radius:9px;
+
+  color:#b7d9c8;
+  background:rgba(32,200,121,.04);
+
+  font-size:9px;
+  line-height:1.45;
+}
+
+.proof strong{color:var(--green)}
+
+.chat-footer{
+  flex:0 0 auto;
+
+  padding:11px 12px;
+
+  border-top:1px solid var(--border);
+  background:#111713;
+}
+
+.outcome{
+  display:flex;
+  align-items:center;
+  gap:8px;
+
+  color:#adb6b1;
+
+  font-size:9px;
+  line-height:1.35;
+}
+
+.outcome strong{color:#dff9ec}
+
+.outcome-icon{
+  flex:0 0 auto;
+
+  width:23px;
+  height:23px;
+
+  display:grid;
+  place-items:center;
+
+  border-radius:50%;
+
+  color:#07130d;
+  background:var(--green);
+
+  font-size:11px;
+  font-weight:950;
+}
+
+/* ======================================================
+   PLAYBOOK
+====================================================== */
+
+.playbook-shell{
+  display:grid;
+  grid-template-columns:255px minmax(0,1fr);
+  gap:18px;
+  align-items:start;
+}
+
+.playbook-menu{
+  position:sticky;
+  top:75px;
+
+  padding:14px;
+
+  border:1px solid var(--border);
+  border-radius:18px;
+
+  background:#10141a;
+}
+
+.playbook-menu strong{
+  display:block;
+  margin:0 0 10px;
+
+  color:#fff;
+
+  font-size:11px;
+  font-weight:950;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+}
+
+.playbook-menu a{
+  display:block;
+
+  margin:2px 0;
+  padding:8px 9px;
+
+  border-radius:8px;
+
+  color:#929ca5;
+
+  text-decoration:none;
+
+  font-size:10.5px;
+  line-height:1.35;
+
+  transition:.15s ease;
+}
+
+.playbook-menu a:hover{
+  color:#fff;
+  background:rgba(255,255,255,.045);
+}
+
+.playbook-content{min-width:0}
+
+.pb-hero{
+  margin-bottom:16px;
+  padding:23px;
+
+  border:1px solid rgba(32,200,121,.14);
+  border-radius:20px;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(32,200,121,.075),
+      rgba(255,255,255,.018)
+    );
+}
+
+.pb-kicker{
+  color:var(--green);
+
+  font-size:9px;
+  font-weight:950;
+  letter-spacing:.13em;
+  text-transform:uppercase;
+}
+
+.pb-hero h2{
+  margin:8px 0;
+  font-size:28px;
+}
+
+.pb-hero p{
+  max-width:1050px;
+  margin:0;
+
+  color:#9ba4ac;
+
+  font-size:12px;
+  line-height:1.65;
+}
+
+.pb-section{
+  margin-bottom:16px;
+  padding:20px;
+
+  scroll-margin-top:90px;
+
+  border:1px solid var(--border);
+  border-radius:18px;
+
+  background:#10141a;
+}
+
+.pb-number{
+  display:block;
+  margin-bottom:5px;
+
+  color:var(--green);
+
+  font-size:9px;
+  font-weight:950;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+}
+
+.pb-section h3{
+  margin:0;
+  font-size:19px;
+}
+
+.pb-desc{
+  max-width:1000px;
+
+  margin:7px 0 0;
+
+  color:#89939c;
+
+  font-size:11px;
+  line-height:1.55;
+}
+
+.pb-rule{
+  margin:13px 0;
+  padding:11px 12px;
+
+  border-left:3px solid var(--green);
+  border-radius:0 9px 9px 0;
+
+  color:#b7c0c6;
+  background:rgba(32,200,121,.052);
+
+  font-size:11px;
+  line-height:1.55;
+}
+
+.pb-rule strong{color:#eafbf2}
+
+.pb-grid{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:10px;
+}
+
+.pb-card{
+  padding:14px;
+
+  border:1px solid rgba(255,255,255,.07);
+  border-radius:13px;
+
+  background:#151a21;
+}
+
+.pb-card.full{
+  grid-column:1 / -1;
+}
+
+.pb-card-title{
+  margin-bottom:8px;
+
+  color:#f4f6f7;
+
+  font-size:11px;
+  font-weight:950;
+}
+
+.pb-copy{
+  padding:11px 12px;
+
+  border:1px solid rgba(255,255,255,.055);
+  border-radius:10px;
+
+  color:#dfe4e7;
+  background:#0d1116;
+
+  font-size:11px;
+  line-height:1.6;
+}
+
+.pb-copy strong{color:#b9f5d7}
+
+.pb-small{
+  margin-top:7px;
+
+  color:#818b94;
+
+  font-size:9.5px;
+  line-height:1.5;
+}
+
+.pb-warning{
+  border-color:rgba(232,189,92,.15);
+  background:rgba(232,189,92,.035);
+}
+
+.pb-danger{
+  border-color:rgba(255,129,129,.13);
+  background:rgba(255,129,129,.03);
+}
+
+.word-table{
+  width:100%;
+  border-collapse:collapse;
+
+  margin-top:12px;
+
+  font-size:10px;
+}
+
+.word-table th,
+.word-table td{
+  padding:9px 10px;
+
+  border-bottom:1px solid rgba(255,255,255,.06);
+
+  text-align:left;
+}
+
+.word-table th{
+  color:#fff;
+
+  font-size:9px;
+  text-transform:uppercase;
+  letter-spacing:.08em;
+}
+
+.word-table td{color:#adb6bd}
+.word-table td:first-child{color:#ff9c9c}
+.word-table td:last-child{color:#b8f3d5}
+
+.emergency-grid{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:10px;
+}
+
+.em-card{
+  padding:14px;
+
+  border:1px solid rgba(232,189,92,.14);
+  border-radius:12px;
+
+  background:rgba(232,189,92,.035);
+}
+
+.em-code{
+  color:var(--gold);
+
+  font-size:10px;
+  font-weight:950;
+  letter-spacing:.08em;
+}
+
+.em-title{
+  margin:4px 0 8px;
+
+  font-size:12px;
+  font-weight:900;
+}
+
+.em-text{
+  color:#c1bba9;
+
+  font-size:10.5px;
+  line-height:1.55;
+}
+
+/* ======================================================
+   FOOTER
+====================================================== */
+
+.principle{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:20px;
+
+  margin-top:18px;
+  padding:17px 19px;
+
+  border:1px solid var(--border);
+  border-radius:17px;
+
+  background:rgba(255,255,255,.024);
+}
+
+.principle strong{
+  display:block;
+  margin-bottom:4px;
+  font-size:12px;
+}
+
+.principle p{
+  max-width:1200px;
+  margin:0;
+
+  color:var(--muted);
+
+  font-size:11px;
+  line-height:1.5;
+}
+
+.pill{
+  flex:0 0 auto;
+
+  padding:7px 10px;
+
+  border:1px solid rgba(232,189,92,.24);
+  border-radius:999px;
+
+  color:var(--gold);
+  background:rgba(232,189,92,.065);
+
+  font-size:9px;
+  font-weight:950;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+}
+
+/* ======================================================
+   RESPONSIVE
+====================================================== */
+
+@media(max-width:1180px){
+  .grid{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+  }
+}
+
+@media(max-width:900px){
+  .playbook-shell{
+    grid-template-columns:1fr;
+  }
+
+  .playbook-menu{
+    position:static;
+
+    display:flex;
+    gap:5px;
+
+    overflow-x:auto;
+  }
+
+  .playbook-menu strong{display:none}
+
+  .playbook-menu a{
+    flex:0 0 auto;
+    white-space:nowrap;
+    border:1px solid var(--border);
+  }
+}
+
+@media(max-width:760px){
+  .page{
+    width:min(100% - 18px,1760px);
+    padding-top:18px;
+  }
+
+  .hero{
+    flex-direction:column;
+    align-items:flex-start;
+  }
+
+  .hero-actions{align-items:flex-start}
+  .legend{justify-content:flex-start}
+
+  .grid{grid-template-columns:1fr}
+
+  .chat-card{height:820px}
+
+  .principle{
+    flex-direction:column;
+    align-items:flex-start;
+  }
+
+  .pb-grid,
+  .emergency-grid{
+    grid-template-columns:1fr;
+  }
+
+  .pb-card.full{
+    grid-column:auto;
+  }
+
+  h1{font-size:40px}
+}
+</style>
+</head>
+
+<body>
+
+<main class="page">
+
+<header class="hero">
+
+  <div class="hero-main">
+
+    <div class="eyebrow">
+      Metha Jurídica · Prospecção Trabalhista · V10.2
+    </div>
+
+    <h1>
+      Menos script.
+      <br>
+      Mais leitura.
+    </h1>
+
+    <p>
+      Seis simulações de WhatsApp partindo da situação mais comum:
+      sabemos que é advogado trabalhista, mas não sabemos se anuncia.
+      A conversa primeiro descobre como os casos chegam, apresenta a Metha
+      depois da primeira resposta humana e só então escolhe a rota.
+      O advogado solo é o padrão; secretária é tratada como apoio, não como “equipe comercial”.
+    </p>
+
+  </div>
+
+  <div class="hero-actions">
+
+    <a
+      class="doug-btn"
+      href="https://chatgpt.com/g/g-680aafa0210081919d1f2111e2e4f428-jis-doug-tensao/c/6acd6ef4-0734-83e8-87f0-a00d02923575"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      doug.tensao ↗
+    </a>
+
+    <div class="legend">
+
+      <div class="legend-item">
+        <span class="legend-dot lead"></span>
+        Advogado
+      </div>
+
+      <div class="legend-item">
+        <span class="legend-dot agency"></span>
+        Giulia / Metha
+      </div>
+
+      <div class="legend-item">
+        <span class="legend-dot emergency"></span>
+        Emergência
+      </div>
+
+    </div>
+
+  </div>
+
+</header>
+
+<nav class="tabs-nav">
+
+  <button
+    class="tab-btn active"
+    data-tab="chats"
+    type="button"
+  >
+    Chats Preview · 6 cenários
+  </button>
+
+  <button
+    class="tab-btn"
+    data-tab="playbook"
+    type="button"
+  >
+    Playbook V10.2
+  </button>
+
+</nav>
+
+<section
+  id="chats"
+  class="tab-panel active"
+>
+
+  <div class="section-title">
+
+    <div>
+      <h2>Aplicação prática</h2>
+
+      <p>
+        A abertura não presume anúncio. Depois da primeira resposta humana,
+        Giulia se identifica, posiciona a Metha em uma frase e continua exatamente
+        do ponto que o advogado revelou.
+      </p>
+    </div>
+
+    <div class="section-badge">
+      6 cenários
+    </div>
+
+  </div>
+
+  <div class="grid">
+
+    <article class="chat-card">
+
+      <div class="chat-route">
+
+        <div class="route-number">
+          Cenário 01
+        </div>
+
+        <h3>
+          Não sabemos se anuncia → ele anuncia e recebe contato ruim
+        </h3>
+
+        <p>
+          Advogado solo. O custo oculto não é “trabalho da equipe”; é o próprio tempo dele.
+        </p>
+
+        <div class="route-tags">
+          <span class="route-tag">abertura padrão</span>
+          <span class="route-tag">anúncios</span>
+          <span class="route-tag">gestante</span>
+        </div>
+
+      </div>
+
+      <div class="chat-header">
+
+        <div class="avatar">MD</div>
+
+        <div class="contact">
+          <strong>Dr. Marcelo</strong>
+          <span>Advogado trabalhista</span>
+        </div>
+
+        <div class="online">
+          ONLINE
+        </div>
+
+      </div>
+
+      <div class="messages">
+
+        <div class="day">
+          SEGUNDA · 10:12
+        </div>
+
+        <div class="msg-row agency">
+          <div class="bubble">
+
+            Dr. Marcelo, vi que você atua no trabalhista e fiquei com uma dúvida.<br><br>
+
+            <strong>
+              Hoje os casos novos chegam mais por indicação
+              ou você também usa anúncios?
+            </strong>
+
+            <div class="meta">
+              10:12 <span class="check">✓✓</span>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="emergency">
+          <strong>SE SUMIR · E1</strong><br>
+          “Dr. Marcelo, só para eu não falar com a pessoa errada:
+          é você mesmo quem acompanha essa parte de anúncios e captação por aí?”
+        </div>
+
+        <div class="msg-row lead">
+          <div class="bubble">
+
+            Uso anúncios também.
+
+            <div class="meta">
+              10:18
+            </div>
+
+          </div>
+        </div>
+
+        <div class="msg-row agency">
+          <div class="bubble">
+
+            Entendi.<br><br>
+
+            Sou a Giulia, da Metha Jurídica.<br><br>
+
+            <strong>
+              Nossa atuação é 100% focada em captação para advocacia trabalhista.
+            </strong><br><br>
+
+            E hoje os anúncios estão trazendo casos que você realmente gosta de pegar...
+            ou vem bastante coisa que não faz sentido?
+
+            <div class="meta">
+              10:20 <span class="check">✓✓</span>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="msg-row lead">
+          <div class="bubble">
+
+            Vem muita coisa ruim.
+
+            <div class="meta">
+              10:25
+            </div>
+
+          </div>
+        </div>
+
+        <div class="msg-row agency">
+          <div class="bubble">
+
+            Imaginei.<br><br>
+
+            Porque uma coisa é fazer o WhatsApp tocar.<br><br>
+
+            Outra é chegar um caso que você olha e pensa:<br><br>
+
+            <strong>“esse eu quero pegar.”</strong><br><br>
+
+            Se pudesse escolher um tipo de caso para aparecer mais,
+            qual seria?
+
+            <div class="meta">
+              10:27 <span class="check">✓✓</span>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="msg-row lead">
+          <div class="bubble">
+
+            Gestante.
+
+            <div class="meta">
+              10:31
+            </div>
+
+          </div>
+        </div>
+
+        <div class="msg-row agency">
+          <div class="bubble">
+
+            Então vamos em gestante.<br><br>
+
+            Hoje pesa mais:<br><br>
+
+            <strong>chegar pouca gestante</strong><br><br>
+
+            ou<br><br>
+
+            <strong>
+              você parar para responder um monte de gente
+              e descobrir que pouca coisa realmente vira um caso que você pegaria?
+            </strong>
+
+            <div class="meta">
+              10:33 <span class="check">✓✓</span>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="msg-row lead">
+          <div class="bubble">
+
+            A segunda.
+
+            Sou eu mesmo que respondo quase tudo.
+
+            <div class="meta">
+              10:38
+            </div>
+
+          </div>
+        </div>
+
+        <div class="msg-row agency">
+          <div class="bubble">
+
+            Então você está pagando duas vezes.<br><br>
+
+            <strong>Pelo contato.</strong><br><br>
+
+            E pelo tempo que você para para descobrir
+            que aquele contato nem deveria ter chegado até você.<br><br>
+
+            É exatamente essa parte que eu olharia primeiro.
+
+            <div class="meta">
+              10:41 <span class="check">✓✓</span>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="proof">
+          <strong>PROVA INDICADA:</strong><br>
+          Bicalho & Dias — reclamante + gestante.
+          Um case parecido entra agora porque já sabemos o tipo de contrato desejado.
+        </div>
+
+        <div class="msg-row agency">
+          <div class="bubble">
+
+            Tem um caso que conversa diretamente com isso.<br><br>
+
+            O Bicalho & Dias também atua com reclamante
+            e relata um contrato de
+            <strong>gestante demitida fechado no primeiro dia de anúncio ativo conosco.</strong><br><br>
+
+            Não estou dizendo que vai acontecer igual com você.<br><br>
+
+            Quero que você observe outra coisa:<br><br>
+
+            <strong>o tipo de contrato que entrou.</strong>
+
+            <div class="meta">
+              10:44 <span class="check">✓✓</span>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="emergency">
+          <strong>SE SUMIR DEPOIS DO CASE · E6</strong><br>
+          “Independente de ter visto: no seu cenário faria mais diferença
+          aumentar gestante ou diminuir esses contatos que tomam seu tempo?”
+        </div>
+
+        <div class="msg-row lead">
+          <div class="bubble">
+
+            Interessante.
+
+            <div class="meta">
+              10:49
+            </div>
+
+          </div>
+        </div>
+
+        <div class="msg-row agency">
+          <div class="bubble">
+
+            Então hoje você quer mais <strong>gestante</strong>,
+            mas boa parte do que chega consome seu tempo e não vira um caso que você pegaria.<br><br>
+
+            Se eu te mostrar como eu montaria uma captação para gestante
+            no cenário que você tem hoje,
+            <strong>vale comparar?</strong>
+
+            <div class="meta">
+              10:51 <span class="check">✓✓</span>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="msg-row lead">
+          <div class="bubble">
+
+            Vale.
+
+            <div class="meta">
+              10:53
+            </div>
+
+          </div>
+        </div>
+
+        <div class="msg-row agency">
+          <div class="bubble">
+
+            Tenho terça às 10h ou quarta às 16h.<br><br>
+
+            Qual funciona melhor?
+
+            <div class="meta">
+              10:54 <span class="check">✓✓</span>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+      <div class="chat-footer">
+        <div class="outcome">
+          <div class="outcome-icon">✓</div>
+          <div>
+            <strong>Saída:</strong>
+            reunião com problema + tipo de contrato já definidos.
+          </div>
+        </div>
+      </div>
+
+    </article>
+
+    <article class="chat-card">
+
+      <div class="chat-route">
+
+        <div class="route-number">
+          Cenário 02
+        </div>
+
+        <h3>
+          Não anuncia → vive de indicação
+        </h3>
+
+        <p>
+          Não destruir o que funciona. Descobrir qual caso ele gostaria de fazer aparecer com mais frequência.
+        </p>
+
+        <div class="route-tags">
+          <span class="route-tag">indicação</span>
+          <span class="route-tag">acidente</span>
+          <span class="route-tag">advogado solo</span>
+        </div>
+
+      </div>
+
+      <div class="chat-header">
+
+        <div class="avatar">RS</div>
+
+        <div class="contact">
+          <strong>Dr. Ricardo</strong>
+          <span>Advogado trabalhista</span>
+        </div>
+
+        <div class="online">
+          ONLINE
+        </div>
+
+      </div>
+
+      <div class="messages">
+
+        <div class="day">
+          TERÇA · 09:04
+        </div>
+
+        <div class="msg-row agency">
+          <div class="bubble">
+
+            Dr. Ricardo, vi que você atua no trabalhista e fiquei com uma dúvida.<br><br>
+
+            Hoje os casos novos chegam mais por indicação
+            ou você também usa anúncios?
+
+            <div class="meta">
+              09:04 <span class="check">✓✓</span>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="msg-row lead">
+          <div class="bubble">
+
+            Praticamente tudo indicação.
+
+            <div class="meta">
+              09:11
+            </div>
+
+          </div>
+        </div>
+
+        <div class="msg-row agency">
+          <div class="bubble">
+
+            Entendi.<br><br>
+
+            Sou a Giulia, da Metha Jurídica.<br><br>
+
+            <strong>
+              Nossa atuação é 100% focada em captação para advocacia trabalhista.
+            </strong><br><br>
+
+            E hoje tem algum tipo de caso que você gostaria que aparecesse
+            com mais frequência,
+            mas ainda depende dessa indicação acontecer?
+
+            <div class="meta">
+              09:13 <span class="check">✓✓</span>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="msg-row lead">
+          <div class="bubble">
+
+            Acidente de trabalho seria interessante.
+
+            <div class="meta">
+              09:19
+            </div>
+
+          </div>
+        </div>
+
+        <div class="msg-row agency">
+          <div class="bubble">
+
+            Aí está o ponto.<br><br>
+
+            Eu não mexeria na indicação.<br><br>
+
+            Se ela funciona, continua.<br><br>
+
+            Mas se amanhã você decidir aumentar acidente,
+            <strong>a indicação acompanha essa decisão?</strong>
+
+            <div class="meta">
+              09:22 <span class="check">✓✓</span>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="msg-row lead">
+          <div class="bubble">
+
+            Não.
+
+            Aí depende do que aparecer.
+
+            <div class="meta">
+              09:26
+            </div>
+
+          </div>
+        </div>
+
+        <div class="msg-row agency">
+          <div class="bubble">
+
+            Exatamente.<br><br>
+
+            Então o problema não é que indicação seja ruim.<br><br>
+
+            É que hoje <strong>acidente aparece quando acontece</strong>,
+            não quando você decide buscar mais desse tipo de caso.<br><br>
+
+            É essa diferença que eu olharia.
+
+            <div class="meta">
+              09:29 <span class="check">✓✓</span>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="emergency">
+          <strong>SE SUMIR · E5</strong><br>
+          “Se eu entendi errado, me corrige:
+          indicação funciona, mas acidente ainda chega mais por acaso
+          do que por decisão sua. É isso?”
+        </div>
+
+        <div class="msg-row lead">
+          <div class="bubble">
+
+            É.
+
+            <div class="meta">
+              09:34
+            </div>
+
+          </div>
+        </div>
+
+        <div class="msg-row agency">
+          <div class="bubble">
+
+            Então eu não te venderia “mais marketing”.<br><br>
+
+            Eu te mostraria como usar anúncios para criar
+            uma segunda origem de casos de acidente,
+            sem mexer no que já funciona por indicação.<br><br>
+
+            <strong>Vale olhar essa comparação?</strong>
+
+            <div class="meta">
+              09:36 <span class="check">✓✓</span>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+      <div class="chat-footer">
+        <div class="outcome">
+          <div class="outcome-icon">✓</div>
+          <div>
+            <strong>Saída:</strong>
+            anúncio posicionado como segunda origem, não substituto da indicação.
+          </div>
+        </div>
+      </div>
+
+    </article>
+
+    <article class="chat-card">
+
+      <div class="chat-route">
+
+        <div class="route-number">
+          Cenário 03
+        </div>
+
+        <h3>
+          Já anunciou e parou
+        </h3>
+
+        <p>
+          Não defender anúncio. Primeiro descobrir por que a experiência anterior morreu.
+        </p>
+
+        <div class="route-tags">
+          <span class="route-tag">trauma</span>
+          <span class="route-tag">anúncios</span>
+          <span class="route-tag">rescisão indireta</span>
+        </div>
+
+      </div>
+
+      <div class="chat-header">
+
+        <div class="avatar">FA</div>
+
+        <div class="contact">
+          <strong>Dr. Fernando</strong>
+          <span>Advogado trabalhista</span>
+        </div>
+
+        <div class="online">
+          ONLINE
+        </div>
+
+      </div>
+
+      <div class="messages">
+
+        <div class="day">
+          QUARTA · 14:11
+        </div>
+
+        <div class="msg-row agency">
+          <div class="bubble">
+
+            Dr. Fernando, vi que você atua no trabalhista e fiquei com uma dúvida.<br><br>
+
+            Hoje os casos novos chegam mais por indicação
+            ou você também usa anúncios?
+
+            <div class="meta">
+              14:11 <span class="check">✓✓</span>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="msg-row lead">
+          <div class="bubble">
+
+            Já anunciei.
+
+            Parei.
+
+            <div class="meta">
+              14:17
+            </div>
+
+          </div>
+        </div>
+
+        <div class="msg-row agency">
+          <div class="bubble">
+
+            Entendi.<br><br>
+
+            Sou a Giulia, da Metha Jurídica.<br><br>
+
+            <strong>
+              Nossa atuação é 100% focada em captação para advocacia trabalhista.
+            </strong><br><br>
+
+            O que fez você parar?<br><br>
+
+            Veio pouca procura...
+            ou vinha bastante gente,
+            mas poucos casos que realmente valiam a conversa?
+
+            <div class="meta">
+              14:19 <span class="check">✓✓</span>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="msg-row lead">
+          <div class="bubble">
+
+            Vinha muita gente sem caso.
+
+            Perdia um tempão respondendo.
+
+            <div class="meta">
+              14:24
+            </div>
+
+          </div>
+        </div>
+
+        <div class="msg-row agency">
+          <div class="bubble">
+
+            Então provavelmente anúncio não virou trauma porque faltou mensagem.<br><br>
+
+            Virou trauma porque <strong>cada mensagem virava trabalho para você</strong>
+            e pouca coisa virava um contrato interessante.<br><br>
+
+            Qual tipo de caso você queria receber naquela época
+            e quase não aparecia?
+
+            <div class="meta">
+              14:27 <span class="check">✓✓</span>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="msg-row lead">
+          <div class="bubble">
+
+            Rescisão indireta e doença ocupacional.
+
+            <div class="meta">
+              14:31
+            </div>
+
+          </div>
+        </div>
+
+        <div class="msg-row agency">
+          <div class="bubble">
+
+            Então você queria
+            <strong>rescisão e doença ocupacional</strong>.<br><br>
+
+            Mas o que chegou foi “gente procurando advogado trabalhista”.<br><br>
+
+            Parece próximo.<br><br>
+
+            <strong>Na prática, é outra coisa.</strong>
+
+            <div class="meta">
+              14:34 <span class="check">✓✓</span>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="msg-row lead">
+          <div class="bubble">
+
+            E vocês garantem que vem caso bom?
+
+            <div class="meta">
+              14:37
+            </div>
+
+          </div>
+        </div>
+
+        <div class="msg-row agency">
+          <div class="bubble">
+
+            Não.<br><br>
+
+            E eu desconfiaria de quem garantisse.<br><br>
+
+            O que dá para fazer é montar anúncio, mensagem e primeiro atendimento
+            para buscar <strong>o tipo de caso que você decidiu priorizar</strong>.<br><br>
+
+            Contrato fechado ainda depende de mercado,
+            atendimento e decisão do cliente.
+
+            <div class="meta">
+              14:40 <span class="check">✓✓</span>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="proof">
+          <strong>PROVA:</strong><br>
+          O case entra para permitir comparação — nunca para substituir uma garantia.
+        </div>
+
+        <div class="msg-row agency">
+          <div class="bubble">
+
+            Para você não precisar acreditar no meu discurso,
+            eu prefiro te mostrar um caso real.<br><br>
+
+            Depois você compara a forma de trabalhar
+            com o que você já contratou antes.
+
+            <div class="meta">
+              14:43 <span class="check">✓✓</span>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+      <div class="chat-footer">
+        <div class="outcome">
+          <div class="outcome-icon">✓</div>
+          <div>
+            <strong>Saída:</strong>
+            transformar “anúncio não funciona” em diagnóstico da experiência anterior.
+          </div>
+        </div>
+      </div>
+
+    </article>
+
+    <article class="chat-card">
+
+      <div class="chat-route">
+
+        <div class="route-number">
+          Cenário 04
+        </div>
+
+        <h3>
+          Tem agência e está satisfeito
+        </h3>
+
+        <p>
+          Não fabricar insatisfação. Encontrar um tipo de caso que ainda poderia crescer.
+        </p>
+
+        <div class="route-tags">
+          <span class="route-tag">agência atual</span>
+          <span class="route-tag">acidente</span>
+          <span class="route-tag">comparação</span>
+        </div>
+
+      </div>
+
+      <div class="chat-header">
+
+        <div class="avatar">CM</div>
+
+        <div class="contact">
+          <strong>Dra. Camila</strong>
+          <span>Advogada trabalhista</span>
+        </div>
+
+        <div class="online">
+          ONLINE
+        </div>
+
+      </div>
+
+      <div class="messages">
+
+        <div class="day">
+          QUINTA · 09:40
+        </div>
+
+        <div class="msg-row agency">
+          <div class="bubble">
+
+            Dra. Camila, vi que você atua no trabalhista e fiquei com uma dúvida.<br><br>
+
+            Hoje os casos novos chegam mais por indicação
+            ou você também usa anúncios?
+
+            <div class="meta">
+              09:40 <span class="check">✓✓</span>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="msg-row lead">
+          <div class="bubble">
+
+            Uso anúncios.
+
+            Tenho agência inclusive.
+
+            <div class="meta">
+              09:46
+            </div>
+
+          </div>
+        </div>
+
+        <div class="msg-row agency">
+          <div class="bubble">
+
+            Entendi.<br><br>
+
+            Sou a Giulia, da Metha Jurídica.<br><br>
+
+            <strong>
+              Nossa atuação é 100% focada em captação para advocacia trabalhista.
+            </strong><br><br>
+
+            E mesmo com a agência funcionando,
+            tem algum tipo de caso que você gostaria de receber mais?
+
+            <div class="meta">
+              09:48 <span class="check">✓✓</span>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="msg-row lead">
+          <div class="bubble">
+
+            Estou satisfeita com eles.
+
+            <div class="meta">
+              09:52
+            </div>
+
+          </div>
+        </div>
+
+        <div class="msg-row agency">
+          <div class="bubble">
+
+            Melhor ainda.<br><br>
+
+            Então troca de agência nem precisa entrar na conversa.<br><br>
+
+            Só fiquei curiosa com uma coisa:<br><br>
+
+            <strong>
+              qual tipo de contrato você gostaria que aparecesse
+              mais vezes no seu WhatsApp?
+            </strong>
+
+            <div class="meta">
+              09:54 <span class="check">✓✓</span>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="msg-row lead">
+          <div class="bubble">
+
+            Acidente de trabalho.
+
+            <div class="meta">
+              09:57
+            </div>
+
+          </div>
+        </div>
+
+        <div class="msg-row agency">
+          <div class="bubble">
+
+            Aí muda a pergunta.<br><br>
+
+            Não é mais:<br>
+            “sua agência funciona?”<br><br>
+
+            É:<br><br>
+
+            <strong>
+              “ela consegue fazer acidente aparecer
+              com a frequência que você gostaria?”
+            </strong><br><br>
+
+            Hoje já consegue?
+
+            <div class="meta">
+              10:00 <span class="check">✓✓</span>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="msg-row lead">
+          <div class="bubble">
+
+            Ainda vem pouco.
+
+            <div class="meta">
+              10:04
+            </div>
+
+          </div>
+        </div>
+
+        <div class="msg-row agency">
+          <div class="bubble">
+
+            Então não tem um problema geral.<br><br>
+
+            Tem uma exceção específica:<br><br>
+
+            <strong>
+              acidente é algo que você quer aumentar
+              e que ainda está abaixo do que gostaria.
+            </strong><br><br>
+
+            É só isso que eu compararia.
+
+            <div class="meta">
+              10:06 <span class="check">✓✓</span>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="emergency">
+          <strong>SE SUMIR · E5</strong><br>
+          “Se eu entendi errado, me corrige:
+          está satisfeita no geral, mas acidente ainda chega menos
+          do que gostaria. É isso?”
+        </div>
+
+      </div>
+
+      <div class="chat-footer">
+        <div class="outcome">
+          <div class="outcome-icon">✓</div>
+          <div>
+            <strong>Saída:</strong>
+            vender uma comparação específica, não atacar fornecedor atual.
+          </div>
+        </div>
+      </div>
+
+    </article>
+
+    <article class="chat-card">
+
+      <div class="chat-route">
+
+        <div class="route-number">
+          Cenário 05
+        </div>
+
+        <h3>
+          Quem responde é a secretária
+        </h3>
+
+        <p>
+          Secretária não vira prospect fictício. Primeiro descobrir o papel dela.
+        </p>
+
+        <div class="route-tags">
+          <span class="route-tag">secretária</span>
+          <span class="route-tag">encaminhamento</span>
+          <span class="route-tag">agenda</span>
+        </div>
+
+      </div>
+
+      <div class="chat-header">
+
+        <div class="avatar">AS</div>
+
+        <div class="contact">
+          <strong>Escritório Almeida</strong>
+          <span>WhatsApp institucional</span>
+        </div>
+
+        <div class="online">
+          ONLINE
+        </div>
+
+      </div>
+
+      <div class="messages">
+
+        <div class="day">
+          SEXTA · 08:53
+        </div>
+
+        <div class="msg-row agency">
+          <div class="bubble">
+
+            Dr. André, vi que você atua no trabalhista e fiquei com uma dúvida.<br><br>
+
+            Hoje os casos novos chegam mais por indicação
+            ou você também usa anúncios?
+
+            <div class="meta">
+              08:53 <span class="check">✓✓</span>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="msg-row lead">
+          <div class="bubble">
+
+            Oi, aqui é a Paula, secretária dele.
+
+            Posso ajudar?
+
+            <div class="meta">
+              08:58
+            </div>
+
+          </div>
+        </div>
+
+        <div class="msg-row agency">
+          <div class="bubble">
+
+            Oi, Paula. Claro.<br><br>
+
+            Sou a Giulia, da Metha Jurídica.<br><br>
+
+            O assunto é captação de casos trabalhistas para o escritório.<br><br>
+
+            <strong>
+              O Dr. André costuma acompanhar essa parte pessoalmente
+              ou você também acompanha anúncios e os contatos que chegam?
+            </strong>
+
+            <div class="meta">
+              09:00 <span class="check">✓✓</span>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="msg-row lead">
+          <div class="bubble">
+
+            Ele que vê isso.
+
+            Eu cuido mais da agenda e do primeiro atendimento.
+
+            <div class="meta">
+              09:05
+            </div>
+
+          </div>
+        </div>
+
+        <div class="msg-row agency">
+          <div class="bubble">
+
+            Perfeito.<br><br>
+
+            Então não vou te transformar em comercial dele 😅<br><br>
+
+            Preciso só entender com o Dr. André
+            como os casos chegam hoje e quais tipos ele gostaria de aumentar.<br><br>
+
+            Qual é o melhor horário para falar com ele?
+
+            <div class="meta">
+              09:07 <span class="check">✓✓</span>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="msg-row lead">
+          <div class="bubble">
+
+            Amanhã depois das 14h costuma ser melhor.
+
+            <div class="meta">
+              09:10
+            </div>
+
+          </div>
+        </div>
+
+        <div class="msg-row agency">
+          <div class="bubble">
+
+            Ótimo.<br><br>
+
+            Falo com ele depois das 14h então.<br><br>
+
+            Obrigada, Paula.
+
+            <div class="meta">
+              09:11 <span class="check">✓✓</span>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="followup-divider">
+          DIA SEGUINTE · ADVOGADO
+        </div>
+
+        <div class="msg-row agency">
+          <div class="bubble">
+
+            Dr. André, tudo bem?<br><br>
+
+            Falei ontem com a Paula.<br><br>
+
+            Sou a Giulia, da Metha Jurídica.<br><br>
+
+            <strong>
+              Nossa atuação é 100% focada em captação para advocacia trabalhista.
+            </strong><br><br>
+
+            Ela comentou que você acompanha essa parte pessoalmente.<br><br>
+
+            Hoje os casos chegam mais por indicação
+            ou você também usa anúncios?
+
+            <div class="meta">
+              14:12 <span class="check">✓✓</span>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+      <div class="chat-footer">
+        <div class="outcome">
+          <div class="outcome-icon">✓</div>
+          <div>
+            <strong>Saída:</strong>
+            secretária fornece contexto e acesso; diagnóstico fica com o advogado.
+          </div>
+        </div>
+      </div>
+
+    </article>
+
+    <article class="chat-card">
+
+      <div class="chat-route">
+
+        <div class="route-number">
+          Cenário 06
+        </div>
+
+        <h3>
+          Advogado some em diferentes pontos
+        </h3>
+
+        <p>
+          Stress test da regra: cada mensagem precisa sobreviver ao silêncio.
+        </p>
+
+        <div class="route-tags">
+          <span class="route-tag">silêncio</span>
+          <span class="route-tag">follow-up</span>
+          <span class="route-tag">acidente</span>
+        </div>
+
+      </div>
+
+      <div class="chat-header">
+
+        <div class="avatar">RA</div>
+
+        <div class="contact">
+          <strong>Dr. Rafael</strong>
+          <span>Advogado trabalhista</span>
+        </div>
+
+        <div class="online">
+          ONLINE
+        </div>
+
+      </div>
+
+      <div class="messages">
+
+        <div class="day">
+          SEGUNDA · 09:03
+        </div>
+
+        <div class="msg-row agency">
+          <div class="bubble">
+
+            Dr. Rafael, vi que você atua no trabalhista e fiquei com uma dúvida.<br><br>
+
+            Hoje os casos novos chegam mais por indicação
+            ou você também usa anúncios?
+
+            <div class="meta">
+              09:03 <span class="check">✓✓</span>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="followup-divider">
+          SEM RESPOSTA · E1
+        </div>
+
+        <div class="msg-row agency">
+          <div class="bubble">
+
+            Dr. Rafael, só para eu não falar com a pessoa errada:<br><br>
+
+            <strong>
+              é você mesmo quem acompanha essa parte
+              de anúncios e captação por aí?
+            </strong>
+
+            <div class="meta">
+              14:21 <span class="check">✓✓</span>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="msg-row lead">
+          <div class="bubble">
+
+            Sou eu.
+
+            <div class="meta">
+              14:37
+            </div>
+
+          </div>
+        </div>
+
+        <div class="msg-row agency">
+          <div class="bubble">
+
+            Entendi.<br><br>
+
+            Sou a Giulia, da Metha Jurídica.<br><br>
+
+            <strong>
+              Nossa atuação é 100% focada em captação para advocacia trabalhista.
+            </strong><br><br>
+
+            Hoje você usa anúncios
+            ou os casos chegam principalmente por indicação?
+
+            <div class="meta">
+              14:39 <span class="check">✓✓</span>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="msg-row lead">
+          <div class="bubble">
+
+            Uso anúncios.
+
+            <div class="meta">
+              14:45
+            </div>
+
+          </div>
+        </div>
+
+        <div class="msg-row agency">
+          <div class="bubble">
+
+            E esses anúncios hoje estão trazendo os tipos de caso
+            que você realmente quer pegar?
+
+            <div class="meta">
+              14:47 <span class="check">✓✓</span>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="msg-row lead">
+          <div class="bubble">
+
+            Mais ou menos.
+
+            <div class="meta">
+              14:51
+            </div>
+
+          </div>
+        </div>
+
+        <div class="msg-row agency">
+          <div class="bubble">
+
+            Então deixa eu inverter a pergunta.<br><br>
+
+            <strong>
+              Se pudesse escolher um tipo de caso
+              para aparecer mais no seu WhatsApp,
+              qual seria?
+            </strong>
+
+            <div class="meta">
+              14:53 <span class="check">✓✓</span>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="followup-divider">
+          SILÊNCIO · E3
+        </div>
+
+        <div class="msg-row agency">
+          <div class="bubble">
+
+            Para deixar mais fácil:<br><br>
+
+            pensando em
+            <strong>gestante, acidente, doença ocupacional ou rescisão indireta</strong>...<br><br>
+
+            qual desses faria mais diferença se começasse a aparecer
+            com frequência?
+
+            <div class="meta">
+              10:06 <span class="check">✓✓</span>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="msg-row lead">
+          <div class="bubble">
+
+            Acidente.
+
+            <div class="meta">
+              10:16
+            </div>
+
+          </div>
+        </div>
+
+        <div class="msg-row agency">
+          <div class="bubble">
+
+            E acidente hoje aparece pouco...<br><br>
+
+            ou aparece bastante contato,
+            mas poucos casos que você realmente pegaria?
+
+            <div class="meta">
+              10:18 <span class="check">✓✓</span>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="msg-row lead">
+          <div class="bubble">
+
+            Aparece pouco.
+
+            <div class="meta">
+              10:21
+            </div>
+
+          </div>
+        </div>
+
+        <div class="msg-row agency">
+          <div class="bubble">
+
+            Então você já sabe o contrato que gostaria de aumentar.<br><br>
+
+            O problema é que
+            <strong>
+              acidente ainda aparece mais quando acontece
+              do que quando você decide buscar.
+            </strong>
+
+            <div class="meta">
+              10:23 <span class="check">✓✓</span>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="followup-divider">
+          SILÊNCIO · E5
+        </div>
+
+        <div class="msg-row agency">
+          <div class="bubble">
+
+            Rafael, se eu entendi errado, me corrige:<br><br>
+
+            <strong>
+              você quer aumentar acidente,
+              mas hoje esse tipo de caso ainda aparece pouco.
+            </strong><br><br>
+
+            É isso?
+
+            <div class="meta">
+              09:12 <span class="check">✓✓</span>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="msg-row lead">
+          <div class="bubble">
+
+            É.
+
+            <div class="meta">
+              09:23
+            </div>
+
+          </div>
+        </div>
+
+        <div class="msg-row agency">
+          <div class="bubble">
+
+            Então a conversa já tem pauta.<br><br>
+
+            Se eu te mostrar como eu montaria uma captação
+            focada em <strong>acidente</strong> no cenário que você tem hoje,
+            vale comparar?
+
+            <div class="meta">
+              09:25 <span class="check">✓✓</span>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="msg-row lead">
+          <div class="bubble">
+
+            Vale.
+
+            <div class="meta">
+              09:29
+            </div>
+
+          </div>
+        </div>
+
+        <div class="msg-row agency">
+          <div class="bubble">
+
+            Tenho terça 11h ou quarta 14h.<br><br>
+
+            Qual funciona melhor?
+
+            <div class="meta">
+              09:31 <span class="check">✓✓</span>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="followup-divider">
+          SILÊNCIO · E7B
+        </div>
+
+        <div class="msg-row agency">
+          <div class="bubble">
+
+            Rafael, para eu não ficar insistindo:<br><br>
+
+            <strong>
+              vale olhar acidente agora
+              ou isso ficou mais para frente?
+            </strong>
+
+            <div class="meta">
+              10:04 <span class="check">✓✓</span>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="msg-row lead">
+          <div class="bubble">
+
+            Mais para frente.
+
+            <div class="meta">
+              10:11
+            </div>
+
+          </div>
+        </div>
+
+        <div class="msg-row agency">
+          <div class="bubble">
+
+            Fechado.<br><br>
+
+            Então eu paro por aqui.<br><br>
+
+            Guardei só uma coisa:<br><br>
+
+            <strong>acidente é um tipo de caso que você quer aumentar.</strong><br><br>
+
+            Quando isso virar prioridade,
+            me chama e a gente retoma daqui.
+
+            <div class="meta">
+              10:13 <span class="check">✓✓</span>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+      <div class="chat-footer">
+        <div class="outcome">
+          <div class="outcome-icon">✓</div>
+          <div>
+            <strong>Saída:</strong>
+            o playbook também sabe parar.
+          </div>
+        </div>
+      </div>
+
+    </article>
+
+  </div>
+
+</section>
+
+<section
+  id="playbook"
+  class="tab-panel"
+>
+
+  <div class="playbook-shell">
+
+    <aside class="playbook-menu">
+
+      <strong>Playbook V10.2</strong>
+
+      <a href="#pb-principio">Princípio</a>
+      <a href="#pb-premissa">Premissa real</a>
+      <a href="#pb-linguagem">Linguagem</a>
+      <a href="#pb-fluxo">Fluxo</a>
+      <a href="#pb-abertura">Abertura</a>
+      <a href="#pb-apresentacao">Apresentação</a>
+      <a href="#pb-rotas">Rotas</a>
+      <a href="#pb-caso">Caso desejado</a>
+      <a href="#pb-diagnostico">Diagnóstico</a>
+      <a href="#pb-atendimento">Quem atende</a>
+      <a href="#pb-devolutiva">Devolutiva</a>
+      <a href="#pb-prova">Prova</a>
+      <a href="#pb-cta">CTA</a>
+      <a href="#pb-secretaria">Secretária</a>
+      <a href="#pb-objecoes">Objeções</a>
+      <a href="#pb-emergencia">Emergências</a>
+      <a href="#pb-regrafinal">Regra final</a>
+
+    </aside>
+
+    <div class="playbook-content">
+
+      <section
+        class="pb-hero"
+        id="pb-principio"
+      >
+
+        <div class="pb-kicker">
+          Metha Jurídica · Playbook V10.2
+        </div>
+
+        <h2>
+          Descobrir primeiro. Posicionar depois.
+        </h2>
+
+        <p>
+          Na maior parte das prospecções sabemos apenas que estamos falando com
+          um advogado trabalhista. Não sabemos se anuncia, se vive de indicação,
+          se já anunciou e parou ou se tem agência.
+          A primeira mensagem existe para descobrir isso.
+          Depois da primeira resposta humana, a Metha se identifica em uma frase
+          e continua exatamente do ponto que o advogado revelou.
+        </p>
+
+      </section>
+
+      <section
+        class="pb-section"
+        id="pb-premissa"
+      >
+
+        <span class="pb-number">
+          Premissa
+        </span>
+
+        <h3>
+          O advogado solo é o padrão
+        </h3>
+
+        <p class="pb-desc">
+          Não presumir estrutura que provavelmente não existe.
+        </p>
+
+        <div class="pb-grid">
+
+          <div class="pb-card">
+
+            <div class="pb-card-title">
+              O QUE SABEMOS
+            </div>
+
+            <div class="pb-copy">
+              Ele atua no <strong>trabalhista</strong>.
+            </div>
+
+          </div>
+
+          <div class="pb-card">
+
+            <div class="pb-card-title">
+              O QUE NÃO SABEMOS
+            </div>
+
+            <div class="pb-copy">
+              Se anuncia.<br>
+              Se vive de indicação.<br>
+              Se já teve agência.<br>
+              Qual caso deseja aumentar.<br>
+              Quem responde os contatos.
+            </div>
+
+          </div>
+
+          <div class="pb-card full">
+
+            <div class="pb-card-title">
+              ASSUNÇÃO OPERACIONAL
+            </div>
+
+            <div class="pb-copy">
+              Até descobrir o contrário,
+              imagine que <strong>é o próprio advogado quem atende</strong>.<br><br>
+
+              No máximo existe uma secretária auxiliando no primeiro contato
+              ou na agenda.
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+
+      <section
+        class="pb-section"
+        id="pb-linguagem"
+      >
+
+        <span class="pb-number">
+          Regra 01
+        </span>
+
+        <h3>
+          Falar como advogado fala
+        </h3>
+
+        <table class="word-table">
+
+          <thead>
+            <tr>
+              <th>Evitar</th>
+              <th>Preferir</th>
+            </tr>
+          </thead>
+
+          <tbody>
+
+            <tr>
+              <td>mídia</td>
+              <td>anúncios</td>
+            </tr>
+
+            <tr>
+              <td>lead</td>
+              <td>contato / pessoa / possível cliente</td>
+            </tr>
+
+            <tr>
+              <td>aderência</td>
+              <td>caso que você realmente pegaria</td>
+            </tr>
+
+            <tr>
+              <td>gargalo</td>
+              <td>o que pesa mais hoje?</td>
+            </tr>
+
+            <tr>
+              <td>tráfego</td>
+              <td>anúncios / captação</td>
+            </tr>
+
+            <tr>
+              <td>conversão</td>
+              <td>virar contrato</td>
+            </tr>
+
+            <tr>
+              <td>performance</td>
+              <td>resultado</td>
+            </tr>
+
+            <tr>
+              <td>sua equipe</td>
+              <td>você / sua secretária</td>
+            </tr>
+
+          </tbody>
+
+        </table>
+
+        <div class="pb-rule">
+          <strong>“Tese” não está proibido.</strong>
+          Mas “tipo de caso” normalmente é mais concreto no começo da conversa.
+        </div>
+
+      </section>
+
+      <section
+        class="pb-section"
+        id="pb-fluxo"
+      >
+
+        <span class="pb-number">
+          Regra 02
+        </span>
+
+        <h3>
+          Fluxo principal
+        </h3>
+
+        <div class="pb-grid">
+
+          <div class="pb-card">
+            <div class="pb-card-title">01 · COMO CHEGA HOJE?</div>
+            <div class="pb-copy">
+              Indicação? Anúncios? Os dois? Já anunciou e parou?
+            </div>
+          </div>
+
+          <div class="pb-card">
+            <div class="pb-card-title">02 · IDENTIDADE</div>
+            <div class="pb-copy">
+              Apresentar Metha em <strong>uma frase</strong>.
+            </div>
+          </div>
+
+          <div class="pb-card">
+            <div class="pb-card-title">03 · CONTINUAR A RESPOSTA</div>
+            <div class="pb-copy">
+              A próxima pergunta nasce exatamente do que ele acabou de dizer.
+            </div>
+          </div>
+
+          <div class="pb-card">
+            <div class="pb-card-title">04 · CASO DESEJADO</div>
+            <div class="pb-copy">
+              Qual tipo de caso gostaria de receber mais?
+            </div>
+          </div>
+
+          <div class="pb-card">
+            <div class="pb-card-title">05 · PROBLEMA</div>
+            <div class="pb-copy">
+              Pouco caso bom ou muito contato que não serve?
+            </div>
+          </div>
+
+          <div class="pb-card">
+            <div class="pb-card-title">06 · DEVOLUTIVA</div>
+            <div class="pb-copy">
+              Mostrar o custo do cenário atual em linguagem simples.
+            </div>
+          </div>
+
+          <div class="pb-card">
+            <div class="pb-card-title">07 · PROVA</div>
+            <div class="pb-copy">
+              Um case parecido. Não um catálogo.
+            </div>
+          </div>
+
+          <div class="pb-card">
+            <div class="pb-card-title">08 · COMPARAÇÃO</div>
+            <div class="pb-copy">
+              Vale olhar como faríamos isso para esse caso específico?
+            </div>
+          </div>
+
+        </div>
+
+      </section>
+
+      <section
+        class="pb-section"
+        id="pb-abertura"
+      >
+
+        <span class="pb-number">
+          Movimento 01
+        </span>
+
+        <h3>
+          Abertura oficial
+        </h3>
+
+        <p class="pb-desc">
+          Quando sabemos apenas que é advogado trabalhista.
+        </p>
+
+        <div class="pb-copy">
+          Dr. [NOME], vi que você atua no trabalhista e fiquei com uma dúvida.<br><br>
+
+          <strong>
+            Hoje os casos novos chegam mais por indicação
+            ou você também usa anúncios?
+          </strong>
+        </div>
+
+        <div class="pb-rule">
+          Depois disso:
+          <strong>PARE.</strong><br><br>
+
+          Não apresente a Metha antes de existir uma resposta humana,
+          salvo se ele perguntar diretamente “quem é?”.
+        </div>
+
+      </section>
+
+      <section
+        class="pb-section"
+        id="pb-apresentacao"
+      >
+
+        <span class="pb-number">
+          Movimento 02
+        </span>
+
+        <h3>
+          Apresentação depois da primeira resposta
+        </h3>
+
+        <div class="pb-copy">
+          Entendi.<br><br>
+
+          Sou a Giulia, da Metha Jurídica.<br><br>
+
+          <strong>
+            Nossa atuação é 100% focada em captação para advocacia trabalhista.
+          </strong>
+        </div>
+
+        <div class="pb-rule">
+          A apresentação não termina a mensagem.<br><br>
+
+          <strong>
+            Depois dela, continuar exatamente da resposta que o advogado acabou de dar.
+          </strong>
+        </div>
+
+        <div class="pb-grid">
+
+          <div class="pb-card">
+            <div class="pb-card-title">SE DISSE “ANUNCIO”</div>
+            <div class="pb-copy">
+              E hoje os anúncios estão trazendo casos que você realmente quer pegar...
+              ou vem bastante coisa que não faz sentido?
+            </div>
+          </div>
+
+          <div class="pb-card">
+            <div class="pb-card-title">SE DISSE “INDICAÇÃO”</div>
+            <div class="pb-copy">
+              Tem algum tipo de caso que você gostaria de receber
+              com mais frequência,
+              mas hoje ainda depende dessa indicação acontecer?
+            </div>
+          </div>
+
+          <div class="pb-card">
+            <div class="pb-card-title">SE DISSE “JÁ ANUNCIEI”</div>
+            <div class="pb-copy">
+              O que fez você parar?<br><br>
+
+              Veio pouca procura ou vinha bastante gente,
+              mas poucos casos que realmente valiam a conversa?
+            </div>
+          </div>
+
+          <div class="pb-card">
+            <div class="pb-card-title">SE DISSE “TENHO AGÊNCIA”</div>
+            <div class="pb-copy">
+              Mesmo com a agência funcionando,
+              tem algum tipo de caso que você gostaria de receber mais?
+            </div>
+          </div>
+
+        </div>
+
+      </section>
+
+      <section
+        class="pb-section"
+        id="pb-rotas"
+      >
+
+        <span class="pb-number">
+          Rotas
+        </span>
+
+        <h3>
+          Quatro respostas que mudam a conversa
+        </h3>
+
+        <div class="pb-grid">
+
+          <div class="pb-card">
+            <div class="pb-card-title">ANÚNCIOS</div>
+            <div class="pb-copy">
+              Descobrir se o problema é <strong>volume</strong>
+              ou <strong>tipo de caso</strong>.
+            </div>
+          </div>
+
+          <div class="pb-card">
+            <div class="pb-card-title">INDICAÇÃO</div>
+            <div class="pb-copy">
+              Não atacar indicação.<br><br>
+              Descobrir qual caso ele gostaria de conseguir aumentar
+              sem esperar a indicação acontecer.
+            </div>
+          </div>
+
+          <div class="pb-card">
+            <div class="pb-card-title">PAROU DE ANUNCIAR</div>
+            <div class="pb-copy">
+              Perguntar <strong>por quê</strong> antes de defender anúncios.
+            </div>
+          </div>
+
+          <div class="pb-card">
+            <div class="pb-card-title">AGÊNCIA ATUAL</div>
+            <div class="pb-copy">
+              Não atacar.<br><br>
+              Procurar apenas uma área que ainda esteja abaixo do desejado.
+            </div>
+          </div>
+
+        </div>
+
+      </section>
+
+      <section
+        class="pb-section"
+        id="pb-caso"
+      >
+
+        <span class="pb-number">
+          Movimento 03
+        </span>
+
+        <h3>
+          Descobrir o caso desejado
+        </h3>
+
+        <div class="pb-grid">
+
+          <div class="pb-card">
+            <div class="pb-card-title">VERSÃO DIRETA</div>
+            <div class="pb-copy">
+              Hoje, qual tipo de caso você mais gostaria de receber?
+            </div>
+          </div>
+
+          <div class="pb-card">
+            <div class="pb-card-title">VERSÃO VISUAL</div>
+            <div class="pb-copy">
+              Se pudesse escolher um tipo de caso
+              para aparecer mais no seu WhatsApp,
+              <strong>qual seria?</strong>
+            </div>
+          </div>
+
+          <div class="pb-card full pb-warning">
+            <div class="pb-card-title">SE SUMIR</div>
+            <div class="pb-copy">
+              Pensando em [CASO 1], [CASO 2], [CASO 3] ou [CASO 4]...<br><br>
+
+              qual faria mais diferença se começasse a aparecer com frequência?
+            </div>
+            <div class="pb-small">
+              Usar apenas tipos de caso que realmente façam parte da atuação dele.
+            </div>
+          </div>
+
+        </div>
+
+      </section>
+
+      <section
+        class="pb-section"
+        id="pb-diagnostico"
+      >
+
+        <span class="pb-number">
+          Movimento 04
+        </span>
+
+        <h3>
+          Diagnóstico mínimo
+        </h3>
+
+        <div class="pb-copy">
+          E [TIPO DE CASO] hoje aparece pouco...<br><br>
+
+          ou aparece bastante gente,
+          mas poucos casos que você realmente pegaria?
+        </div>
+
+        <div class="pb-rule">
+          O primeiro diagnóstico só precisa responder uma coisa:<br><br>
+
+          <strong>
+            falta o caso certo ou sobra contato errado?
+          </strong>
+        </div>
+
+      </section>
+
+      <section
+        class="pb-section"
+        id="pb-atendimento"
+      >
+
+        <span class="pb-number">
+          Movimento 05
+        </span>
+
+        <h3>
+          Descobrir quem sente o custo do atendimento
+        </h3>
+
+        <div class="pb-copy">
+          Quando entra um contato novo,
+          <strong>
+            é você mesmo quem responde
+            ou sua secretária faz esse primeiro atendimento?
+          </strong>
+        </div>
+
+        <div class="pb-grid">
+
+          <div class="pb-card">
+            <div class="pb-card-title">ELE MESMO</div>
+            <div class="pb-copy">
+              Então cada contato errado cai diretamente no seu tempo.
+            </div>
+          </div>
+
+          <div class="pb-card">
+            <div class="pb-card-title">SECRETÁRIA</div>
+            <div class="pb-copy">
+              Ela só faz o primeiro atendimento
+              ou também consegue identificar quando é um caso
+              que vale você pegar?
+            </div>
+          </div>
+
+        </div>
+
+      </section>
+
+      <section
+        class="pb-section"
+        id="pb-devolutiva"
+      >
+
+        <span class="pb-number">
+          Movimento 06
+        </span>
+
+        <h3>
+          Devolutiva
+        </h3>
+
+        <div class="pb-grid">
+
+          <div class="pb-card">
+
+            <div class="pb-card-title">
+              ADVOGADO SOLO + CONTATO RUIM
+            </div>
+
+            <div class="pb-copy">
+              Então você está pagando duas vezes.<br><br>
+
+              <strong>Pelo contato.</strong><br><br>
+
+              E pelo tempo que você para para descobrir
+              que aquele contato nem era um caso que você gostaria de pegar.
+            </div>
+
+          </div>
+
+          <div class="pb-card">
+
+            <div class="pb-card-title">
+              POUCO CASO BOM
+            </div>
+
+            <div class="pb-copy">
+              Então você já sabe o contrato que quer aumentar.<br><br>
+
+              O problema é que
+              <strong>
+                [TIPO DE CASO] ainda aparece mais quando acontece
+                do que quando você decide buscar.
+              </strong>
+            </div>
+
+          </div>
+
+          <div class="pb-card full pb-warning">
+
+            <div class="pb-card-title">
+              SE SUMIR
+            </div>
+
+            <div class="pb-copy">
+              Se eu entendi errado, me corrige:<br><br>
+
+              você quer aumentar <strong>[TIPO DE CASO]</strong>,
+              mas hoje <strong>[PROBLEMA]</strong>.<br><br>
+
+              É isso?
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+
+      <section
+        class="pb-section"
+        id="pb-prova"
+      >
+
+        <span class="pb-number">
+          Movimento 07
+        </span>
+
+        <h3>
+          Prova
+        </h3>
+
+        <div class="pb-rule">
+          O case só entra <strong>depois</strong> de existir um problema definido.
+        </div>
+
+        <div class="pb-copy">
+          Tem um caso que conversa bastante com o que você acabou de me falar.<br><br>
+
+          [CASE PARECIDO]<br><br>
+
+          Não estou dizendo que vai acontecer igual com você.<br><br>
+
+          Quero que você observe
+          <strong>o tipo de contrato que entrou.</strong>
+        </div>
+
+        <div class="pb-card full pb-warning" style="margin-top:10px;">
+          <div class="pb-card-title">
+            SE SUMIR DEPOIS DO CASE
+          </div>
+
+          <div class="pb-copy">
+            Independente de ter visto o case:<br><br>
+
+            no seu cenário faria mais diferença
+            <strong>aumentar [TIPO DE CASO]</strong>
+            ou
+            <strong>diminuir os contatos que tomam seu tempo?</strong>
+          </div>
+        </div>
+
+      </section>
+
+      <section
+        class="pb-section"
+        id="pb-cta"
+      >
+
+        <span class="pb-number">
+          Movimento 08
+        </span>
+
+        <h3>
+          CTA
+        </h3>
+
+        <div class="pb-copy">
+          Então hoje você quer aumentar
+          <strong>[TIPO DE CASO]</strong>,
+          mas <strong>[PROBLEMA CONFIRMADO]</strong>.<br><br>
+
+          Se eu te mostrar como montaria uma captação para
+          <strong>[TIPO DE CASO]</strong>
+          no cenário que você tem hoje,
+          <strong>vale comparar?</strong>
+        </div>
+
+        <div class="pb-rule">
+          Só depois do “sim” entram os horários.
+        </div>
+
+        <div class="pb-copy">
+          Tenho [HORÁRIO 1] ou [HORÁRIO 2].<br><br>
+
+          Qual funciona melhor?
+        </div>
+
+      </section>
+
+      <section
+        class="pb-section"
+        id="pb-secretaria"
+      >
+
+        <span class="pb-number">
+          Desvio
+        </span>
+
+        <h3>
+          Quando quem responde é a secretária
+        </h3>
+
+        <div class="pb-copy">
+          Oi, [NOME]. Tudo bem?<br><br>
+
+          Sou a Giulia, da Metha Jurídica.<br><br>
+
+          O assunto é captação de casos trabalhistas para o escritório.<br><br>
+
+          <strong>
+            O Dr. [NOME] costuma acompanhar essa parte pessoalmente
+            ou você também acompanha anúncios e os contatos que chegam?
+          </strong>
+        </div>
+
+        <div class="pb-rule">
+          Se ela só cuida da agenda:
+          <strong>não faça diagnóstico com ela.</strong>
+        </div>
+
+        <div class="pb-copy">
+          Perfeito.<br><br>
+
+          Então com você eu só alinho o horário.<br><br>
+
+          Qual costuma ser o melhor período para falar com ele?
+        </div>
+
+      </section>
+
+      <section
+        class="pb-section"
+        id="pb-objecoes"
+      >
+
+        <span class="pb-number">
+          Módulos
+        </span>
+
+        <h3>
+          Objeções
+        </h3>
+
+        <div class="pb-grid">
+
+          <div class="pb-card">
+
+            <div class="pb-card-title">
+              “ANÚNCIO NÃO FUNCIONA”
+            </div>
+
+            <div class="pb-copy">
+              Pode não ter funcionado na experiência que você teve.<br><br>
+
+              O que aconteceu?<br><br>
+
+              Veio pouca gente
+              ou veio bastante contato que não tinha um caso que você pegaria?
+            </div>
+
+          </div>
+
+          <div class="pb-card">
+
+            <div class="pb-card-title">
+              “TENHO AGÊNCIA”
+            </div>
+
+            <div class="pb-copy">
+              Perfeito.<br><br>
+
+              Mesmo com ela funcionando,
+              existe algum tipo de caso que você gostaria de receber mais?
+            </div>
+
+          </div>
+
+          <div class="pb-card">
+
+            <div class="pb-card-title">
+              “VIVO DE INDICAÇÃO”
+            </div>
+
+            <div class="pb-copy">
+              Eu não mexeria na indicação.<br><br>
+
+              A pergunta é:<br><br>
+
+              se amanhã você decidir aumentar
+              <strong>[TIPO DE CASO]</strong>,
+              a indicação acompanha essa decisão?
+            </div>
+
+          </div>
+
+          <div class="pb-card">
+
+            <div class="pb-card-title">
+              “QUANTO CUSTA?”
+            </div>
+
+            <div class="pb-copy">
+              Consigo te explicar.<br><br>
+
+              Só não quero jogar um número sem saber
+              o que ele estaria comprando.<br><br>
+
+              Qual tipo de caso você gostaria de aumentar primeiro?
+            </div>
+
+          </div>
+
+          <div class="pb-card">
+
+            <div class="pb-card-title">
+              “VOCÊS GARANTEM?”
+            </div>
+
+            <div class="pb-copy">
+              Não.<br><br>
+
+              E eu desconfiaria de quem garantisse.<br><br>
+
+              Dá para estruturar anúncio, mensagem e atendimento
+              em volta do tipo de caso desejado.<br><br>
+
+              Contrato ainda depende de outras variáveis.
+            </div>
+
+          </div>
+
+          <div class="pb-card">
+
+            <div class="pb-card-title">
+              “NÃO QUERO ANÚNCIOS”
+            </div>
+
+            <div class="pb-copy">
+              Perfeito.<br><br>
+
+              Então provavelmente não faz sentido eu insistir.<br><br>
+
+              Minha conversa era justamente sobre usar anúncios
+              para aumentar tipos específicos de casos.
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+
+      <section
+        class="pb-section"
+        id="pb-emergencia"
+      >
+
+        <span class="pb-number">
+          Plano B
+        </span>
+
+        <h3>
+          Matriz de emergência
+        </h3>
+
+        <p class="pb-desc">
+          A emergência não cobra resposta.
+          Ela reduz a dificuldade da próxima decisão.
+        </p>
+
+        <div class="emergency-grid">
+
+          <div class="em-card">
+            <div class="em-code">E1</div>
+            <div class="em-title">Silêncio na abertura</div>
+            <div class="em-text">
+              “É você mesmo quem acompanha essa parte
+              de anúncios e captação por aí?”
+            </div>
+          </div>
+
+          <div class="em-card">
+            <div class="em-code">E2</div>
+            <div class="em-title">Silêncio depois da experiência ruim</div>
+            <div class="em-text">
+              “O que fez você parar:
+              pouca procura ou muito contato que não virava caso?”
+            </div>
+          </div>
+
+          <div class="em-card">
+            <div class="em-code">E3</div>
+            <div class="em-title">Silêncio no caso desejado</div>
+            <div class="em-text">
+              Dar algumas opções reais da atuação dele.
+            </div>
+          </div>
+
+          <div class="em-card">
+            <div class="em-code">E4</div>
+            <div class="em-title">Silêncio no diagnóstico</div>
+            <div class="em-text">
+              “Hoje pesa mais pouco caso bom chegando
+              ou muito contato que não faz sentido?”
+            </div>
+          </div>
+
+          <div class="em-card">
+            <div class="em-code">E5</div>
+            <div class="em-title">Silêncio na devolutiva</div>
+            <div class="em-text">
+              “Se eu entendi errado, me corrige:
+              você quer mais [CASO], mas hoje [PROBLEMA]. É isso?”
+            </div>
+          </div>
+
+          <div class="em-card">
+            <div class="em-code">E6</div>
+            <div class="em-title">Silêncio depois do case</div>
+            <div class="em-text">
+              Não perguntar “viu?”.
+              Voltar para a situação concreta dele.
+            </div>
+          </div>
+
+          <div class="em-card">
+            <div class="em-code">E7</div>
+            <div class="em-title">Silêncio antes da reunião</div>
+            <div class="em-text">
+              “Se eu te mostrar como montaria isso para [CASO],
+              vale comparar?”
+            </div>
+          </div>
+
+          <div class="em-card">
+            <div class="em-code">E7B</div>
+            <div class="em-title">Silêncio depois dos horários</div>
+            <div class="em-text">
+              “Vale olhar isso agora ou ficou mais para frente?”
+            </div>
+          </div>
+
+          <div class="em-card">
+            <div class="em-code">E8</div>
+            <div class="em-title">Silêncio depois de preço</div>
+            <div class="em-text">
+              Fazer somente a menor pergunta necessária
+              para saber qual caso ele quer aumentar.
+            </div>
+          </div>
+
+          <div class="em-card">
+            <div class="em-code">FIM</div>
+            <div class="em-title">E7B sem resposta</div>
+            <div class="em-text">
+              Encerrar.
+              Não inventar uma emergência infinita.
+            </div>
+          </div>
+
+        </div>
+
+      </section>
+
+      <section
+        class="pb-section"
+        id="pb-regrafinal"
+      >
+
+        <span class="pb-number">
+          Regra final
+        </span>
+
+        <h3>
+          Toda mensagem precisa ter uma função
+        </h3>
+
+        <div class="pb-grid">
+
+          <div class="pb-card">
+            <div class="pb-card-title">1 · POR QUE ESTOU ENVIANDO?</div>
+            <div class="pb-copy">
+              Qual informação ou decisão quero obter?
+            </div>
+          </div>
+
+          <div class="pb-card">
+            <div class="pb-card-title">2 · ELA CONTINUA O QUE ELE DISSE?</div>
+            <div class="pb-copy">
+              Ou estou puxando o advogado de volta para meu script?
+            </div>
+          </div>
+
+          <div class="pb-card">
+            <div class="pb-card-title">3 · ELE ENTENDE AS PALAVRAS?</div>
+            <div class="pb-copy">
+              Anúncio. Caso. Contrato. Indicação. Tempo.
+            </div>
+          </div>
+
+          <div class="pb-card">
+            <div class="pb-card-title">4 · SE ELE SUMIR?</div>
+            <div class="pb-copy">
+              Existe uma próxima mensagem que reduz a decisão?
+            </div>
+          </div>
+
+          <div class="pb-card full">
+
+            <div class="pb-card-title">
+              PRINCÍPIO FINAL
+            </div>
+
+            <div class="pb-copy">
+              <strong>
+                A conversa segue o advogado.
+                O advogado não segue o roteiro.
+              </strong><br><br>
+
+              Primeiro descobrimos como os casos chegam.<br>
+              Depois mostramos quem somos.<br>
+              Depois entendemos qual contrato ele quer aumentar.<br>
+              Só então mostramos por que a Metha pode ser relevante.
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+
+    </div>
+
+  </div>
+
+</section>
+
+<footer class="principle">
+
+  <div>
+
+    <strong>
+      Metha V10.2 · Princípio central
+    </strong>
+
+    <p>
+      Não presumir anúncio.
+      Não presumir equipe.
+      Não transformar a secretária em decisora.
+      Não explicar a Metha antes de existir contexto.
+      Descobrir primeiro qual contrato o advogado gostaria de receber mais vezes
+      e construir a conversa a partir disso.
+    </p>
+
+  </div>
+
+  <div class="pill">
+    doug.tensao
+  </div>
+
+</footer>
+
+</main>
+
+<script>
+const tabButtons = document.querySelectorAll(".tab-btn");
+const tabPanels = document.querySelectorAll(".tab-panel");
+
+tabButtons.forEach(button => {
+  button.addEventListener("click", () => {
+
+    const target = button.dataset.tab;
+
+    tabButtons.forEach(btn => {
+      btn.classList.remove("active");
+    });
+
+    tabPanels.forEach(panel => {
+      panel.classList.remove("active");
+    });
+
+    button.classList.add("active");
+
+    const targetPanel = document.getElementById(target);
+
+    if(targetPanel){
+      targetPanel.classList.add("active");
+
+      window.scrollTo({
+        top:0,
+        behavior:"smooth"
+      });
+    }
+
+  });
+});
+
+document.querySelectorAll(".playbook-menu a").forEach(link => {
+
+  link.addEventListener("click", () => {
+
+    const playbookButton =
+      document.querySelector('.tab-btn[data-tab="playbook"]');
+
+    if(
+      playbookButton &&
+      !document.getElementById("playbook").classList.contains("active")
+    ){
+      playbookButton.click();
+    }
+
+  });
+
+});
+</script>
+
+</body>
+</html>
