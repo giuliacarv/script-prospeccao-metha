@@ -6,15 +6,15 @@ O início de tudo está na **matriz de mensagens**. Comece por ela para comparar
 
 **[Abrir ou baixar a matriz de mensagens por etapa](Metha-Mensagens-por-Etapa.xlsx)**
 
-A planilha está na raiz do repositório e reúne o conteúdo original dos **14 documentos do acervo: 7 Markdown, 4 HTML e 3 PDF**. A matriz tem **uma linha por documento**; cada coluna de etapa reúne todas as mensagens e trechos daquela fase, preservados integralmente e identificados por código.
+A planilha está na raiz do repositório e reúne o conteúdo original dos **45 documentos do acervo: 38 Markdown, 4 HTML e 3 PDF**. A matriz tem **uma linha por documento**; cada coluna de etapa reúne todas as mensagens e trechos daquela fase, preservados integralmente e identificados por código.
 
-São **14 linhas de documentos na matriz e 1.600 registros de origem**, incluindo mensagens da Metha, falas simuladas dos leads, instruções, tabelas e exemplos. Os tipos estão identificados para distinguir o que é mensagem, fala de lead, conduta interna ou exemplo. As repetições entre arquivos e as diferenças entre versões foram preservadas.
+São **45 linhas de documentos na matriz e 2.171 registros de origem**, incluindo mensagens da Metha, falas simuladas dos leads, instruções, tabelas e exemplos. Os tipos estão identificados para distinguir o que é mensagem, fala de lead, conduta interna ou exemplo. As repetições entre arquivos e as diferenças entre versões foram preservadas.
 
 ### Organização da planilha
 
-- **Matriz integral:** ponto de partida. Cada linha é um dos 14 documentos originais; as colunas são as etapas. Todas as ocorrências daquela fonte ficam na coluna correspondente, com ID, tipo e título para localizar cada mensagem.
+- **Matriz integral:** ponto de partida. Cada linha é um dos 45 documentos originais; as colunas são as etapas. Todas as ocorrências daquela fonte ficam na coluna correspondente, com ID, tipo e título para localizar cada mensagem.
 - **Mensagens integrais:** um registro por bloco de origem, com código, texto completo, tipo, título, arquivo, localização, ID original, contexto e hash. Os códigos M da matriz identificam o registro correspondente nessa aba.
-- **Fontes e cobertura:** inventário dos 14 documentos, contagens, hashes e critérios de extração e uso.
+- **Fontes e cobertura:** inventário dos 45 documentos, contagens, hashes e critérios de extração e uso.
 - **Contexto integral:** os Markdown completos, o texto visível completo dos HTMLs e todas as 148 páginas dos PDFs, para conferir instruções e passagens no contexto original.
 - **Adaptações iniciais:** preserva separadamente as 96 mensagens adaptadas da primeira entrega. Essas adaptações não são a extração literal das fontes.
 
@@ -32,6 +32,10 @@ As colunas são um repertório: use a próxima etapa conforme a conversa. Prova,
 A matriz é o ponto de partida para organizar o trabalho. Os documentos abaixo são as bases originais para consulta. V1 e V2 na aba Adaptações iniciais identificam apenas as alternativas da primeira entrega; as demais abas mantêm os nomes e as versões das fontes. O cadastro no Kommo ainda não foi realizado.
 
 [Conferir a cobertura da extração](MATRIZ_COBERTURA.md)
+
+## Notion · V5 Operacional
+
+O [índice da exportação](Notion/V5%20Operacional/README.md) reúne a página principal e suas subpáginas: **31 documentos e 531 blocos de código**, incluídos na matriz. Cada documento ocupa uma linha. O legado, backups, falas de leads, instruções e exemplos permanecem identificados pelo título e tipo. Prévia visual repetida fica no contexto integral; os blocos copiáveis permanecem literais. Um bloco breadcrumb não pôde ser exportado pelo conector, conforme o relatório de cobertura.
 
 ## Bases do acervo
 
