@@ -1,6 +1,16 @@
 # Inventário das fontes
 
-14 documentos originais: 7 Markdown, 4 HTML e 3 PDF. Inventário em 2026-10-13. Tamanhos e SHA-256 referem-se aos bytes armazenados no Git, independentes da conversão de quebras de linha no Windows.
+14 documentos originais: 7 Markdown, 4 HTML e 3 PDF, além de 1 matriz de mensagens derivada em XLSX. Inventário em 2026-10-13. Tamanhos e SHA-256 referem-se aos bytes armazenados no Git, independentes da conversão de quebras de linha no Windows.
+
+## Matriz de mensagens — ponto de partida
+
+| Arquivo | Bytes | SHA-256 |
+| --- | ---: | --- |
+| [Metha-Mensagens-por-Etapa.xlsx](Metha-Mensagens-por-Etapa.xlsx) | 11397 | `410e29e68c381e2984a108d646646dbc40964a3c7895a026d66b76860076e075` |
+
+A matriz reúne 6 alternativas e 16 etapas. Suas mensagens são adaptações para revisão; os documentos originais abaixo permanecem preservados.
+
+## Documentos originais
 
 | Fonte | Bytes | SHA-256 |
 | --- | ---: | --- |

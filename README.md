@@ -1,9 +1,29 @@
 # Acervo de scripts de prospecção — Metha Jurídica
 
-Catálogo das fontes do repositório. Os textos e caminhos originais foram preservados. A numeração de versão e palavras como FINAL reproduzem os nomes das fontes; não comprovam aprovação ou funcionamento em produção.
+O início de tudo está na **matriz de mensagens**. Comece por ela para comparar as alternativas por etapa, escolher a linha de conversa e preparar os modelos que serão cadastrados no Kommo.
+
+## Comece pela matriz
+
+**[Abrir ou baixar a matriz de mensagens por etapa](Metha-Mensagens-por-Etapa.xlsx)**
+
+A planilha está na raiz do repositório e organiza **6 alternativas em linhas** — Karnage V1/V2, Copydrill V1/V2 e Doug V1/V2 — e **16 etapas em colunas**, da abordagem ao encerramento. Cada célula contém uma mensagem daquela alternativa para a etapa correspondente. São 96 mensagens adaptadas para revisão.
+
+1. Compare as mensagens da mesma etapa entre as alternativas.
+2. Escolha a abordagem que combina com o cenário e a resposta do advogado.
+3. Revise o texto e preencha os campos entre colchetes com informações reais.
+4. Defina os nomes e cadastre os modelos escolhidos no Kommo.
+
+As colunas são um repertório: use a próxima etapa conforme a conversa. Prova, Raio X, devolutiva, convite, proposta e formalização entram quando houver contexto. Os critérios de uso e as fontes estão na própria planilha.
+
+V1 e V2 identificam alternativas criadas para esta matriz; não renumeram as versões originais. A matriz é o ponto de partida para organizar o trabalho. Os documentos abaixo são as bases para consultar contexto e aprofundar os textos. O cadastro no Kommo ainda não foi realizado.
+
+## Bases do acervo
+
+Os textos e caminhos originais foram preservados. A numeração de versão e palavras como FINAL reproduzem os nomes das fontes; não comprovam aprovação ou funcionamento em produção.
 
 ## Navegação por tarefa
 
+- **Começar a organizar as mensagens:** [matriz de mensagens por etapa](Metha-Mensagens-por-Etapa.xlsx).
 - **Consultar os scripts V10:** [doug.tensao](#dougtensao).
 - **Consultar a abordagem Copydrill:** [Copydrill](#copydrill).
 - **Consultar a abordagem Karnage:** [Karnage](#karnage).
