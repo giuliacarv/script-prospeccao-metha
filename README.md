@@ -17,6 +17,7 @@ São **45 linhas de documentos na matriz e 2.171 registros de origem**, incluind
 - **Fontes e cobertura:** inventário dos 45 documentos, contagens, hashes e critérios de extração e uso.
 - **Contexto integral:** os Markdown completos, o texto visível completo dos HTMLs e todas as 148 páginas dos PDFs, para conferir instruções e passagens no contexto original.
 - **Adaptações iniciais:** preserva separadamente as 96 mensagens adaptadas da primeira entrega. Essas adaptações não são a extração literal das fontes.
+- **Modelos V5:** quatro rotas comerciais organizadas pelas mesmas etapas, com 43 mensagens selecionadas literalmente do Playbook V5 e os respectivos IDs M para conferência.
 
 Os blocos de mensagem delimitados nos Markdown foram mantidos integralmente. Quando a fonte mistura copy e conduta na mesma seção, a seção completa foi preservada e identificada como **Mensagem e conduta da fonte**. Nos HTMLs, as ênfases foram convertidas para a formatação de WhatsApp e os links foram mantidos. Nos PDFs, foram preservadas as quebras de linha da extração das caixas originais.
 
@@ -29,7 +30,7 @@ Os PDFs V7.0 Final e V8 são idênticos, mas ambos estão representados com seus
 
 As colunas são um repertório: use a próxima etapa conforme a conversa. Prova, Raio X, devolutiva, convite, proposta e formalização entram quando houver contexto. Consulte o tipo do conteúdo e a conduta original antes de usar um bloco.
 
-A matriz é o ponto de partida para organizar o trabalho. Os documentos abaixo são as bases originais para consulta. V1 e V2 na aba Adaptações iniciais identificam apenas as alternativas da primeira entrega; as demais abas mantêm os nomes e as versões das fontes. O cadastro no Kommo ainda não foi realizado.
+A matriz é o ponto de partida para organizar o trabalho. Os documentos abaixo são as bases originais para consulta. V1 e V2 na aba Adaptações iniciais identificam apenas as alternativas da primeira entrega; as demais abas mantêm os nomes e as versões das fontes. A aba Modelos V5 e a pasta [modelos-kommo](modelos-kommo/LEIA-ME.md) organizam a nova seleção por rota e etapa. Os arquivos são uma biblioteca editorial para revisão e cadastro manual; sua inclusão aqui não significa que os 43 modelos tenham sido gravados no Kommo.
 
 [Conferir a cobertura da extração](MATRIZ_COBERTURA.md)
 

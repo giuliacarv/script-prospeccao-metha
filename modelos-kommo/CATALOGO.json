@@ -1,0 +1,545 @@
+{
+  "fonte": "Playbook Comercial Metha V5 no Notion",
+  "revisao": "b507edaf39b596761e8aa58b1892d4afa9b22f5b",
+  "observacao": "Seleção de mensagens literais; conferir placeholders e condição antes do cadastro.",
+  "modelos": [
+    {
+      "nome": "V5 F01 Abordagem M01604",
+      "fase": "Abordagem",
+      "condicao": "Use quando você ainda não sabe se o escritório tem agência, faz marketing sozinho ou vive de indicação.",
+      "rotas": [
+        "V5 · Neutra / origem desconhecida"
+      ],
+      "mensagem": "Dr. [Nome], tudo bem?",
+      "origem": "Notion/V5 Operacional/01-1-01-COMECAR-UMA-CONVERSA.md",
+      "localizacao": "bloco de código 1; linha 34",
+      "id": "M01604"
+    },
+    {
+      "nome": "V5 F01 Abertura M01605",
+      "fase": "Abertura",
+      "condicao": "Use quando você ainda não sabe se o escritório tem agência, faz marketing sozinho ou vive de indicação.",
+      "rotas": [
+        "V5 · Neutra / origem desconhecida"
+      ],
+      "mensagem": "Vi que vocês atuam com Direito do Trabalho e queria te fazer *uma pergunta objetiva:* *Hoje os novos casos chegam mais por indicação ou vocês já fazem alguma captação pelo digital?*",
+      "origem": "Notion/V5 Operacional/01-1-01-COMECAR-UMA-CONVERSA.md",
+      "localizacao": "bloco de código 2; linha 37",
+      "id": "M01605"
+    },
+    {
+      "nome": "V5 F01 Abertura M01607",
+      "fase": "Abertura",
+      "condicao": "V5 · Neutra / origem desconhecida",
+      "rotas": [
+        "V5 · Neutra / origem desconhecida"
+      ],
+      "mensagem": "Dr. [Nome], *pergunta rápida:* Hoje os novos casos chegam mais por indicação, por marketing feito pelo próprio escritório ou vocês já trabalham com uma agência?",
+      "origem": "Notion/V5 Operacional/01-1-01-COMECAR-UMA-CONVERSA.md",
+      "localizacao": "bloco de código 4; linha 62",
+      "id": "M01607"
+    },
+    {
+      "nome": "V5 F03 Caso desejado M01622",
+      "fase": "Caso desejado",
+      "condicao": "V5 · Neutra / origem desconhecida",
+      "rotas": [
+        "V5 · Neutra / origem desconhecida"
+      ],
+      "mensagem": "Dr. [Nome], vi que vocês trabalham bastante [TESE / MERCADO].\n\nEssa frente hoje cresce só por indicação ou vocês já pensaram em construir uma segunda fonte de oportunidades especificamente para ela?",
+      "origem": "Notion/V5 Operacional/01-1-01-COMECAR-UMA-CONVERSA.md",
+      "localizacao": "bloco de código 19; linha 225",
+      "id": "M01622"
+    },
+    {
+      "nome": "V5 F03 Diferenciação M01625",
+      "fase": "Diferenciação",
+      "condicao": "V5 · Neutra / origem desconhecida",
+      "rotas": [
+        "V5 · Neutra / origem desconhecida"
+      ],
+      "mensagem": "E faz sentido.\n\nEsse risco aumenta quando “Direito do Trabalho” é tratado como um único público.\n\nA gente prefere começar pela tese, pelo perfil e pela situação que o escritório realmente quer atrair.",
+      "origem": "Notion/V5 Operacional/01-1-01-COMECAR-UMA-CONVERSA.md",
+      "localizacao": "bloco de código 22; linha 251",
+      "id": "M01625"
+    },
+    {
+      "nome": "V5 F04 Raio X M01645",
+      "fase": "Raio X",
+      "condicao": "V5 · Neutra / origem desconhecida; V5 · Agência / qualidade dos contatos; V5 · Interno / advogado faz marketing; V5 · Agência anterior / experiência frustrante",
+      "rotas": [
+        "V5 · Neutra / origem desconhecida",
+        "V5 · Agência / qualidade dos contatos",
+        "V5 · Interno / advogado faz marketing",
+        "V5 · Agência anterior / experiência frustrante"
+      ],
+      "mensagem": "Aqui está o formulário de diagnóstico: [LINK]\n\nPreencha com o cenário atual do escritório para avaliarmos se faz sentido seguir para uma reunião.",
+      "origem": "Notion/V5 Operacional/03-3-04-PRE-DIAGNOSTICO-E-QUALIFICACAO.md",
+      "localizacao": "bloco de código 9; linha 93",
+      "id": "M01645"
+    },
+    {
+      "nome": "V5 F04 Raio X M01646",
+      "fase": "Raio X",
+      "condicao": "V5 · Neutra / origem desconhecida; V5 · Agência / qualidade dos contatos; V5 · Interno / advogado faz marketing; V5 · Agência anterior / experiência frustrante",
+      "rotas": [
+        "V5 · Neutra / origem desconhecida",
+        "V5 · Agência / qualidade dos contatos",
+        "V5 · Interno / advogado faz marketing",
+        "V5 · Agência anterior / experiência frustrante"
+      ],
+      "mensagem": "Quando concluir, consegue me avisar por aqui?",
+      "origem": "Notion/V5 Operacional/03-3-04-PRE-DIAGNOSTICO-E-QUALIFICACAO.md",
+      "localizacao": "bloco de código 10; linha 101",
+      "id": "M01646"
+    },
+    {
+      "nome": "V5 F04 Devolutiva M01664",
+      "fase": "Devolutiva",
+      "condicao": "V5 · Neutra / origem desconhecida; V5 · Agência / qualidade dos contatos; V5 · Interno / advogado faz marketing; V5 · Agência anterior / experiência frustrante",
+      "rotas": [
+        "V5 · Neutra / origem desconhecida",
+        "V5 · Agência / qualidade dos contatos",
+        "V5 · Interno / advogado faz marketing",
+        "V5 · Agência anterior / experiência frustrante"
+      ],
+      "mensagem": "Analisei suas respostas e faz sentido seguirmos para uma conversa sobre [PRIORIDADE]. Vou te explicar o que podemos avaliar juntos.",
+      "origem": "Notion/V5 Operacional/03-3-04-PRE-DIAGNOSTICO-E-QUALIFICACAO.md",
+      "localizacao": "bloco de código 28; linha 220",
+      "id": "M01664"
+    },
+    {
+      "nome": "V5 F04 Convite M01637",
+      "fase": "Convite",
+      "condicao": "V5 · Neutra / origem desconhecida; V5 · Agência / qualidade dos contatos; V5 · Interno / advogado faz marketing",
+      "rotas": [
+        "V5 · Neutra / origem desconhecida",
+        "V5 · Agência / qualidade dos contatos",
+        "V5 · Interno / advogado faz marketing"
+      ],
+      "mensagem": "Pelo que você me contou, a prioridade hoje é [PRIORIDADE]. O próximo passo é preencher nosso formulário de diagnóstico para entendermos o cenário do escritório e avaliar se faz sentido uma conversa sobre o serviço.",
+      "origem": "Notion/V5 Operacional/03-3-04-PRE-DIAGNOSTICO-E-QUALIFICACAO.md",
+      "localizacao": "bloco de código 1; linha 41",
+      "id": "M01637"
+    },
+    {
+      "nome": "V5 F04 Convite M01638",
+      "fase": "Convite",
+      "condicao": "V5 · Neutra / origem desconhecida; V5 · Agência / qualidade dos contatos; V5 · Interno / advogado faz marketing",
+      "rotas": [
+        "V5 · Neutra / origem desconhecida",
+        "V5 · Agência / qualidade dos contatos",
+        "V5 · Interno / advogado faz marketing"
+      ],
+      "mensagem": "Posso te enviar o formulário?",
+      "origem": "Notion/V5 Operacional/03-3-04-PRE-DIAGNOSTICO-E-QUALIFICACAO.md",
+      "localizacao": "bloco de código 2; linha 47",
+      "id": "M01638"
+    },
+    {
+      "nome": "V5 F05 Agendamento M02093",
+      "fase": "Agendamento",
+      "condicao": "V5 · Neutra / origem desconhecida; V5 · Agência / qualidade dos contatos; V5 · Interno / advogado faz marketing; V5 · Agência anterior / experiência frustrante",
+      "rotas": [
+        "V5 · Neutra / origem desconhecida",
+        "V5 · Agência / qualidade dos contatos",
+        "V5 · Interno / advogado faz marketing",
+        "V5 · Agência anterior / experiência frustrante"
+      ],
+      "mensagem": "Dr. [NOME], analisei suas respostas. Você comentou que [PRIORIDADE]. Faz sentido conversarmos para entender melhor esse ponto e te mostrar como a Metha pode ajudar no cenário do escritório.",
+      "origem": "Notion/V5 Operacional/24-Levar-para-reuniao-quando-e-como-convidar.md",
+      "localizacao": "bloco de código 1; linha 13",
+      "id": "M02093"
+    },
+    {
+      "nome": "V5 F05 Agendamento M02111",
+      "fase": "Agendamento",
+      "condicao": "V5 · Neutra / origem desconhecida; V5 · Agência / qualidade dos contatos; V5 · Interno / advogado faz marketing; V5 · Agência anterior / experiência frustrante",
+      "rotas": [
+        "V5 · Neutra / origem desconhecida",
+        "V5 · Agência / qualidade dos contatos",
+        "V5 · Interno / advogado faz marketing",
+        "V5 · Agência anterior / experiência frustrante"
+      ],
+      "mensagem": "Tenho estes horários disponíveis: [OPÇÃO 1] ou [OPÇÃO 2].",
+      "origem": "Notion/V5 Operacional/24-Levar-para-reuniao-quando-e-como-convidar.md",
+      "localizacao": "bloco de código 19; linha 131",
+      "id": "M02111"
+    },
+    {
+      "nome": "V5 F05 Agendamento M02112",
+      "fase": "Agendamento",
+      "condicao": "V5 · Neutra / origem desconhecida; V5 · Agência / qualidade dos contatos; V5 · Interno / advogado faz marketing; V5 · Agência anterior / experiência frustrante",
+      "rotas": [
+        "V5 · Neutra / origem desconhecida",
+        "V5 · Agência / qualidade dos contatos",
+        "V5 · Interno / advogado faz marketing",
+        "V5 · Agência anterior / experiência frustrante"
+      ],
+      "mensagem": "Qual funciona melhor para você?",
+      "origem": "Notion/V5 Operacional/24-Levar-para-reuniao-quando-e-como-convidar.md",
+      "localizacao": "bloco de código 20; linha 137",
+      "id": "M02112"
+    },
+    {
+      "nome": "V5 F06 Retomada M02124",
+      "fase": "Retomada",
+      "condicao": "V5 · Neutra / origem desconhecida",
+      "rotas": [
+        "V5 · Neutra / origem desconhecida"
+      ],
+      "mensagem": "Dr. [NOME], você comentou que [PRIORIDADE]. As respostas do formulário vão ajudar a avaliar se faz sentido uma conversa sobre esse ponto.",
+      "origem": "Notion/V5 Operacional/25-Follow-up-e-reativacao-por-situacao.md",
+      "localizacao": "bloco de código 2; linha 16",
+      "id": "M02124"
+    },
+    {
+      "nome": "V5 F06 Retomada M02125",
+      "fase": "Retomada",
+      "condicao": "V5 · Neutra / origem desconhecida",
+      "rotas": [
+        "V5 · Neutra / origem desconhecida"
+      ],
+      "mensagem": "Ficou alguma dúvida que esteja dificultando o preenchimento?",
+      "origem": "Notion/V5 Operacional/25-Follow-up-e-reativacao-por-situacao.md",
+      "localizacao": "bloco de código 3; linha 22",
+      "id": "M02125"
+    },
+    {
+      "nome": "V5 F02 Objeção M01623",
+      "fase": "Objeção: agência / experiência",
+      "condicao": "V5 · Neutra / origem desconhecida",
+      "rotas": [
+        "V5 · Neutra / origem desconhecida"
+      ],
+      "mensagem": "E eu não mexeria em algo que funciona.\n\nA questão seria usar o digital como uma segunda fonte, sem substituir a indicação e sem anunciar “trabalhista” para todo mundo.",
+      "origem": "Notion/V5 Operacional/01-1-01-COMECAR-UMA-CONVERSA.md",
+      "localizacao": "bloco de código 20; linha 235",
+      "id": "M01623"
+    },
+    {
+      "nome": "V5 F02 Objeção M01624",
+      "fase": "Objeção: agência / experiência",
+      "condicao": "V5 · Neutra / origem desconhecida",
+      "rotas": [
+        "V5 · Neutra / origem desconhecida"
+      ],
+      "mensagem": "Existe alguma tese que vocês gostariam de desenvolver de forma mais intencional?",
+      "origem": "Notion/V5 Operacional/01-1-01-COMECAR-UMA-CONVERSA.md",
+      "localizacao": "bloco de código 21; linha 243",
+      "id": "M01624"
+    },
+    {
+      "nome": "V5 F01 Abertura M01611",
+      "fase": "Abertura",
+      "condicao": "Use somente quando existe confirmação de que uma agência ou fornecedor externo já cuida do marketing.",
+      "rotas": [
+        "V5 · Agência / qualidade dos contatos"
+      ],
+      "mensagem": "Doutor, vi que vocês estão trabalhando bastante [tese específica]. Fiquei com uma dúvida: hoje os contatos que chegam pelo marketing já vêm alinhados com esse tipo de caso ou ainda entra muita coisa sem perfil?",
+      "origem": "Notion/V5 Operacional/01-1-01-COMECAR-UMA-CONVERSA.md",
+      "localizacao": "bloco de código 8; linha 112",
+      "id": "M01611"
+    },
+    {
+      "nome": "V5 F01 Abertura M01612",
+      "fase": "Abertura",
+      "condicao": "V5 · Agência / qualidade dos contatos",
+      "rotas": [
+        "V5 · Agência / qualidade dos contatos"
+      ],
+      "mensagem": "Dr. [Nome], tudo bem?\n\nVi que vocês já trabalham o marketing do escritório e queria te fazer *uma pergunta bem objetiva:* Vocês estão satisfeitos com a qualidade dos leads que chegam hoje ou ainda vem muita gente sem potencial pro tipo de caso que vocês querem?",
+      "origem": "Notion/V5 Operacional/01-1-01-COMECAR-UMA-CONVERSA.md",
+      "localizacao": "bloco de código 9; linha 120",
+      "id": "M01612"
+    },
+    {
+      "nome": "V5 F01 Abertura M01613",
+      "fase": "Abertura",
+      "condicao": "V5 · Agência / qualidade dos contatos",
+      "rotas": [
+        "V5 · Agência / qualidade dos contatos"
+      ],
+      "mensagem": "Dr. [Nome], vi que vocês já investem no digital.\n\n*Uma dúvida:* Os leads que chegam hoje têm vindo com bom potencial ou vocês ainda perdem muito tempo filtrando contato desqualificado?",
+      "origem": "Notion/V5 Operacional/01-1-01-COMECAR-UMA-CONVERSA.md",
+      "localizacao": "bloco de código 10; linha 130",
+      "id": "M01613"
+    },
+    {
+      "nome": "V5 F03 Diagnóstico M01614",
+      "fase": "Diagnóstico",
+      "condicao": "V5 · Agência / qualidade dos contatos",
+      "rotas": [
+        "V5 · Agência / qualidade dos contatos"
+      ],
+      "mensagem": "Dr. [Nome], vi que o escritório já trabalha com marketing.\n\nPosso te perguntar uma coisa?\n\nHoje sua maior insatisfação é quantidade de leads ou qualidade do que chega?",
+      "origem": "Notion/V5 Operacional/01-1-01-COMECAR-UMA-CONVERSA.md",
+      "localizacao": "bloco de código 11; linha 140",
+      "id": "M01614"
+    },
+    {
+      "nome": "V5 F03 Diagnóstico M01615",
+      "fase": "Diagnóstico",
+      "condicao": "V5 · Agência / qualidade dos contatos",
+      "rotas": [
+        "V5 · Agência / qualidade dos contatos"
+      ],
+      "mensagem": "Doutor, *uma curiosidade:* quando vocês dizem para a agência que os leads estão vindo desqualificados, ela consegue explicar por que aquelas pessoas estão chegando e corrigir isso no anúncio?\n\nOu a resposta costuma ser mais uma rodada de ajustes e novas promessas de melhora, enquanto a qualidade continua parecida?",
+      "origem": "Notion/V5 Operacional/01-1-01-COMECAR-UMA-CONVERSA.md",
+      "localizacao": "bloco de código 12; linha 152",
+      "id": "M01615"
+    },
+    {
+      "nome": "V5 F03 Diagnóstico M01617",
+      "fase": "Diagnóstico",
+      "condicao": "V5 · Agência / qualidade dos contatos",
+      "rotas": [
+        "V5 · Agência / qualidade dos contatos"
+      ],
+      "mensagem": "Qual tese hoje está trazendo mais gente sem perfil para vocês?",
+      "origem": "Notion/V5 Operacional/01-1-01-COMECAR-UMA-CONVERSA.md",
+      "localizacao": "bloco de código 14; linha 170",
+      "id": "M01617"
+    },
+    {
+      "nome": "V5 F03 Diferenciação M01616",
+      "fase": "Diferenciação",
+      "condicao": "V5 · Agência / qualidade dos contatos",
+      "rotas": [
+        "V5 · Agência / qualidade dos contatos"
+      ],
+      "mensagem": "É justamente o cenário que mais nos incomoda.\n\nPorque uma agência pode saber operar anúncio e ainda assim não entender suficientemente o trabalhista para perceber que cada tese envolve situações e intenções diferentes.",
+      "origem": "Notion/V5 Operacional/01-1-01-COMECAR-UMA-CONVERSA.md",
+      "localizacao": "bloco de código 13; linha 162",
+      "id": "M01616"
+    },
+    {
+      "nome": "V5 F03 Diferenciação M01619",
+      "fase": "Diferenciação",
+      "condicao": "V5 · Agência / qualidade dos contatos; V5 · Agência / qualidade dos contatos",
+      "rotas": [
+        "V5 · Agência / qualidade dos contatos"
+      ],
+      "mensagem": "*Mas eu faria uma pergunta:* Quando muda a tese, vocês mudam de verdade o anúncio, a mensagem e a página ou normalmente aproveitam quase o mesmo modelo e só adaptam algumas partes?",
+      "origem": "Notion/V5 Operacional/01-1-01-COMECAR-UMA-CONVERSA.md",
+      "localizacao": "bloco de código 16; linha 186",
+      "id": "M01619"
+    },
+    {
+      "nome": "V5 F06 Retomada M02138",
+      "fase": "Retomada",
+      "condicao": "V5 · Agência / qualidade dos contatos",
+      "rotas": [
+        "V5 · Agência / qualidade dos contatos"
+      ],
+      "mensagem": "Doutor, *deixo só um critério simples para avaliar aí:* Quando muda a tese, mudam de verdade o anúncio, a mensagem e a página ou só trocam o texto do anúncio?\n\nSe só muda o texto, provavelmente ainda existe espaço para aprofundar a especialização.",
+      "origem": "Notion/V5 Operacional/25-Follow-up-e-reativacao-por-situacao.md",
+      "localizacao": "bloco de código 16; linha 171",
+      "id": "M02138"
+    },
+    {
+      "nome": "V5 F02 Objeção M01618",
+      "fase": "Objeção: agência / experiência",
+      "condicao": "V5 · Agência / qualidade dos contatos",
+      "rotas": [
+        "V5 · Agência / qualidade dos contatos"
+      ],
+      "mensagem": "Ótimo.\n\nEu não trocaria um fornecedor que está funcionando só porque outra agência apareceu no WhatsApp.",
+      "origem": "Notion/V5 Operacional/01-1-01-COMECAR-UMA-CONVERSA.md",
+      "localizacao": "bloco de código 15; linha 178",
+      "id": "M01618"
+    },
+    {
+      "nome": "V5 F01 Abertura M01627",
+      "fase": "Abertura",
+      "condicao": "Use quando o próprio advogado, sócio ou equipe interna produz conteúdo, gerencia anúncios, mantém páginas ou acompanha a captação sem apoio de uma agência.",
+      "rotas": [
+        "V5 · Interno / advogado faz marketing"
+      ],
+      "mensagem": "Dr. [Nome], vi que vocês mesmos cuidam do marketing do escritório.\n\n*Uma curiosidade:* Hoje essa parte já funciona sem depender tanto de você ou ainda sobra pra você cuidar de conteúdo, anúncios, página e acompanhar o que está funcionando no meio da rotina da advocacia?",
+      "origem": "Notion/V5 Operacional/01-1-01-COMECAR-UMA-CONVERSA.md",
+      "localizacao": "bloco de código 24; linha 282",
+      "id": "M01627"
+    },
+    {
+      "nome": "V5 F01 Abertura M01628",
+      "fase": "Abertura",
+      "condicao": "V5 · Interno / advogado faz marketing",
+      "rotas": [
+        "V5 · Interno / advogado faz marketing"
+      ],
+      "mensagem": "Doutor, vi que vocês mesmos têm uma presença digital bem ativa.\n\n*Uma curiosidade:* Vocês também cuidam dos anúncios internamente ou hoje ficam mais no conteúdo e na presença orgânica?",
+      "origem": "Notion/V5 Operacional/01-1-01-COMECAR-UMA-CONVERSA.md",
+      "localizacao": "bloco de código 25; linha 292",
+      "id": "M01628"
+    },
+    {
+      "nome": "V5 F03 Diagnóstico M01629",
+      "fase": "Diagnóstico",
+      "condicao": "V5 · Interno / advogado faz marketing",
+      "rotas": [
+        "V5 · Interno / advogado faz marketing"
+      ],
+      "mensagem": "Dr. [Nome], vi que você trabalha bastante o digital do escritório por conta própria.\n\nQuando anuncia, está conseguindo atrair casos com o perfil que procura ou ainda chega muita coisa que você descarta logo no começo?",
+      "origem": "Notion/V5 Operacional/01-1-01-COMECAR-UMA-CONVERSA.md",
+      "localizacao": "bloco de código 26; linha 302",
+      "id": "M01629"
+    },
+    {
+      "nome": "V5 F03 Diagnóstico M01630",
+      "fase": "Diagnóstico",
+      "condicao": "V5 · Interno / advogado faz marketing",
+      "rotas": [
+        "V5 · Interno / advogado faz marketing"
+      ],
+      "mensagem": "Entendi.\n\nQuando você cuida do marketing sozinho, acaba tendo que pensar no anúncio, na página, nas mensagens que chegam e ainda acompanhar o que está funcionando.\n\nNo fim, isso vira mais uma função dentro do escritório.",
+      "origem": "Notion/V5 Operacional/01-1-01-COMECAR-UMA-CONVERSA.md",
+      "localizacao": "bloco de código 27; linha 312",
+      "id": "M01630"
+    },
+    {
+      "nome": "V5 F03 Diagnóstico M01631",
+      "fase": "Diagnóstico",
+      "condicao": "V5 · Interno / advogado faz marketing",
+      "rotas": [
+        "V5 · Interno / advogado faz marketing"
+      ],
+      "mensagem": "Hoje o que mais pesa pra você: ter que cuidar de tudo isso ou a qualidade dos contatos que chegam?",
+      "origem": "Notion/V5 Operacional/01-1-01-COMECAR-UMA-CONVERSA.md",
+      "localizacao": "bloco de código 28; linha 322",
+      "id": "M01631"
+    },
+    {
+      "nome": "V5 F03 Diagnóstico M01634",
+      "fase": "Diagnóstico",
+      "condicao": "V5 · Interno / advogado faz marketing",
+      "rotas": [
+        "V5 · Interno / advogado faz marketing"
+      ],
+      "mensagem": "Qual tese hoje mais traz contato que você descarta?",
+      "origem": "Notion/V5 Operacional/01-1-01-COMECAR-UMA-CONVERSA.md",
+      "localizacao": "bloco de código 31; linha 346",
+      "id": "M01634"
+    },
+    {
+      "nome": "V5 F03 Diferenciação M01632",
+      "fase": "Diferenciação",
+      "condicao": "V5 · Interno / advogado faz marketing",
+      "rotas": [
+        "V5 · Interno / advogado faz marketing"
+      ],
+      "mensagem": "É justamente aí que a Metha pode aliviar.\n\nVocê continua dando a direção jurídica, mas não precisa ficar cuidando de cada anúncio, página e ajuste do marketing no meio da rotina do escritório.",
+      "origem": "Notion/V5 Operacional/01-1-01-COMECAR-UMA-CONVERSA.md",
+      "localizacao": "bloco de código 29; linha 330",
+      "id": "M01632"
+    },
+    {
+      "nome": "V5 F03 Diferenciação M01633",
+      "fase": "Diferenciação",
+      "condicao": "V5 · Interno / advogado faz marketing",
+      "rotas": [
+        "V5 · Interno / advogado faz marketing"
+      ],
+      "mensagem": "Então eu olharia primeiro para o tipo de contato que está chegando, não para trazer mais gente.",
+      "origem": "Notion/V5 Operacional/01-1-01-COMECAR-UMA-CONVERSA.md",
+      "localizacao": "bloco de código 30; linha 340",
+      "id": "M01633"
+    },
+    {
+      "nome": "V5 F06 Retomada M02139",
+      "fase": "Retomada",
+      "condicao": "V5 · Interno / advogado faz marketing",
+      "rotas": [
+        "V5 · Interno / advogado faz marketing"
+      ],
+      "mensagem": "Doutor, última coisa sobre o que te perguntei.\n\nComeçar marketing não deveria significar abrir a porta para qualquer pessoa mandar mensagem.\n\nVocês podem fazer anúncios voltados para as teses que o escritório realmente quer desenvolver.\n\nSe esse movimento entrar na pauta mais para frente, conversamos.",
+      "origem": "Notion/V5 Operacional/25-Follow-up-e-reativacao-por-situacao.md",
+      "localizacao": "bloco de código 17; linha 181",
+      "id": "M02139"
+    },
+    {
+      "nome": "V5 F01 Abertura M02062",
+      "fase": "Abertura",
+      "condicao": "V5 · Agência anterior / experiência frustrante",
+      "rotas": [
+        "V5 · Agência anterior / experiência frustrante"
+      ],
+      "mensagem": "Doutor, vi que vocês já tiveram uma presença mais ativa no marketing e fiquei curioso com uma coisa.\n\nVocês reduziram porque não entravam contatos ou porque entrava gente demais que não tinha relação com os casos que realmente queriam atender?",
+      "origem": "Notion/V5 Operacional/22-Nunca-fez-ja-tentou-faz-marketing-sozinho.md",
+      "localizacao": "bloco de código 1; linha 11",
+      "id": "M02062"
+    },
+    {
+      "nome": "V5 F03 Diagnóstico M02065",
+      "fase": "Diagnóstico",
+      "condicao": "V5 · Agência anterior / experiência frustrante; V5 · Agência anterior / experiência frustrante",
+      "rotas": [
+        "V5 · Agência anterior / experiência frustrante"
+      ],
+      "mensagem": "Aí eu nem tentaria te vender com “agora vai”.\n\nPrimeiro eu tentaria entender o que aconteceu antes.\n\nQue tese vocês trabalhavam?\n\nQue tipo de pessoa chegava?\n\nO que tornava esses contatos ruins para vocês?\n\nPorque repetir marketing sem entender isso seria só financiar outra tentativa.",
+      "origem": "Notion/V5 Operacional/22-Nunca-fez-ja-tentou-faz-marketing-sozinho.md",
+      "localizacao": "bloco de código 4; linha 41",
+      "id": "M02065"
+    },
+    {
+      "nome": "V5 F03 Diferenciação M02063",
+      "fase": "Diferenciação",
+      "condicao": "V5 · Agência anterior / experiência frustrante; V5 · Agência anterior / experiência frustrante",
+      "rotas": [
+        "V5 · Agência anterior / experiência frustrante"
+      ],
+      "mensagem": "Essa é provavelmente a frustração mais comum que escuto.\n\nE é justamente por isso que especialização importa.\n\nUma agência pode saber fazer anúncios muito bem e ainda não entender suficientemente uma tese trabalhista para saber que tipo de pessoa deveria chegar por ela.",
+      "origem": "Notion/V5 Operacional/22-Nunca-fez-ja-tentou-faz-marketing-sozinho.md",
+      "localizacao": "bloco de código 2; linha 22",
+      "id": "M02063"
+    },
+    {
+      "nome": "V5 F03 Diferenciação M02066",
+      "fase": "Diferenciação",
+      "condicao": "V5 · Agência anterior / experiência frustrante; V5 · Agência anterior / experiência frustrante",
+      "rotas": [
+        "V5 · Agência anterior / experiência frustrante"
+      ],
+      "mensagem": "Justo.\n\nDepois de pagar para receber contato que não faz sentido, “confia no processo” vira uma frase difícil de engolir.\n\nA diferença que eu tentaria te mostrar não é uma promessa maior.\n\nÉ o raciocínio anterior ao anúncio.\n\nQuem queremos atrair? Para qual tese? Quem NÃO queremos? Qual mensagem seleciona melhor?\n\nEspecialização deveria aparecer aí.",
+      "origem": "Notion/V5 Operacional/22-Nunca-fez-ja-tentou-faz-marketing-sozinho.md",
+      "localizacao": "bloco de código 5; linha 60",
+      "id": "M02066"
+    },
+    {
+      "nome": "V5 F04 Convite M02099",
+      "fase": "Convite",
+      "condicao": "V5 · Agência anterior / experiência frustrante",
+      "rotas": [
+        "V5 · Agência anterior / experiência frustrante"
+      ],
+      "mensagem": "Entendi nas suas respostas que [EXPERIÊNCIA ANTERIOR]. Vale uma conversa para entender o que aconteceu, o que você espera agora e como trabalhamos antes de você decidir qualquer coisa.",
+      "origem": "Notion/V5 Operacional/24-Levar-para-reuniao-quando-e-como-convidar.md",
+      "localizacao": "bloco de código 7; linha 52",
+      "id": "M02099"
+    },
+    {
+      "nome": "V5 F04 Convite M02100",
+      "fase": "Convite",
+      "condicao": "V5 · Agência anterior / experiência frustrante",
+      "rotas": [
+        "V5 · Agência anterior / experiência frustrante"
+      ],
+      "mensagem": "Quer que eu veja os horários disponíveis?",
+      "origem": "Notion/V5 Operacional/24-Levar-para-reuniao-quando-e-como-convidar.md",
+      "localizacao": "bloco de código 8; linha 58",
+      "id": "M02100"
+    },
+    {
+      "nome": "V5 F06 Retomada M02137",
+      "fase": "Retomada",
+      "condicao": "V5 · Agência anterior / experiência frustrante",
+      "rotas": [
+        "V5 · Agência anterior / experiência frustrante"
+      ],
+      "mensagem": "Doutor, fiquei pensando no que você comentou sobre os contatos.\n\n*Uma das primeiras coisas que eu olharia é:* As teses que vocês trabalham realmente têm mensagens e anúncios próprios ou vocês acabam reaproveitando quase o mesmo modelo?\n\nPorque essa diferença costuma aparecer justamente na qualidade dos contatos que chegam.",
+      "origem": "Notion/V5 Operacional/25-Follow-up-e-reativacao-por-situacao.md",
+      "localizacao": "bloco de código 15; linha 159",
+      "id": "M02137"
+    }
+  ]
+}
