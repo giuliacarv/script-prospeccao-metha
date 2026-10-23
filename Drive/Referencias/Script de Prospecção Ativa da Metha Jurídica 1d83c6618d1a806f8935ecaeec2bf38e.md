@@ -1,0 +1,1 @@
+# Só pra te mostrar como essa estrutura funcionaria no seu caso e tirar todas as dúvidas.

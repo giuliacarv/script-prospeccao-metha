@@ -59,3 +59,73 @@
 | [Notion/V5 Operacional/28-Governanca-regra-final-e-biblioteca-de-referencia.md](Notion/V5%20Operacional/28-Governanca-regra-final-e-biblioteca-de-referencia.md) | 21803 | `2c5f1938496aafd16e65ef3ef48760552f8f6783c3bc6fd144f7b1a5170eb6dd` |
 | [Notion/V5 Operacional/29-ZZ-BACKUPS-DA-MIGRACAO-V5-nao-usar.md](Notion/V5%20Operacional/29-ZZ-BACKUPS-DA-MIGRACAO-V5-nao-usar.md) | 1749 | `7bdf89f24d15ad7f8a523dfdd7153b48f2114cb0f23c1f41539ffb7e8f73f7de` |
 | [Notion/V5 Operacional/30-Auditoria-de-cobertura-V5-16-16-capitulos.md](Notion/V5%20Operacional/30-Auditoria-de-cobertura-V5-16-16-capitulos.md) | 7775 | `ec0c156a1e1a6df986c9c33212fabf60275293165b44df37cc822e0c528e0190` |
+
+
+
+## Importação complementar do Google Drive — 23/10/2026
+
+Os arquivos abaixo foram adicionados ao diretório `Drive/`. Tamanho e identificador são do blob Git gravado nesta proposta; arquivos de Google Docs/Word foram exportados como Markdown. Consulte [Drive/README.md](Drive/README.md) para a origem e itens ignorados.
+
+| Arquivo | Bytes | Git blob SHA |
+| --- | ---: | --- |
+| `Drive/01/Playbook_Comercial_Metha_V6.7_Trabalhista_Consciente + Faz Ads_DorAntecipada.md` | 36637 | `16ab5e1982460025963493794edc13836228ade1` |
+| `Drive/01/Playbook_Comercial_Metha_V6.6_Trabalhista_Consciente + Faz Ads.md` | 32609 | `de779bf9d0a9c79c2f8bbf3f3842293caebe74f9` |
+| `Drive/03/Script de fechamento-2025050305314065.md` | 2785 | `b496c4390cdb0d934ad2d0241629230062eb14e0` |
+| `Drive/03/Script de fechamento-20250503053152.md` | 3012 | `387899d873dffb204cddf52cb5a4ca161fcefd1b` |
+| `Drive/03/Script de fechamento-2025050305314065.pdf` | 28976 | `8b8d16f88ca220c17e7478c7468c78c5494c7571` |
+| `Drive/03/Scripts validados.pdf` | 532200 | `782a3c993f8d42c1e414a8c08e55006a75e5b7a9` |
+| `Drive/03/Script de Prospecção via WhatsApp - Público-Alvo Morno e Quente.pdf` | 434345 | `d220227403390372035d25ad0dbdc43b31f03974` |
+| `Drive/03/Script - Nova Legião.pdf` | 68181 | `43c2246272bce8ebc68045771d8ecb4cfeaf816a` |
+| `Drive/03/Script #07 - 3 Roteiros Para Clientes Que Não Te Respondem.pdf` | 141751 | `ae62ed28f0892fe0ece5578e9bb31ed0b29b8aba` |
+| `Drive/03/VARIAESDOSCRIPT.pdf` | 68181 | `43c2246272bce8ebc68045771d8ecb4cfeaf816a` |
+| `Drive/03/Modelosdescript.pdf` | 68181 | `b360a5b64efc75bfe8f4826e6f7f790363c8fc74` |
+| `Drive/03/Principais Objeções Prospecção.xlsx` | 11375 | `a8422dff2544652b07384a0bfec4b27164dfef5f` |
+| `Drive/03/Principais Objeções.xlsx` | 11354 | `120063fb3ca67ed3940e1081a63c0799748bdaeb` |
+| `Drive/03/Outubro2025/1.1 _ PRINCIPAL-20251016192456.md` | 10041 | `018b9733930bebab7fd9f647bd5fdf4d06a1b81f` |
+| `Drive/03/Scripts para WhatsApp (Disparo)/Funil D  — DIRETO E CRU.md` | 6219 | `857b132d2b292bafa137ad6b5ae362bbd203589d` |
+| `Drive/03/Scripts para WhatsApp (Disparo)/Follow-Up.md` | 3849 | `b13807cf837302dc1d4ece57cafbe7f01ea47a7b` |
+| `Drive/03/Scripts para WhatsApp (Disparo)/Script — Recesso Forense [CRU].md` | 2523 | `f032db251b54fc55fa86592424f406732467c5ab` |
+| `Drive/03/Scripts para WhatsApp (Disparo)/Script — Achei no Instagram de Mentores.md` | 7141 | `bc60fbeacd5d3bbce4a1098f4684ac5fa65d8058` |
+| `Drive/03/Scripts para WhatsApp (Disparo)/Funil C  — Dica de Ouro [RASCUNHO].md` | 16840 | `76cea9561e87c28e093a4a128fe789c8ece9fd4d` |
+| `Drive/03/Scripts para WhatsApp (Disparo)/Funil B  — Dica de Ouro B1 __ Recesso Forense.md` | 8574 | `4d056ac9f8f25712058e52f81a63e08bc6df8945` |
+| `Drive/03/Scripts para WhatsApp (Disparo)/Reunião.md` | 3137 | `e99eccd4d603fd7d905e85bfbd23e47b98cc4a0b` |
+| `Drive/03/Scripts para WhatsApp (Disparo)/Perguntou Preço.md` | 1946 | `a94a057572278b43e32b9f385ecd1ac9b95131ca` |
+| `Drive/03/Scripts para WhatsApp (Disparo)/Script com Permissão.md` | 2785 | `1f78dd30175c2ef38e7c87367944ad29b498e50f` |
+| `Drive/03/Scripts para WhatsApp (Disparo)/Closes de Vendas.md` | 79332 | `8d1850dd24be07da20ce3073360dda5afb9fd428` |
+| `Drive/03/Scripts para WhatsApp (Disparo)/Script Opção 01_ Para Todos Nichos.md` | 6550 | `ac70fab4bc8b1ab74a6c2bee8968522a0b08da8e` |
+| `Drive/03/Scripts para WhatsApp (Disparo)/Pré-Recesso Forense (2024).md` | 4417 | `569f1a9c3641bf8d70980aad03626e43c9ad7d8c` |
+| `Drive/03/Scripts para WhatsApp (Disparo)/PRINCIPAL _ COMERCIAL-20250827223933.md` | 236868 | `64a61837dec9623f6b55b4c7d22b4179bbdbcc3b` |
+| `Drive/03/Scripts para WhatsApp (Disparo)/PRINCIPAL _ COMERCIAL - 27.08.2025.md` | 230316 | `bb7f855e30fe77cb03edbf4ff983c1b3bea4319b` |
+| `Drive/03/Scripts para WhatsApp (Disparo)/Mensagens para o cliente que te deixou.md` | 1457 | `49bc148c85eb11d3d923a31ae5970967438c885b` |
+| `Drive/03/2. Scripts de Captação/[MT] Pitch.md` | 1378 | `0f7fb654cd15e7fb43ba69d59a1e52e36de9f944` |
+| `Drive/03/2. Scripts de Captação/Script Recesso Forense Completo <> CONSULTORIA ESTRATÉGICA.md` | 3217 | `979550bcdb7370f02b54af90e72dd9dcf3ff8d75` |
+| `Drive/03/2. Scripts de Captação/SCRIPT RECESSO FORENSE.md` | 2177 | `a77d48792f0783b76a1e844e5af48c30c577f682` |
+| `Drive/03/2. Scripts de Captação/Script Introdutório 01.md` | 3388 | `12978df1ac0a35b2a4de925aa82e25e2eb5df062` |
+| `Drive/03/2. Scripts de Captação/Script Introdutório 01.txt` | 3318 | `bd6b2ec4e4133d72906b3ccb8bef412f5192382f` |
+| `Drive/03/2. Scripts de Captação/SCRIPT WHATSAPP - V2.md` | 3551 | `0e4278d8a4b96a3bf0b9b8e36cead2400fc3e6b8` |
+| `Drive/03/2. Scripts de Captação/Script de Atend. para Adv..md` | 3107 | `a2e194be6cab38ac94fda328329639e9dd0995ef` |
+| `Drive/03/2. Scripts de Captação/SCRIPT RECESSO FORENSE.txt` | 2134 | `7cf0696caa8eba84aac0c9f739cebe15454c8c7c` |
+| `Drive/03/2. Scripts de Captação/SCRIPT RECESSO.jpeg` | 178455 | `db7e56e420b8458ee9d2c503a11b072eebd0d440` |
+| `Drive/03/2. Scripts de Captação/[MEJ] Roteiro para Áudios.pdf` | 36371 | `e40c61c4b019f6bedf8d7f3d21b796a7e40401e4` |
+| `Drive/03/2. Scripts de Captação/[MEJ] Roteiro para Áudios.md` | 3510 | `ba7d8c6f3693bcd2a96974f03fdeabb3c9a07df1` |
+| `Drive/03/2. Scripts de Captação/[MEJ] SCRIPT WHATSAPP.md` | 6609 | `07c96c89687c27adedaeab65a2c87bd6d8c65e13` |
+| `Drive/03/2. Scripts de Captação/Script via Áudio/1.mp3` | 534868 | `850068c1e91bc5c5920715df7671d6286f2b629c` |
+| `Drive/03/2. Scripts de Captação/Script Rav/SCRIPTS RAV 2.0 WORD - Versão somente scripts.md` | 36351 | `3fca060b7833f899f29ac19f3b4879f702d04fd6` |
+| `Drive/03/2. Scripts de Captação/Script Rav/EBOOK+SCRIPTS+RAV+COMPLETO.pdf` | 4800811 | `7c16e35ac69d5b43011787f4198590a41d267ff2` |
+| `Drive/03/2. Scripts de Captação/ÁUDIOS/5 - PEDINDO O WHATSAPP.mp4` | 342867 | `882dc58a9079899b370b84a0e4c36b067631126e` |
+| `Drive/03/2. Scripts de Captação/ÁUDIOS/4 - AÇÃO PRA RESERVAR.mp4` | 419489 | `59de16b213624d493b1d1c6104a937746e0daf00` |
+| `Drive/03/2. Scripts de Captação/ÁUDIOS/3 - AÇÃO 1.mp4` | 911978 | `e8bfa34a4661618d70bea5b30c03a41288ad1a35` |
+| `Drive/03/2. Scripts de Captação/ÁUDIOS/3 - AÇÃO 2.mp4` | 947048 | `c131ec543b98ca32e6d7b646d075349da85ac1f3` |
+| `Drive/03/2. Scripts de Captação/ÁUDIOS/2 - QUEM SOMOS 1.mp4` | 922488 | `a61c906b1c5b9d4a516d6c9241c3145fb36782e1` |
+| `Drive/03/2. Scripts de Captação/ÁUDIOS/2 - QUEM SOMOS 2.mp4` | 922488 | `a61c906b1c5b9d4a516d6c9241c3145fb36782e1` |
+| `Drive/03/2. Scripts de Captação/ÁUDIOS/1 - APRESENTAÇÃO.mp4` | 626061 | `8f6789802a105e29ca68c2edcdb92f701d11e091` |
+| `Drive/03/2. Scripts de Captação/Finalizados/WhatsApp/Script — Mestre __ Recesso Forense - 24.09.24.html` | 786115 | `40f34a9f285336406b4460cf1f22f9c56c9f8086` |
+| `Drive/03/2. Scripts de Captação/Finalizados/WhatsApp/Script — Mestre __ Recesso Forense - 24.09.24.pdf` | 91285 | `6eb238c4d0afcca7c25df9719b151983437ba7d9` |
+| `Drive/Referencias/Roteiro de Prospecção - Funil 2 - Otimizado.pdf` | 184901 | `86ab6dd2d66cd7f31cd593932d776f754adcbac8` |
+| `Drive/Referencias/SCRIPT LONGO-20251030160024.md` | 3554 | `92411c622e7f4223194cab91b6c5993e1b64d420` |
+| `Drive/Referencias/A_Economia_Escondida_do_Direito_do_Trabalho_Metha.pdf` | 155841 | `8e08fde1776a7f509fe6f8b36c3a1bc06061713d` |
+| `Drive/Referencias/ESTRATÉGIA COMERCIAL CENTRAL DO @7 PECADOS CAPITAI 3287a383898b806c91a2c6f40c1e79f0.md` | 18755 | `65f80fed70bc254ece6439fd2965b44acb65e14e` |
+| `Drive/Referencias/Script de Prospecção Ativa da Metha Jurídica 1d83c6618d1a806f8935ecaeec2bf38e.md` | 91 | `1de56cb7e3ed433bb8e267e28c296e544bc96a3d` |
+| `Drive/Referencias/1. Plano Estruturação 2025 — Projeto 20K30D.md` | 15218 | `8ac0f130b0b5c81469eac07a2bc6f95217939a72` |
+| `Drive/Referencias/Script de Prospecção via WhatsApp - Público-Alvo Morno e Quente.md` | 3131 | `1d854b51b58940c9d2cf21ed5cc161425c41338e` |
+| `Drive/Referencias/08 - 3.5. Definição do Script de Prospecção Ativa para Janeiro — 20K30D.md` | 352 | `58e872bf467be3f42c05188624e7f187a6d5dce6` |

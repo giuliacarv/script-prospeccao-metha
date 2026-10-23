@@ -92,3 +92,9 @@ Não foi escolhida uma versão oficial nem feita consolidação dos textos. Para
 Ao adicionar materiais, inclua o link neste catálogo e atualize o inventário. Preserve as variantes e registre sua origem e aprovação quando houver evidência. Não substitua arquivos apenas por terem nomes semelhantes.
 
 [Inventário completo com tamanho e SHA-256](INVENTARIO.md)
+
+
+
+## Fontes complementares do Google Drive
+
+Foram adicionados materiais em [Drive/](Drive/README.md), mantendo arquivos e versões como referências de origem. Eles não foram incorporados à matriz de mensagens existente nem marcados como roteiros aprovados.
