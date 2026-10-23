@@ -61,7 +61,6 @@
 | [Notion/V5 Operacional/30-Auditoria-de-cobertura-V5-16-16-capitulos.md](Notion/V5%20Operacional/30-Auditoria-de-cobertura-V5-16-16-capitulos.md) | 7775 | `ec0c156a1e1a6df986c9c33212fabf60275293165b44df37cc822e0c528e0190` |
 
 
-
 ## Importação complementar do Google Drive — 23/10/2026
 
 Os arquivos abaixo foram adicionados ao diretório `Drive/`. Tamanho e identificador são do blob Git gravado nesta proposta; arquivos de Google Docs/Word foram exportados como Markdown. Consulte [Drive/README.md](Drive/README.md) para a origem e itens ignorados.
