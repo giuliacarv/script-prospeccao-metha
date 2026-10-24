@@ -1,0 +1,7 @@
+# Acervo documental: preservar bytes e quebras de linha para manter os hashes.
+* -text
+*.pdf binary
+*.xlsx binary
+*.mp3 binary
+*.mp4 binary
+*.jpeg binary

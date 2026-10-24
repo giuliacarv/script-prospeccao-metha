@@ -1,94 +1,60 @@
-# Acervo de scripts de prospecção — Metha Jurídica
+# Biblioteca comercial — Metha Jurídica
 
-O início de tudo está na **matriz de mensagens**. Comece por ela para comparar as alternativas por etapa, escolher a linha de conversa e preparar os modelos que serão cadastrados no Kommo.
+Scripts de prospecção, playbooks e materiais de apoio para o comercial da Metha na captação de escritórios de advocacia.
 
-## Comece pela matriz
+**[Catálogo completo](catalogo.md)** · **[Matriz por etapa](matrizes/mensagens-por-etapa.xlsx)** · **[43 modelos V5](modelos/kommo/v5/README.md)**
 
-**[Abrir ou baixar a matriz de mensagens por etapa](Metha-Mensagens-por-Etapa.xlsx)**
+## Encontre o que precisa
 
-A planilha está na raiz do repositório e reúne o conteúdo original dos **45 documentos do acervo: 38 Markdown, 4 HTML e 3 PDF**. A matriz tem **uma linha por documento**; cada coluna de etapa reúne todas as mensagens e trechos daquela fase, preservados integralmente e identificados por código.
+| Objetivo | Onde consultar |
+| --- | --- |
+| Comparar mensagens por etapa da conversa | [Matriz e cobertura](matrizes/README.md) |
+| Consultar o V5 exportado do Notion | [Índice V5](playbooks/v5/README.md) |
+| Comparar playbooks V6.6, V6.7, V7.0, V7.2 e V8 | [Playbooks por versão](playbooks/README.md) |
+| Consultar Doug, Copydrill ou Karnage | [Abordagens](abordagens/README.md) |
+| Preparar abertura, follow-up, fechamento ou recesso | [Scripts de WhatsApp](scripts/README.md) |
+| Revisar uma seleção para cadastro no CRM | [Modelos Kommo](modelos/kommo/v5/README.md) |
+| Consultar estratégia, objeções ou mídia de referência | [Apoio](apoio/README.md) · [Áudios e imagens](midias/README.md) |
+| Encontrar um nome antigo ou conferir a origem | [Mapa de caminhos](catalogo/caminhos.csv) · [Inventário](docs/inventario.md) |
 
-São **45 linhas de documentos na matriz e 2.171 registros de origem**, incluindo mensagens da Metha, falas simuladas dos leads, instruções, tabelas e exemplos. Os tipos estão identificados para distinguir o que é mensagem, fala de lead, conduta interna ou exemplo. As repetições entre arquivos e as diferenças entre versões foram preservadas.
+## Cobertura do acervo
 
-### Organização da planilha
+Há **105 arquivos de fontes**. A matriz cobre **45 documentos**, com **2.171 registros**; os **60 arquivos complementares** estão identificados no catálogo e ainda não foram extraídos para a matriz. A seleção Kommo reúne **43 mensagens** do V5.
 
-- **Matriz integral:** ponto de partida. Cada linha é um dos 45 documentos originais; as colunas são as etapas. Todas as ocorrências daquela fonte ficam na coluna correspondente, com ID, tipo e título para localizar cada mensagem.
-- **Mensagens integrais:** um registro por bloco de origem, com código, texto completo, tipo, título, arquivo, localização, ID original, contexto e hash. Os códigos M da matriz identificam o registro correspondente nessa aba.
-- **Fontes e cobertura:** inventário dos 45 documentos, contagens, hashes e critérios de extração e uso.
-- **Contexto integral:** os Markdown completos, o texto visível completo dos HTMLs e todas as 148 páginas dos PDFs, para conferir instruções e passagens no contexto original.
-- **Adaptações iniciais:** preserva separadamente as 96 mensagens adaptadas da primeira entrega. Essas adaptações não são a extração literal das fontes.
-- **Modelos V5:** quatro rotas comerciais organizadas pelas mesmas etapas, com 43 mensagens selecionadas literalmente do Playbook V5 e os respectivos IDs M para conferência.
+Uma [pendência de origem](docs/pendencias/script-janeiro-20k30d.md) registra o arquivo vazio do item 8 do Drive. O [fragmento de prospecção ativa](scripts/whatsapp/legado/prospeccao-ativa-fragmento.md) contém somente a linha disponível na fonte.
 
-Os blocos de mensagem delimitados nos Markdown foram mantidos integralmente. Quando a fonte mistura copy e conduta na mesma seção, a seção completa foi preservada e identificada como **Mensagem e conduta da fonte**. Nos HTMLs, as ênfases foram convertidas para a formatação de WhatsApp e os links foram mantidos. Nos PDFs, foram preservadas as quebras de linha da extração das caixas originais.
+## Organização
 
-Os PDFs V7.0 Final e V8 são idênticos, mas ambos estão representados com seus nomes originais. Diferenças entre fontes, como a mensagem 051 do PDF e do catálogo IA, também foram mantidas.
+```text
+playbooks/       Versões completas e exportação V5
+abordagens/      Doug, Copydrill e Karnage
+scripts/        WhatsApp por situação e referências
+apoio/          Estratégia e planilhas de objeções
+midias/         Áudios e imagem de apoio
+modelos/        Seleção editorial para Kommo
+matrizes/       Planilha de mensagens e cobertura
+catalogo/       Metadados, caminhos anteriores e integridade
+docs/           Origem, nomenclatura e revisão do acervo
+ferramentas/    Atualização de índices e validação local
+```
 
-1. Compare as mensagens da mesma etapa entre as fontes e versões.
-2. Escolha a abordagem que combina com o cenário e a resposta do advogado.
-3. Revise o texto e preencha os campos entre colchetes com informações reais.
-4. Defina os nomes e cadastre os modelos escolhidos no Kommo.
+## Como usar
 
-As colunas são um repertório: use a próxima etapa conforme a conversa. Prova, Raio X, devolutiva, convite, proposta e formalização entram quando houver contexto. Consulte o tipo do conteúdo e a conduta original antes de usar um bloco.
+1. Escolha o cenário e leia a condição de uso e o contexto completo.
+2. Confira a versão e preencha os campos entre colchetes com dados reais.
+3. Revise texto, oferta e provas antes de cadastrar ou enviar uma mensagem.
 
-A matriz é o ponto de partida para organizar o trabalho. Os documentos abaixo são as bases originais para consulta. V1 e V2 na aba Adaptações iniciais identificam apenas as alternativas da primeira entrega; as demais abas mantêm os nomes e as versões das fontes. A aba Modelos V5 e a pasta [modelos-kommo](modelos-kommo/LEIA-ME.md) organizam a nova seleção por rota e etapa. Os arquivos são uma biblioteca editorial para revisão e cadastro manual; sua inclusão aqui não significa que os 43 modelos tenham sido gravados no Kommo.
+O acervo reúne referências editoriais, rascunhos, exemplos e variantes históricas. Termos como “final” e “validado” reproduzem a identificação da fonte; a inclusão aqui não comprova aprovação atual, eficácia comercial ou cadastro no Kommo. Scripts de atendimento jurídico e referências de terceiros estão em `scripts/referencias/`.
 
-[Conferir a cobertura da extração](MATRIZ_COBERTURA.md)
+Os HTMLs podem ser baixados e abertos no navegador. PDFs, planilhas e mídias mantêm o formato disponível na fonte; documentos Word/Google Docs importados na etapa anterior estão em Markdown extraído. Os [detalhes da importação](docs/fontes-drive.md) registram esse limite.
 
-## Notion · V5 Operacional
+## Manutenção
 
-O [índice da exportação](Notion/V5%20Operacional/README.md) reúne a página principal e suas subpáginas: **31 documentos e 531 blocos de código**, incluídos na matriz. Cada documento ocupa uma linha. O legado, backups, falas de leads, instruções e exemplos permanecem identificados pelo título e tipo. Prévia visual repetida fica no contexto integral; os blocos copiáveis permanecem literais. Um bloco breadcrumb não pôde ser exportado pelo conector, conforme o relatório de cobertura.
+Os nomes usam minúsculas, hífens e caracteres compatíveis com Windows. Veja o [padrão de organização](docs/nomenclatura.md) antes de adicionar materiais.
 
-## Bases do acervo
+```bash
+python ferramentas/acervo.py atualizar
+python ferramentas/acervo.py validar
+```
 
-Os textos e caminhos originais foram preservados. A numeração de versão e palavras como FINAL reproduzem os nomes das fontes; não comprovam aprovação ou funcionamento em produção.
-
-## Navegação por tarefa
-
-- **Começar a organizar as mensagens:** [matriz de mensagens por etapa](Metha-Mensagens-por-Etapa.xlsx).
-- **Consultar os scripts V10:** [doug.tensao](#dougtensao).
-- **Consultar a abordagem Copydrill:** [Copydrill](#copydrill).
-- **Consultar a abordagem Karnage:** [Karnage](#karnage).
-- **Consultar playbooks e materiais de automação:** [Playbooks e apoio](#playbooks-e-apoio).
-
-Os HTMLs podem ser baixados e abertos no navegador. No GitHub, o link apresenta o código do arquivo. Os PDFs mantêm sua composição original.
-
-## doug.tensao
-
-- [Metha Jurídica — Script V10 FINAL.md](doug.tensao/v10/Metha%20Jur%C3%ADdica%20%E2%80%94%20Script%20V10%20FINAL.md)
-- [Metha V10 — Stress Test_ 6 Conversas + Plano de Emergência.md](doug.tensao/v10/Metha%20V10%20%E2%80%94%20Stress%20Test_%206%20Conversas%20%2B%20Plano%20de%20Emerg%C3%AAncia.md)
-- [script-doug.tensao-v10.2.html](doug.tensao/v10/script-doug.tensao-v10.2.html)
-- [script-doug.tensao-v10.html](doug.tensao/v10/script-doug.tensao-v10.html)
-
-## Copydrill
-
-- [copydrill_v9_1.html](Copydrill/v9_1/copydrill_v9_1.html)
-- [Copydrill/Script - Versão Pra quem se frustou com agência anterior (Copydrill).md](Copydrill/Script%20-%20Vers%C3%A3o%20Pra%20quem%20se%20frustou%20com%20ag%C3%AAncia%20anterior%20%28Copydrill%29.md)
-
-## Karnage
-
-- [metha_script_v9_3_rotas.html](Karnage/v9_1/metha_script_v9_3_rotas.html)
-
-## Playbooks e apoio
-
-- [Playbook Comercial Metha — Karnage.md](Outros/Playbook%20Comercial%20Metha%20%E2%80%94%20Karnage.md)
-- [Playbook_Comercial_Metha_V7.0_Final.pdf](Outros/Playbook_Comercial_Metha_V7.0_Final.pdf)
-- [Playbook_Comercial_Metha_V7.2_Janela_de_Ouro.pdf](Outros/Playbook_Comercial_Metha_V7.2_Janela_de_Ouro.pdf)
-- [Playbook_Comercial_Metha_V8_IA_WhatsApp.md](Outros/Playbook_Comercial_Metha_V8_IA_WhatsApp.md)
-- [Playbook_Comercial_Metha_V8_Salesbot_Kommo_Sem_IA.md](Outros/Playbook_Comercial_Metha_V8_Salesbot_Kommo_Sem_IA.md)
-- [Playbook_Comercial_Metha_V8.md](Outros/Playbook_Comercial_Metha_V8.md)
-- [Playbook_Comercial_Metha_V8.pdf](Outros/Playbook_Comercial_Metha_V8.pdf)
-
-## Divergências de nomes e versões
-
-- `Outros/Playbook_Comercial_Metha_V8.md` começa com o título interno “Playbook Comercial Metha V7.0”.
-- `Outros/Playbook_Comercial_Metha_V8.pdf` e `Outros/Playbook_Comercial_Metha_V7.0_Final.pdf` são idênticos byte a byte. Ambos foram preservados.
-- `Karnage/v9_1/metha_script_v9_3_rotas.html` combina pasta v9_1, nome v9_3 e título interno “Script V9 aplicado”.
-- A pasta `doug.tensao/v10` reúne HTMLs V10 e V10.2; as variantes continuam acessíveis separadamente.
-
-Não foi escolhida uma versão oficial nem feita consolidação dos textos. Para resolver essas divergências, é necessária uma decisão editorial sobre a fonte de referência.
-
-## Manutenção do acervo
-
-Ao adicionar materiais, inclua o link neste catálogo e atualize o inventário. Preserve as variantes e registre sua origem e aprovação quando houver evidência. Não substitua arquivos apenas por terem nomes semelhantes.
-
-[Inventário completo com tamanho e SHA-256](INVENTARIO.md)
+A validação confere arquivos, hashes, links, nomes, blocos copiáveis, matriz e modelos. Consulte a [revisão da organização](docs/revisao-organizacao.md) para divergências de versão e evidências de preservação.
