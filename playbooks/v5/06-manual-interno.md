@@ -14,9 +14,9 @@ Exportação consultada em 2026-10-13. Conteúdo em Markdown ampliado do Notion;
 </callout>
 ---
 ## Treinamento / estratégia
-[Estratégia da prospecção — o que estamos vendendo e por quê](26-Estrategia-da-prospeccao-o-que-estamos-vendendo-e-por-que.md)
-[Linguagem, palavras permitidas e limites](27-Linguagem-palavras-permitidas-e-limites.md)
-[Governança, regra final e biblioteca de referência](28-Governanca-regra-final-e-biblioteca-de-referencia.md)
+[Estratégia da prospecção — o que estamos vendendo e por quê](26-estrategia-prospeccao.md)
+[Linguagem, palavras permitidas e limites](27-linguagem-limites.md)
+[Governança, regra final e biblioteca de referência](28-governanca-referencias.md)
 ---
 ## Fonte de conferência
 <mention-page url="https://app.notion.com/p/90d5d20db29a4229ad4436904e08d101"/>
@@ -25,5 +25,5 @@ Exportação consultada em 2026-10-13. Conteúdo em Markdown ampliado do Notion;
 </callout>
 ---
 ## Auditoria / contingência
-[ZZ · BACKUPS DA MIGRAÇÃO V5 — não usar](29-ZZ-BACKUPS-DA-MIGRACAO-V5-nao-usar.md)
-[Auditoria de cobertura V5 — 16/16 capítulos](30-Auditoria-de-cobertura-V5-16-16-capitulos.md)
+[ZZ · BACKUPS DA MIGRAÇÃO V5 — não usar](29-backups-migracao-nao-usar.md)
+[Auditoria de cobertura V5 — 16/16 capítulos](30-auditoria-cobertura.md)

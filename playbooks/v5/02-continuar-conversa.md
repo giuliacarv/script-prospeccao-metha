@@ -23,19 +23,19 @@ Exportação consultada em 2026-10-13. Conteúdo em Markdown ampliado do Notion;
 </columns>
 ---
 ## O lead disse ou fez...
-[“De onde conseguiu meu número?” / spam / remoção](14-De-onde-conseguiu-meu-numero-spam-remocao.md)
-[“Não sou eu que cuido disso” / sócio / secretária / decisor](15-Nao-sou-eu-que-cuido-disso-socio-secretaria-decisor.md)
-[“Agora não” / contrato atual / falar depois](16-Agora-nao-contrato-atual-falar-depois.md)
-[“Já temos muitos casos” / não quero mais volume](17-Ja-temos-muitos-casos-nao-quero-mais-volume.md)
-[“Quero ver resultados” / prova / confiança](18-Quero-ver-resultados-prova-confianca.md)
-[Preço / desconto / concorrente / risco / garantia](19-Preco-desconto-concorrente-risco-garantia.md)
-[Objeções rápidas — resposta curta para situações comuns](20-Objecoes-rapidas-resposta-curta-para-situacoes-comuns.md)
+[“De onde conseguiu meu número?” / spam / remoção](14-origem-numero-remocao.md)
+[“Não sou eu que cuido disso” / sócio / secretária / decisor](15-socio-secretaria-decisor.md)
+[“Agora não” / contrato atual / falar depois](16-agora-nao-falar-depois.md)
+[“Já temos muitos casos” / não quero mais volume](17-sem-interesse-em-mais-volume.md)
+[“Quero ver resultados” / prova / confiança](18-resultados-prova-confianca.md)
+[Preço / desconto / concorrente / risco / garantia](19-preco-desconto-risco.md)
+[Objeções rápidas — resposta curta para situações comuns](20-objecoes-rapidas.md)
 ---
 ---
 ## Escolha pela situação atual
-[Já tem agência — qualidade, tese e especialização](21-Ja-tem-agencia-qualidade-tese-e-especializacao.md)
-[Nunca fez / já tentou / faz marketing sozinho](22-Nunca-fez-ja-tentou-faz-marketing-sozinho.md)
-[Como explicar Metha, ORDEM™, CRM e IA](23-Como-explicar-Metha-ORDEMTM-CRM-e-IA.md)
+[Já tem agência — qualidade, tese e especialização](21-agencia-qualidade-especializacao.md)
+[Nunca fez / já tentou / faz marketing sozinho](22-nunca-anunciou-ja-tentou-marketing-interno.md)
+[Como explicar Metha, ORDEM™, CRM e IA](23-explicar-metha-ordem-crm-ia.md)
 ---
 <callout icon="🧭" color="gray_bg">
 	**Regra:** primeiro faça o lead reconhecer o problema no cenário dele. Só depois explique mecanismo, tecnologia ou Método ORDEM™.

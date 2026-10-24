@@ -13,7 +13,7 @@ Exportação consultada em 2026-10-13. Conteúdo em Markdown ampliado do Notion;
 </callout>
 ---
 ## Escolha a situação de follow-up
-[Follow-up e reativação — por situação](25-Follow-up-e-reativacao-por-situacao.md)
+[Follow-up e reativação — por situação](25-follow-up-por-situacao.md)
 ---
 ## Atalho importante
 <callout icon="🧭" color="gray_bg">

@@ -1,0 +1,20 @@
+{
+  "snapshot_anterior": "416d181902d4ad2c963c038dd121c25c7dbfb88f",
+  "sha256_anterior": "91a2c5b82e593d1159dc004d955220d7ed672ac26a1f52e2a965bc337715a149",
+  "regra": "Conteúdo de todas as células preservado; somente caminhos completos exatos foram atualizados.",
+  "referencias_atualizadas": 2472,
+  "partes_xml_alteradas": [
+    "xl/worksheets/sheet1.xml",
+    "xl/worksheets/sheet2.xml",
+    "xl/worksheets/sheet3.xml",
+    "xl/worksheets/sheet4.xml"
+  ],
+  "abas": {
+    "Matriz integral": "8991c110233105a91d88d6196931b5ec2527e09035bd7592149a7378a4402543",
+    "Mensagens integrais": "118564e0ed6243b7842b9751ca1233e481b7d6453129fd37fb4266ae3b9f9e4b",
+    "Fontes e cobertura": "f1c72a43db6a68c2085b9afab564df90f7ac00188847583aad8327098882042f",
+    "Contexto integral": "2910575e7956c705223bc62aae2ae7fa97ae5c2f99b18fb6a9ee03978dc6e06e",
+    "Adaptações iniciais": "0acb2b429dc4d4870442b01ac3027688012177868f3bf3f322516a74477be4a9",
+    "Modelos V5": "0853636c7dc08e33da5f07cc9bf7f68249156cfc157717b3d780f7f02514ad9e"
+  }
+}

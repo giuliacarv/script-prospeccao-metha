@@ -2,9 +2,9 @@
 
 Este catálogo reúne 43 mensagens copiáveis do Playbook Comercial Metha V5, distribuídas em quatro rotas: abertura neutra, escritório com agência, marketing interno e experiência anterior frustrante.
 
-- [Catálogo legível](CATALOGO.md)
-- [CSV para consulta e cadastro assistido](CATALOGO.csv)
-- [JSON estruturado](CATALOGO.json)
+- [Catálogo legível](catalogo.md)
+- [CSV para consulta e cadastro assistido](catalogo.csv)
+- [JSON estruturado](catalogo.json)
 
 Os nomes seguem `V5 + fase + assunto/ID M`, por exemplo `V5 F01 Abertura M01605`. F01 a F06 indicam a fase operacional do Playbook nesta biblioteca; não declaram correspondência com código de bot, tag ou Salesbot existente. Cada item aponta para o arquivo, localização e ID M na aba Mensagens integrais.
 

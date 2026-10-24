@@ -3,3 +3,10 @@ Thumbs.db
 .DS_Store
 *.tmp
 ~*
+
+# Manutenção local e dados privados
+__pycache__/
+*.pyc
+.env
+.env.*
+dados_restritos/

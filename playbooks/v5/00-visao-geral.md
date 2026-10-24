@@ -76,27 +76,27 @@ _Esta frase chegará em itálico._
 		<callout>
 			## O que você precisa fazer agora?
 			---
-			[01 · COMEÇAR UMA CONVERSA](01-1-01-COMECAR-UMA-CONVERSA.md)
-			[02 · CONTINUAR A CONVERSA](02-2-02-CONTINUAR-A-CONVERSA.md)
-			[04 · PRÉ-DIAGNÓSTICO E QUALIFICAÇÃO](03-3-04-PRE-DIAGNOSTICO-E-QUALIFICACAO.md)
-			[05 · AVANÇAR PARA REUNIÃO](04-05-AVANCAR-PARA-REUNIAO.md)
-			[06 · FOLLOW-UP E REATIVAÇÃO](05-06-FOLLOW-UP-E-REATIVACAO.md)
-			[07 · MANUAL INTERNO](06-07-MANUAL-INTERNO.md)
+			[01 · COMEÇAR UMA CONVERSA](01-comecar-conversa.md)
+			[02 · CONTINUAR A CONVERSA](02-continuar-conversa.md)
+			[04 · PRÉ-DIAGNÓSTICO E QUALIFICAÇÃO](03-pre-diagnostico-qualificacao.md)
+			[05 · AVANÇAR PARA REUNIÃO](04-avancar-reuniao.md)
+			[06 · FOLLOW-UP E REATIVAÇÃO](05-follow-up-reativacao.md)
+			[07 · MANUAL INTERNO](06-manual-interno.md)
 		</callout>
 		<callout>
 			## Materiais Super Úteis
 			---
-			[Cenários reais na prática: Lead que preencheu o formulário de diagnóstico em nosso site](07-Cenarios-reais-na-pratica-Lead-que-preencheu-o-formulario-de-diagnostico-em-nosso-site.md)
+			[Cenários reais na prática: Lead que preencheu o formulário de diagnóstico em nosso site](07-lead-do-pre-diagnostico.md)
 		</callout>
 		<callout>
 			## Legado para otimizar / Inserir em <mention-page url="https://app.notion.com/p/3efe403fd79c8138a13ce526541033fb">Playbook Comercial Metha — V5 OPERACIONAL \[ICP = QUEM JÁ FAZ MARKETING SOZINHO OU COM AGÊNCIA OU JÁ FEZ E PAROU PORQUE SE DECEPCIONOU\] </mention-page> 
 			---
-			[Funil Pré Recesso](08-Funil-Pre-Recesso.md)
-			[Script SDR — Agendamento de Reunião para Lead Jurídico Qualificado](09-Script-SDR-Agendamento-de-Reuniao-para-Lead-Juridico-Qualificado.md)
-			[Script Validado — Prospecção de Advogados Trabalhistas com Case Renan](10-Script-Validado-Prospeccao-de-Advogados-Trabalhistas-com-Case-Renan.md)
-			[Roteiro de Atenção para Comunidades e Grupos no WhatsApp](11-Roteiro-de-Atencao-para-Comunidades-e-Grupos-no-WhatsApp.md)
-			[Estratégia para Captar Atenção de Advogados Que Já Anunciam e Estão Inseguros](12-Estrategia-para-Captar-Atencao-de-Advogados-Que-Ja-Anunciam-e-Estao-Inseguros.md)
-			[Script — Prospecção Ativa para Metha Jurídica](13-Script-Prospeccao-Ativa-para-Metha-Juridica.md)
+			[Funil Pré Recesso](08-funil-pre-recesso.md)
+			[Script SDR — Agendamento de Reunião para Lead Jurídico Qualificado](09-sdr-agendamento.md)
+			[Script Validado — Prospecção de Advogados Trabalhistas com Case Renan](10-trabalhistas-case-renan.md)
+			[Roteiro de Atenção para Comunidades e Grupos no WhatsApp](11-comunidades-whatsapp.md)
+			[Estratégia para Captar Atenção de Advogados Que Já Anunciam e Estão Inseguros](12-anunciantes-inseguros.md)
+			[Script — Prospecção Ativa para Metha Jurídica](13-prospeccao-ativa.md)
 		</callout>
 		*E te chamei agora por um motivo:* estamos entrando na *JANELA DE OURO do trabalhista: pré-recesso, recesso e pós-recesso*.
 		O escritório entra em recesso. O problema trabalhista dos trabalhadores continuam/aumentam
