@@ -212,6 +212,20 @@ def validate() -> None:
         errors.append('Os 2.171 registros da matriz não foram preservados')
     if sum(f['coberto_pela_matriz'] for f in files) != 45:
         errors.append('Cobertura das 45 fontes mudou')
+    with (ROOT / 'catalogo/cobertura-drive.csv').open(encoding='utf-8', newline='') as stream:
+        coverage = list(csv.DictReader(stream))
+    if len(coverage) != 64 or len({r['drive_id'] for r in coverage}) != 64:
+        errors.append('Conferência dos 64 itens do Drive incompleta ou com IDs repetidos')
+    for row in coverage:
+        if row['status'] == 'fora-do-escopo':
+            if row['nome_original'] != 'WhatsApp_RocketSend_Logs.csv' or row['caminho']:
+                errors.append('Exclusão inesperada na cobertura do Drive: ' + row['drive_id'])
+            continue
+        dest = ROOT / row['caminho']
+        if not row['caminho'] or not dest.is_file():
+            errors.append('Fonte do Drive sem arquivo: ' + row['drive_id'])
+        elif sha(dest.read_bytes()) != row['sha256']:
+            errors.append('Cópia da cobertura do Drive alterada: ' + row['caminho'])
     if errors:
         for err in errors:
             print('ERRO: ' + err)

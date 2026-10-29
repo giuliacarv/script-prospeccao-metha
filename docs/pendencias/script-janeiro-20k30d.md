@@ -8,3 +8,5 @@ Esta nota registra a pendência; o roteiro original não foi reconstruído.
 - ID do Drive: `1uFF9WdQLPT0jktUpi80tRM0YrsrdqbI0`
 
 Próximo passo: obter uma cópia com conteúdo ou confirmar se o arquivo era apenas um marcador.
+
+Reverificado em 28/10/2026: metadados continuam indicando zero bytes e a leitura retorna texto vazio. O [arquivo original vazio](../../scripts/whatsapp/legado/script-janeiro-20k30d.md) foi incluído no Git, mantendo esta nota separada do conteúdo de origem.

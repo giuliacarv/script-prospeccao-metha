@@ -86,3 +86,7 @@ A matriz de mensagens continua cobrindo as 45 fontes anteriores. As novas fontes
 | [scripts/whatsapp/recesso-forense/script-longo.md](../scripts/whatsapp/recesso-forense/script-longo.md) | [Drive](https://drive.google.com/file/d/1s7YJ_OeQlF3ZeA35Nk2ZjpB-NHOUm9_W/view) |
 | [scripts/whatsapp/legado/prospeccao-ativa-fragmento.md](../scripts/whatsapp/legado/prospeccao-ativa-fragmento.md) | [Drive](https://drive.google.com/file/d/1T2rrjTurdUpvbpm_8k-9LF4ojOYJ8PPi/view) |
 | [scripts/whatsapp/abordagem/publico-morno-quente.md](../scripts/whatsapp/abordagem/publico-morno-quente.md) | [Drive](https://docs.google.com/document/d/1DfiN93EGR_xneKGcDG_C9EGUh3JG6dMv/edit) |
+
+## Conferência integral — 28/10/2026
+
+As três pastas, suas subpastas e os nove links individuais foram novamente conferidos: 64 arquivos no total, 63 fontes com destino no acervo e um log de envios fora do escopo de scripts. O original vazio de janeiro foi acrescentado como arquivo de zero bytes. Veja a [conferência documento por documento](cobertura-drive.md). A matriz cobre 45 das 106 fontes; as outras 61 estão disponíveis como arquivos.

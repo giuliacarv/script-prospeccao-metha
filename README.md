@@ -19,7 +19,9 @@ Scripts de prospecção, playbooks e materiais de apoio para o comercial da Meth
 
 ## Cobertura do acervo
 
-Há **105 arquivos de fontes**. A matriz cobre **45 documentos**, com **2.171 registros**; os **60 arquivos complementares** estão identificados no catálogo e ainda não foram extraídos para a matriz. A seleção Kommo reúne **43 mensagens** do V5.
+Há **106 arquivos de fontes**. A matriz cobre **45 documentos**, com **2.171 registros**; os **61 arquivos complementares** estão identificados no catálogo e ainda não foram extraídos para a matriz. A seleção Kommo reúne **43 mensagens** do V5.
+
+**[Conferência dos 12 links do Drive: documento por documento](docs/cobertura-drive.md)** — inclui todas as subpastas e o destino das 63 fontes.
 
 Uma [pendência de origem](docs/pendencias/script-janeiro-20k30d.md) registra o arquivo vazio do item 8 do Drive. O [fragmento de prospecção ativa](scripts/whatsapp/legado/prospeccao-ativa-fragmento.md) contém somente a linha disponível na fonte.
 

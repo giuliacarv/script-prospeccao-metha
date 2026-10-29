@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "revisado_em": "2026-10-24",
+  "revisado_em": "2026-10-28",
   "snapshot_anterior": "416d181902d4ad2c963c038dd121c25c7dbfb88f",
   "arquivos": [
     {
@@ -757,8 +757,8 @@
       "sha256_original": "2aa5fced536a1754645fdc1391e048379f860fbf8128d48556214178fb1736c3",
       "coberto_pela_matriz": false,
       "id": "P001",
-      "sha256": "e812a299239682b616e96ef8a60f62e5cadeb30a2607c72c71769186b5550b7b",
-      "bytes": 552,
+      "sha256": "1180614f0917d57b1e0e831b70d4c15275365929f8df4082cd09e98a29fa30ac",
+      "bytes": 812,
       "observacao": "Nota; arquivo original no Drive tem zero bytes"
     },
     {
@@ -1504,6 +1504,19 @@
       "sha256": "a428e0ff18358e2e6496eb53484c3c200bf7748816d76b8480370257d511e420",
       "bytes": 20257,
       "observacao": ""
+    },
+    {
+      "tipo": "fonte",
+      "caminho": "scripts/whatsapp/legado/script-janeiro-20k30d.md",
+      "caminho_anterior": "",
+      "nome_original": "3.5. Definição do Script de Prospecção Ativa para Janeiro — 20K30D.md",
+      "url_origem": "https://drive.google.com/file/d/1uFF9WdQLPT0jktUpi80tRM0YrsrdqbI0/view",
+      "sha256_original": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "coberto_pela_matriz": false,
+      "id": "S106",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "observacao": "Original com zero bytes; conteúdo vazio reconfirmado no Drive em 28/10/2026. Ver docs/pendencias/script-janeiro-20k30d.md."
     }
   ]
 }

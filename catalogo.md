@@ -1,6 +1,6 @@
 # Catálogo do acervo
 
-**105 arquivos de fontes**, mais seleções, matriz e pendência de origem. Consulte pelo assunto, formato ou nome anterior.
+**106 arquivos de fontes**, mais seleções, matriz e pendência de origem. Consulte pelo assunto, formato ou nome anterior.
 
 O nome original, o endereço de origem, os hashes e a cobertura da matriz constam no [JSON](catalogo/arquivos.json). O [mapa de caminhos](catalogo/caminhos.csv) permite localizar os nomes usados antes da reorganização.
 
@@ -101,6 +101,7 @@ O nome original, o endereço de origem, os hashes e a cobertura da matriz consta
 | S045 | [scripts/whatsapp/legado/comercial-2025-08-27.md](scripts/whatsapp/legado/comercial-2025-08-27.md) | MD | Não | [Fonte](https://drive.google.com/file/d/1RdT36zwbqYzAJZk2q5E5dD6RIYBh7ssN/view?usp=drivesdk) |
 | S030 | [scripts/whatsapp/legado/principal-exportacao-20251016192456.md](scripts/whatsapp/legado/principal-exportacao-20251016192456.md) | MD | Não | [Fonte](https://drive.google.com/file/d/1d_fxBh4XtFcoc-pR4NOHN69Jwjo9BIwE/view?usp=drivesdk) |
 | S061 | [scripts/whatsapp/legado/prospeccao-ativa-fragmento.md](scripts/whatsapp/legado/prospeccao-ativa-fragmento.md) | MD | Não | [Fonte](https://drive.google.com/file/d/1T2rrjTurdUpvbpm_8k-9LF4ojOYJ8PPi/view) · Fragmento de uma linha na fonte |
+| S106 | [scripts/whatsapp/legado/script-janeiro-20k30d.md](scripts/whatsapp/legado/script-janeiro-20k30d.md) | MD | Não | [Fonte](https://drive.google.com/file/d/1uFF9WdQLPT0jktUpi80tRM0YrsrdqbI0/view) · Original com zero bytes; conteúdo vazio reconfirmado no Drive em 28/10/2026. Ver docs/pendencias/script-janeiro-20k30d.md. |
 | S015 | [scripts/whatsapp/recesso-forense/consultoria-estrategica.md](scripts/whatsapp/recesso-forense/consultoria-estrategica.md) | MD | Não | [Fonte](https://docs.google.com/document/d/12feVGIzQ_grxNba7zXex1Mn59ufKIQFu/edit?usp=drivesdk&ouid=113277956783807496281&rtpof=true&sd=true) · Texto extraído de Word/Google Docs na importação |
 | S048 | [scripts/whatsapp/recesso-forense/pre-recesso-2024.md](scripts/whatsapp/recesso-forense/pre-recesso-2024.md) | MD | Não | [Fonte](https://drive.google.com/file/d/1Pf64GIX9j1Krtptvm0r1kcRaC6jvLR7b/view?usp=drivesdk) |
 | S005 | [scripts/whatsapp/recesso-forense/roteiro-mestre-2024-09-24.html](scripts/whatsapp/recesso-forense/roteiro-mestre-2024-09-24.html) | HTML | Não | [Fonte](https://drive.google.com/file/d/1eezEx_VO-dkAXsNImNtRANHmLl8E7jW4/view?usp=drivesdk) |

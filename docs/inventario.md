@@ -2,7 +2,7 @@
 
 Gerado por `python ferramentas/acervo.py atualizar`. Os hashes atuais são SHA-256 dos bytes gravados. O JSON também preserva os hashes anteriores à reorganização.
 
-- Fontes: **105 arquivos**; **45** cobertos pela matriz e **60** complementares.
+- Fontes: **106 arquivos**; **45** cobertos pela matriz e **61** complementares.
 - Derivados catalogados: **4**. Pendência: **1**.
 - Identidade e conteúdo comercial são preservados por fonte; aprovação editorial é uma decisão separada.
 
@@ -21,7 +21,7 @@ Gerado por `python ferramentas/acervo.py atualizar`. Os hashes atuais são SHA-2
 | S058 | [apoio/estrategia/sete-pecados-advogado-trabalhista.md](../apoio/estrategia/sete-pecados-advogado-trabalhista.md) | 18755 | `89bddd8565666e5c447ad2807287005170c9fd904a191e39597a1802a66c3cce` |
 | S032 | [apoio/objecoes/principais-objecoes.xlsx](../apoio/objecoes/principais-objecoes.xlsx) | 11354 | `d3e8a3617743fc9dc58fefecaf9f492b7ff93ca2cd16c8af4398012c1d9a76fe` |
 | S031 | [apoio/objecoes/prospeccao.xlsx](../apoio/objecoes/prospeccao.xlsx) | 11375 | `0dac6889127d664965e64dd4c5eb38f4b4d950a474274a98325281e1f90d8083` |
-| P001 | [docs/pendencias/script-janeiro-20k30d.md](pendencias/script-janeiro-20k30d.md) | 552 | `e812a299239682b616e96ef8a60f62e5cadeb30a2607c72c71769186b5550b7b` |
+| P001 | [docs/pendencias/script-janeiro-20k30d.md](pendencias/script-janeiro-20k30d.md) | 812 | `1180614f0917d57b1e0e831b70d4c15275365929f8df4082cd09e98a29fa30ac` |
 | D001 | [matrizes/mensagens-por-etapa.xlsx](../matrizes/mensagens-por-etapa.xlsx) | 1273804 | `15ddf3e86c925948eff41048451d3eb7f0e76c803e42a7237bfd12882c28d2b1` |
 | S022 | [midias/audios/captacao/01-apresentacao.mp4](../midias/audios/captacao/01-apresentacao.mp4) | 626061 | `855ffc40b44865f927a6b37521e2b293afcbbc32ea8b122e5de5ef6efe5e3850` |
 | S023 | [midias/audios/captacao/02-quem-somos-opcao-1.mp4](../midias/audios/captacao/02-quem-somos-opcao-1.mp4) | 922488 | `1d152ec5ca74af70e7c67c7521f5409565de85be3c17576f4b52cd883c1c2ec2` |
@@ -110,6 +110,7 @@ Gerado por `python ferramentas/acervo.py atualizar`. Os hashes atuais são SHA-2
 | S045 | [scripts/whatsapp/legado/comercial-2025-08-27.md](../scripts/whatsapp/legado/comercial-2025-08-27.md) | 230316 | `49e581a95e191a20a85434c9509c639b2ce605942749f5199a06ad4cacb5856f` |
 | S030 | [scripts/whatsapp/legado/principal-exportacao-20251016192456.md](../scripts/whatsapp/legado/principal-exportacao-20251016192456.md) | 10041 | `f00bde13d0fb3c887dcbb119dc5a32fce08bcf66630a956c4140e53ce8664e51` |
 | S061 | [scripts/whatsapp/legado/prospeccao-ativa-fragmento.md](../scripts/whatsapp/legado/prospeccao-ativa-fragmento.md) | 91 | `29863c68fe05c3d0d3a1147cee7cf6d0a12c21db5537710358624c97e3a79bba` |
+| S106 | [scripts/whatsapp/legado/script-janeiro-20k30d.md](../scripts/whatsapp/legado/script-janeiro-20k30d.md) | 0 | `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855` |
 | S015 | [scripts/whatsapp/recesso-forense/consultoria-estrategica.md](../scripts/whatsapp/recesso-forense/consultoria-estrategica.md) | 3217 | `287c4dbd8078c4cc4474108db6924cb48340d4b368898693bf1f2f04749de742` |
 | S048 | [scripts/whatsapp/recesso-forense/pre-recesso-2024.md](../scripts/whatsapp/recesso-forense/pre-recesso-2024.md) | 4417 | `2ce68efbf28040ef8610e9e77bfe7a80cfc0d9125b5d236d0dd227c37316abd6` |
 | S005 | [scripts/whatsapp/recesso-forense/roteiro-mestre-2024-09-24.html](../scripts/whatsapp/recesso-forense/roteiro-mestre-2024-09-24.html) | 786115 | `7ca0bcdd5b7f6c280353226a74ec083d5e34da2d5633574b476fb062900959fe` |
