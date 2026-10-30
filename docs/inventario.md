@@ -2,8 +2,8 @@
 
 Gerado por `python ferramentas/acervo.py atualizar`. Os hashes atuais são SHA-256 dos bytes gravados. O JSON também preserva os hashes anteriores à reorganização.
 
-- Fontes: **106 arquivos**; **45** cobertos pela matriz e **61** complementares.
-- Derivados catalogados: **4**. Pendência: **1**.
+- Fontes: **117 arquivos**; **45** cobertos pela matriz e **72** complementares.
+- Derivados catalogados: **40**. Pendência: **1**.
 - Identidade e conteúdo comercial são preservados por fonte; aprovação editorial é uma decisão separada.
 
 | ID | Arquivo | Bytes | SHA-256 atual |
@@ -74,6 +74,53 @@ Gerado por `python ferramentas/acervo.py atualizar`. Os hashes atuais são SHA-2
 | S098 | [playbooks/v8/playbook.md](../playbooks/v8/playbook.md) | 79799 | `9b0f5109d1cc98181d343550c8dd0505dc6be5c5981c33a2d7a9f77aca0fc4a6` |
 | S099 | [playbooks/v8/playbook.pdf](../playbooks/v8/playbook.pdf) | 224888 | `ea03900610fd1205960d202cdc3f95c90df96533d1fa62a4aec84c456b1a6b7e` |
 | S101 | [playbooks/v8/salesbot-kommo-sem-ia.md](../playbooks/v8/salesbot-kommo-sem-ia.md) | 51210 | `59117f9ae29d8e9b3ac2b8ab3dd162856529a685e9ecd4625808c9a78d63b994` |
+| D040 | [roteiros-internos/README.md](../roteiros-internos/README.md) | 22529 | `0ef7e137c8c7d392aeafd48b573dde4dfd6e7e2d26a1b6dc823011ed518ad44d` |
+| D005 | [roteiros-internos/inventario.json](../roteiros-internos/inventario.json) | 69556 | `bb37427f293d1e82ac5889a36bc144ee2c386c2a0dee0807ce2edf7ca8e6b628` |
+| D006 | [roteiros-internos/leituras/1-4t7joo.md](../roteiros-internos/leituras/1-4t7joo.md) | 682 | `d0f402801473ed3963c530b908d3af96cf753e65f14e50122e5b481ef105777a` |
+| D007 | [roteiros-internos/leituras/1-apresentacao-ocpgei.md](../roteiros-internos/leituras/1-apresentacao-ocpgei.md) | 784 | `505767b1a720c16f46b920e1477b164106524147c4dbc7bc7740cef057b7e5bf` |
+| D008 | [roteiros-internos/leituras/2-quem-somos-1-htmbnq.md](../roteiros-internos/leituras/2-quem-somos-1-htmbnq.md) | 904 | `ce18aaf7d25564017cc403bb17f8343842312974de4782d824a085363a6ae50d` |
+| D009 | [roteiros-internos/leituras/2-quem-somos-2-a9xz5i.md](../roteiros-internos/leituras/2-quem-somos-2-a9xz5i.md) | 904 | `97c4dcd1acde9086d7144ae1da7e3d1bd0d39fd12d663525c836b9ea3bbe208d` |
+| D010 | [roteiros-internos/leituras/3-acao-1-gzuder.md](../roteiros-internos/leituras/3-acao-1-gzuder.md) | 1037 | `9778eb9530420a4ebe181fd6b6b16939c67fd7647b275af2e7face9ddf6701dd` |
+| D011 | [roteiros-internos/leituras/3-acao-2-b4v9ak.md](../roteiros-internos/leituras/3-acao-2-b4v9ak.md) | 917 | `7b96e81b96a8bb6c7b13ddd2c01afd62f0cc47eff2d23cd1249e4f0ae2152849` |
+| D012 | [roteiros-internos/leituras/4-acao-pra-reservar-pswrrq.md](../roteiros-internos/leituras/4-acao-pra-reservar-pswrrq.md) | 625 | `7cef73dbe8f27f289a989f1a106da8c70f5cb2039638979a842885fef78ee1aa` |
+| D013 | [roteiros-internos/leituras/5-pedindo-o-whatsapp-fecxxk.md](../roteiros-internos/leituras/5-pedindo-o-whatsapp-fecxxk.md) | 561 | `61a4634f4ac38ced38f98aa10aaf8beb0c6820a75f2cb49cf148f5a99b41efec` |
+| D014 | [roteiros-internos/leituras/ebook-scripts-rav-completo-twqs9j.md](../roteiros-internos/leituras/ebook-scripts-rav-completo-twqs9j.md) | 86477 | `5b2788239f2ff935b042ba1693028c57c8dd66e72be4f0deca7b931fc54f85ea` |
+| D015 | [roteiros-internos/leituras/log-envios-resumo.md](../roteiros-internos/leituras/log-envios-resumo.md) | 345 | `14bcf8acf53e9cbd7cdacce2815d2b2046056fb08180591c55b54e556b62ffa9` |
+| D016 | [roteiros-internos/leituras/mej-roteiro-para-audios-79vyeq.md](../roteiros-internos/leituras/mej-roteiro-para-audios-79vyeq.md) | 3931 | `3f87fbdbca36ed3f5ef7a812429dbbcd63ac5066c3db82b0183cbe62e3a91be9` |
+| D017 | [roteiros-internos/leituras/mej-roteiro-para-audios-w6gcpy.md](../roteiros-internos/leituras/mej-roteiro-para-audios-w6gcpy.md) | 3404 | `e29485ad9153d8faaae7d9a5f0dfa808c5c37f0fb2b191e3dd4c50a934fa85b9` |
+| D018 | [roteiros-internos/leituras/mej-script-whatsapp-fmypdd.md](../roteiros-internos/leituras/mej-script-whatsapp-fmypdd.md) | 7029 | `9c7c1b9230a7026ca96f18c519eef51d908b6b121d4a24d0a9e96cdb243423e4` |
+| D019 | [roteiros-internos/leituras/mensagens-para-o-cliente-que-te-deixou-dsjdte.md](../roteiros-internos/leituras/mensagens-para-o-cliente-que-te-deixou-dsjdte.md) | 1908 | `e0268c52a226561ebc13eee648847a566e4082d004081843b3cf2147ff694a8a` |
+| D020 | [roteiros-internos/leituras/modelosdescript--is1jc.md](../roteiros-internos/leituras/modelosdescript--is1jc.md) | 4192 | `c9da84ac08e7e5ea1b4c80808ed2c8922cfbcc6554d5f15ba23e7f0d08c83849` |
+| D021 | [roteiros-internos/leituras/mt-pitch-5r4mzh.md](../roteiros-internos/leituras/mt-pitch-5r4mzh.md) | 1782 | `8c079342ebdaae8be11b4e5c0bc56d48635e4a728e1c10b5c35230d1733abe37` |
+| D022 | [roteiros-internos/leituras/principais-objecoes-oqpvdq.md](../roteiros-internos/leituras/principais-objecoes-oqpvdq.md) | 2986 | `ce05bccfea50ecd980a763bf88e4889f603007863d54b927e5dff68c847d9521` |
+| D023 | [roteiros-internos/leituras/principais-objecoes-prospeccao-vjl-kw.md](../roteiros-internos/leituras/principais-objecoes-prospeccao-vjl-kw.md) | 2999 | `442679236819836c10ac65e0cf5f624b76c358cc25eef78371260821f0c4d3a8` |
+| D024 | [roteiros-internos/leituras/roteiro-de-prospeccao-funil-2-otimizado-dw-fcz.md](../roteiros-internos/leituras/roteiro-de-prospeccao-funil-2-otimizado-dw-fcz.md) | 4323 | `84feba7d3c9a6d128004eef048c07a7fb550bda6a107ea7eb4c73c0af108a707` |
+| D025 | [roteiros-internos/leituras/script-07-3-roteiros-para-clientes-que-nao-te-respondem--3has3.md](../roteiros-internos/leituras/script-07-3-roteiros-para-clientes-que-nao-te-respondem--3has3.md) | 4121 | `5f90e7dbf1fc74d872db3038cf8c5569092ea51f24108e53c7f84ab17c91e4ae` |
+| D026 | [roteiros-internos/leituras/script-de-atend-para-adv-shlmc4.md](../roteiros-internos/leituras/script-de-atend-para-adv-shlmc4.md) | 3518 | `4b6bfcdb997377a14dc19a5bfb9bf946842ccf40a3cdb352b0306c988ddaafca` |
+| D027 | [roteiros-internos/leituras/script-de-fechamento-2025050305314065-bm-pfq.md](../roteiros-internos/leituras/script-de-fechamento-2025050305314065-bm-pfq.md) | 3040 | `abf80178300e881870dbe828a8ebfb961d4c01974d3e804414421edc2149ddc6` |
+| D028 | [roteiros-internos/leituras/script-de-fechamento-2025050305314065-wihrxc.md](../roteiros-internos/leituras/script-de-fechamento-2025050305314065-wihrxc.md) | 3078 | `c24df379502c25b6cd67355492ac9afd892620f95bbfcf9b0be48c79ac1e9def` |
+| D029 | [roteiros-internos/leituras/script-de-prospeccao-via-whatsapp-publico-alvo-morno-e-quente-s3pwqu.md](../roteiros-internos/leituras/script-de-prospeccao-via-whatsapp-publico-alvo-morno-e-quente-s3pwqu.md) | 4257 | `a5c4e306c80ac141ebad9b911955a2ca1110f0a2ec2bbbdf4a559ce6c9208ba8` |
+| D030 | [roteiros-internos/leituras/script-introdutorio-01-scshao.md](../roteiros-internos/leituras/script-introdutorio-01-scshao.md) | 3694 | `49792f6e384c2d48d0de6c0ae024be663c76251878330a652f7d4e4d02fa409f` |
+| D031 | [roteiros-internos/leituras/script-mestre-recesso-forense-24-09-24-r7oiea.md](../roteiros-internos/leituras/script-mestre-recesso-forense-24-09-24-r7oiea.md) | 13523 | `f83c4418bdfe6a05e0ca0beaeab502127e01e9730ebf4d7f1aedd2779a56f3d3` |
+| D032 | [roteiros-internos/leituras/script-nova-legiao-04ojgm.md](../roteiros-internos/leituras/script-nova-legiao-04ojgm.md) | 4198 | `29bed49c3e639e3ea3644e5e0c4e3b74b30d75873eb5aa450cdbce1611d88a02` |
+| D033 | [roteiros-internos/leituras/script-recesso-forense-completo-consultoria-estrategica-fkiqfu.md](../roteiros-internos/leituras/script-recesso-forense-completo-consultoria-estrategica-fkiqfu.md) | 3659 | `60294fa8b4b184068f1775f31f97ab964d9688d9c10df1c003c9dcbc5cc77b21` |
+| D034 | [roteiros-internos/leituras/script-recesso-forense-teipcg.md](../roteiros-internos/leituras/script-recesso-forense-teipcg.md) | 2499 | `8a6bb8b04d206c821d48cd4b6c1a67b15536fc7376f06e983ce5e362df9ae9a9` |
+| D035 | [roteiros-internos/leituras/script-recesso-heaqug.md](../roteiros-internos/leituras/script-recesso-heaqug.md) | 2416 | `ecf959118f657f0ce77cda15f7a2b0554b7ad52eacebce20b1de07c11a4e3c80` |
+| D036 | [roteiros-internos/leituras/script-whatsapp-v2-spfpil.md](../roteiros-internos/leituras/script-whatsapp-v2-spfpil.md) | 3965 | `d9bcdf421d54c73fa4861dae3c786559f35dda8ff4c507cb5bb68b13ab4b4d07` |
+| D037 | [roteiros-internos/leituras/scripts-rav-2-0-word-versao-somente-scripts-za5mxz.md](../roteiros-internos/leituras/scripts-rav-2-0-word-versao-somente-scripts-za5mxz.md) | 36379 | `9940ae3f06ddde49fbb12a29fe6ccecf8d9faec70d58ea612557da62ff3459fb` |
+| D038 | [roteiros-internos/leituras/scripts-validados-fzh1tf.md](../roteiros-internos/leituras/scripts-validados-fzh1tf.md) | 109610 | `a27cc6c809a37e37c34d8bc86cd1144bcd42d4e1315298da85a3f0ac6343ca61` |
+| D039 | [roteiros-internos/leituras/variaesdoscript-1ou0nb.md](../roteiros-internos/leituras/variaesdoscript-1ou0nb.md) | 4192 | `f3f7aeace6a56b9f5dba41d3e20265413c4cafc6781057fa96c3f96e989f7073` |
+| S107 | [roteiros-internos/originais/mej-roteiro-para-audios-79vyeq.docx](../roteiros-internos/originais/mej-roteiro-para-audios-79vyeq.docx) | 218627 | `084b1fd076490c4326e880f9bec77b0bc09b6639c426298eee9ff4236537d60a` |
+| S108 | [roteiros-internos/originais/mej-script-whatsapp-fmypdd.docx](../roteiros-internos/originais/mej-script-whatsapp-fmypdd.docx) | 296961 | `35d599621056eec22475ab99ee3640685e79fd16488a8de36a06ffe3f272a89c` |
+| S109 | [roteiros-internos/originais/mensagens-para-o-cliente-que-te-deixou-dsjdte.docx](../roteiros-internos/originais/mensagens-para-o-cliente-que-te-deixou-dsjdte.docx) | 13129 | `57ca480fab20b3c230cd0451441e4af7f77d06d3cd1673a69850603faf4e19ec` |
+| S110 | [roteiros-internos/originais/mt-pitch-5r4mzh.docx](../roteiros-internos/originais/mt-pitch-5r4mzh.docx) | 9084 | `af11bee08823cf85a4daa7936d14919f0b1ee0a13b4e007c3cb369a1d2dba382` |
+| S111 | [roteiros-internos/originais/script-de-atend-para-adv-shlmc4.docx](../roteiros-internos/originais/script-de-atend-para-adv-shlmc4.docx) | 237693 | `430f8c52d25332a148790f372175b1ded27fda0ffb3927a93f3687f4cd585656` |
+| S112 | [roteiros-internos/originais/script-de-fechamento-2025050305314065-wihrxc.docx](../roteiros-internos/originais/script-de-fechamento-2025050305314065-wihrxc.docx) | 1106795 | `467ac1bdbbfddc439a000754b5a2e08e407e349ba443875e993322908b6e265e` |
+| S113 | [roteiros-internos/originais/script-introdutorio-01-scshao.docx](../roteiros-internos/originais/script-introdutorio-01-scshao.docx) | 9102 | `f2e24f30dead71fc90b6e0bb2d7058b6f81c96fa006e68e272ee17aca437a353` |
+| S114 | [roteiros-internos/originais/script-recesso-forense-completo-consultoria-estrategica-fkiqfu.docx](../roteiros-internos/originais/script-recesso-forense-completo-consultoria-estrategica-fkiqfu.docx) | 295966 | `aee7ebac7de2089820d708702fc184bae3140a98064f45848b06c9a6aead9042` |
+| S115 | [roteiros-internos/originais/script-recesso-forense-teipcg.docx](../roteiros-internos/originais/script-recesso-forense-teipcg.docx) | 8471 | `bbb2b27d51545593f3c1537ec055bb1929abc6dfc8097faa7531a0f40581845a` |
+| S116 | [roteiros-internos/originais/script-whatsapp-v2-spfpil.docx](../roteiros-internos/originais/script-whatsapp-v2-spfpil.docx) | 294714 | `c8d12f996e51fb387187cc01bc5fd770e4fafe2d1dd54f3190b67f824a6a76ab` |
+| S117 | [roteiros-internos/originais/scripts-rav-2-0-word-versao-somente-scripts-za5mxz.docx](../roteiros-internos/originais/scripts-rav-2-0-word-versao-somente-scripts-za5mxz.docx) | 149069 | `71f0d64258a7dc11064d37101fbb60455f0cbec067f26a942d7f9d9729ae3b73` |
 | S016 | [scripts/referencias/atendimento-advogados.md](../scripts/referencias/atendimento-advogados.md) | 3107 | `e39c44d2752b823e441159b8f5ab246de3528f4d8e66bad22e1b6fca27b571b7` |
 | S052 | [scripts/referencias/instagram-mentores.md](../scripts/referencias/instagram-mentores.md) | 7141 | `9ba0c52ca5535acf04147770f55f606dd937ed312114090f25bde97a08eb837e` |
 | S029 | [scripts/referencias/modelos-de-script.pdf](../scripts/referencias/modelos-de-script.pdf) | 68181 | `e38b9f1d258c0f1914e9389286f65ce5b1850b5e43c868db6b72204751a41671` |

@@ -23,6 +23,7 @@ GROUPS = {
     'scripts': 'Scripts por canal e situação', 'apoio': 'Estratégia e objeções',
     'midias': 'Áudios e imagens', 'modelos': 'Seleções para o Kommo',
     'matrizes': 'Matriz de mensagens', 'docs': 'Pendências documentadas',
+    'roteiros-internos': 'Roteiros internos: originais e leituras',
 }
 
 

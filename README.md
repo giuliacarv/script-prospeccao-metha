@@ -19,7 +19,7 @@ Scripts de prospecção, playbooks e materiais de apoio para o comercial da Meth
 
 ## Cobertura do acervo
 
-Há **106 arquivos de fontes**. A matriz cobre **45 documentos**, com **2.171 registros**; os **61 arquivos complementares** estão identificados no catálogo e ainda não foram extraídos para a matriz. A seleção Kommo reúne **43 mensagens** do V5.
+Há **117 arquivos de fontes**. A matriz cobre **45 documentos**, com **2.171 registros**; os **72 arquivos complementares** estão identificados no catálogo e ainda não foram extraídos para a matriz. A seleção Kommo reúne **43 mensagens** do V5.
 
 **[Conferência dos 12 links do Drive: documento por documento](docs/cobertura-drive.md)** — inclui todas as subpastas e o destino das 63 fontes.
 
@@ -60,3 +60,7 @@ python ferramentas/acervo.py validar
 ```
 
 A validação confere arquivos, hashes, links, nomes, blocos copiáveis, matriz e modelos. Consulte a [revisão da organização](docs/revisao-organizacao.md) para divergências de versão e evidências de preservação.
+
+## Roteiros internos — originais e leituras
+
+A [pasta de roteiros internos](roteiros-internos/README.md) reúne os 11 DOCX adicionais, 33 leituras de documentos, planilhas, imagem e áudio, e o resumo do log sem telefones. O índice mapeia todos os 54 arquivos do Drive: 53 originais contemplados no Git e o CSV original mantido apenas localmente por escolha da usuária. Esta revisão também está no repositório privado oficial.
