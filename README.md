@@ -19,7 +19,7 @@ Scripts de prospecção, playbooks e materiais de apoio para o comercial da Meth
 
 ## Cobertura do acervo
 
-Há **117 arquivos de fontes**. A matriz cobre **45 documentos**, com **2.171 registros**; os **72 arquivos complementares** estão identificados no catálogo e ainda não foram extraídos para a matriz. A seleção Kommo reúne **43 mensagens** do V5.
+Há **117 arquivos de fontes**. A matriz cobre **45 documentos**, com **2.171 registros**; os **72 arquivos complementares** estão na [triagem completa](docs/triagem-complementos.md), com duplicatas comprovadas, equivalências de espaçamento e dez revisões editoriais. Eles ainda não foram extraídos para a matriz; 72 arquivos não significam 72 scripts únicos. A seleção Kommo reúne **43 mensagens** do V5.
 
 **[Conferência dos 12 links do Drive: documento por documento](docs/cobertura-drive.md)** — inclui todas as subpastas e o destino das 63 fontes.
 
@@ -56,6 +56,7 @@ Os nomes usam minúsculas, hífens e caracteres compatíveis com Windows. Veja o
 
 ```bash
 python ferramentas/acervo.py atualizar
+python ferramentas/complementos.py atualizar
 python ferramentas/acervo.py validar
 ```
 

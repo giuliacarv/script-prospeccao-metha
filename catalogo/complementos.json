@@ -1,0 +1,723 @@
+{
+  "schema_version": 1,
+  "metodo": "SHA-256 de todas as fontes; texto MD/TXT com espaços normalizados; sem inferência semântica.",
+  "total_complementos": 72,
+  "contagens": {
+    "comparacao-editorial-pendente": 65,
+    "identico-em-bytes": 4,
+    "mesmo-texto-sem-espacamento": 2,
+    "vazio": 1
+  },
+  "arquivos": [
+    {
+      "id": "S003",
+      "caminho": "playbooks/v6.6/trabalhista-anunciantes.md",
+      "sha256": "b540063c080fadd25823ad1d5a880f6b7e2a38c8153f1128bcf61027ac46737a",
+      "triagem": "comparacao-editorial-pendente",
+      "identicos_em_bytes": [],
+      "mesmo_texto_sem_espacamento": [],
+      "revisao": null
+    },
+    {
+      "id": "S004",
+      "caminho": "playbooks/v6.7/trabalhista-anunciantes-dor-antecipada.md",
+      "sha256": "633db8bb46775575e799aa719f0a00f0cebf12ef5663c8f8fbc3ea6656017a11",
+      "triagem": "comparacao-editorial-pendente",
+      "identicos_em_bytes": [],
+      "mesmo_texto_sem_espacamento": [],
+      "revisao": null
+    },
+    {
+      "id": "S005",
+      "caminho": "scripts/whatsapp/recesso-forense/roteiro-mestre-2024-09-24.html",
+      "sha256": "7ca0bcdd5b7f6c280353226a74ec083d5e34da2d5633574b476fb062900959fe",
+      "triagem": "comparacao-editorial-pendente",
+      "identicos_em_bytes": [],
+      "mesmo_texto_sem_espacamento": [],
+      "revisao": null
+    },
+    {
+      "id": "S006",
+      "caminho": "scripts/whatsapp/recesso-forense/roteiro-mestre-2024-09-24.pdf",
+      "sha256": "be0fefd943bf57ffddbd2666d81fcdc33072ece7dfef6a2feef53af9797a1210",
+      "triagem": "comparacao-editorial-pendente",
+      "identicos_em_bytes": [],
+      "mesmo_texto_sem_espacamento": [],
+      "revisao": null
+    },
+    {
+      "id": "S007",
+      "caminho": "scripts/whatsapp/recesso-forense/script-principal.md",
+      "sha256": "a25901fcdaf5b97eaa21a2710cf44f9938e8eed8a69dd80b34cb2f855d92faf8",
+      "triagem": "mesmo-texto-sem-espacamento",
+      "identicos_em_bytes": [],
+      "mesmo_texto_sem_espacamento": [
+        "S008"
+      ],
+      "revisao": {
+        "id": "S007",
+        "sha256": "a25901fcdaf5b97eaa21a2710cf44f9938e8eed8a69dd80b34cb2f855d92faf8",
+        "evidencia": "Recesso: apresentação, sazonalidade e convite para reunião. S008 repete o texto com diferença de espaços.",
+        "encaminhamento": "Agrupar S007/S008; revisar datas de 2024, percentuais e provas antes de selecionar."
+      }
+    },
+    {
+      "id": "S008",
+      "caminho": "scripts/whatsapp/recesso-forense/script-principal.txt",
+      "sha256": "7972ec89c6be7d1ed6e69780b1ef8a878191ba684168df2c7580f0734512f7ca",
+      "triagem": "mesmo-texto-sem-espacamento",
+      "identicos_em_bytes": [],
+      "mesmo_texto_sem_espacamento": [
+        "S007"
+      ],
+      "revisao": {
+        "id": "S008",
+        "sha256": "7972ec89c6be7d1ed6e69780b1ef8a878191ba684168df2c7580f0734512f7ca",
+        "evidencia": "Mesmo texto de S007 após normalização de espaços; identidade de origem preservada.",
+        "encaminhamento": "Referenciar S007 na fila; preservar ambos os originais."
+      }
+    },
+    {
+      "id": "S009",
+      "caminho": "midias/imagens/recesso-forense.jpeg",
+      "sha256": "e3b672a8140af40190134fb8c3bac069113380b0fceeb78b98bfd965bdfa38b0",
+      "triagem": "comparacao-editorial-pendente",
+      "identicos_em_bytes": [],
+      "mesmo_texto_sem_espacamento": [],
+      "revisao": null
+    },
+    {
+      "id": "S010",
+      "caminho": "scripts/whatsapp/abordagem/script-v2.md",
+      "sha256": "9356ca84ec25863d8bc47d8f3899f072847ec9f7737793a2feee5500e3d20e71",
+      "triagem": "comparacao-editorial-pendente",
+      "identicos_em_bytes": [],
+      "mesmo_texto_sem_espacamento": [],
+      "revisao": null
+    },
+    {
+      "id": "S011",
+      "caminho": "scripts/whatsapp/abordagem/introdutorio-01.md",
+      "sha256": "7474d5ebdc6688c37f2b2a727a689776438de5153e1ee40a96b075b05912dab3",
+      "triagem": "comparacao-editorial-pendente",
+      "identicos_em_bytes": [],
+      "mesmo_texto_sem_espacamento": [],
+      "revisao": {
+        "id": "S011",
+        "sha256": "7474d5ebdc6688c37f2b2a727a689776438de5153e1ee40a96b075b05912dab3",
+        "evidencia": "Introdução com projeto de 120 dias e escopo marketing, vendas, tecnologia e comunicação; S012 encurta essa frase para marketing.",
+        "encaminhamento": "Comparar variantes; não fundir como equivalentes. Confirmar escopo, promessas e oferta atual."
+      }
+    },
+    {
+      "id": "S012",
+      "caminho": "scripts/whatsapp/abordagem/introdutorio-01.txt",
+      "sha256": "71a2bde343b0a6f8a664d984a587e75d7ce06bd9851f18d68d2b56e0ada6d20d",
+      "triagem": "comparacao-editorial-pendente",
+      "identicos_em_bytes": [],
+      "mesmo_texto_sem_espacamento": [],
+      "revisao": {
+        "id": "S012",
+        "sha256": "71a2bde343b0a6f8a664d984a587e75d7ce06bd9851f18d68d2b56e0ada6d20d",
+        "evidencia": "Variante de S011 com omissão de vendas, tecnologia e comunicação na frase da equipe dedicada.",
+        "encaminhamento": "Preservar a diferença de escopo e conferir se a matriz já contém essa versão."
+      }
+    },
+    {
+      "id": "S013",
+      "caminho": "scripts/referencias/rav/ebook-completo.pdf",
+      "sha256": "a8d84edd47ad41abfa5c7ae76517759525ea8a059c17bce2d11c09a2ec7946e9",
+      "triagem": "comparacao-editorial-pendente",
+      "identicos_em_bytes": [],
+      "mesmo_texto_sem_espacamento": [],
+      "revisao": null
+    },
+    {
+      "id": "S014",
+      "caminho": "scripts/referencias/rav/v2.0/scripts.md",
+      "sha256": "8f2bdbaa4d381e2338e4f62daf75bd8ddcaace47c4f747cb32c1b8722e9a6a54",
+      "triagem": "comparacao-editorial-pendente",
+      "identicos_em_bytes": [],
+      "mesmo_texto_sem_espacamento": [],
+      "revisao": null
+    },
+    {
+      "id": "S015",
+      "caminho": "scripts/whatsapp/recesso-forense/consultoria-estrategica.md",
+      "sha256": "287c4dbd8078c4cc4474108db6924cb48340d4b368898693bf1f2f04749de742",
+      "triagem": "comparacao-editorial-pendente",
+      "identicos_em_bytes": [],
+      "mesmo_texto_sem_espacamento": [],
+      "revisao": null
+    },
+    {
+      "id": "S016",
+      "caminho": "scripts/referencias/atendimento-advogados.md",
+      "sha256": "e39c44d2752b823e441159b8f5ab246de3528f4d8e66bad22e1b6fca27b571b7",
+      "triagem": "comparacao-editorial-pendente",
+      "identicos_em_bytes": [],
+      "mesmo_texto_sem_espacamento": [],
+      "revisao": null
+    },
+    {
+      "id": "S017",
+      "caminho": "midias/audios/prospeccao.mp3",
+      "sha256": "bedb0ca6c9cf036b4fd2c8cec66d2cf5fbd574ac65e580bc4191490219146185",
+      "triagem": "comparacao-editorial-pendente",
+      "identicos_em_bytes": [],
+      "mesmo_texto_sem_espacamento": [],
+      "revisao": null
+    },
+    {
+      "id": "S018",
+      "caminho": "scripts/whatsapp/audio/roteiro-mej.md",
+      "sha256": "1fc9950192687ec735afca3c036f37e92fc7c30a7f1b514cf86662625312d749",
+      "triagem": "comparacao-editorial-pendente",
+      "identicos_em_bytes": [],
+      "mesmo_texto_sem_espacamento": [],
+      "revisao": null
+    },
+    {
+      "id": "S019",
+      "caminho": "scripts/whatsapp/audio/roteiro-mej.pdf",
+      "sha256": "7c06e8d5857bfb82ca8bca0644e55bd4b49ffde5f3fe3b0106934154dd40d299",
+      "triagem": "comparacao-editorial-pendente",
+      "identicos_em_bytes": [],
+      "mesmo_texto_sem_espacamento": [],
+      "revisao": null
+    },
+    {
+      "id": "S020",
+      "caminho": "scripts/whatsapp/abordagem/mej-script.md",
+      "sha256": "5fa6a458e0056f4bdab7da9e629547e1f5d917f8b21c514a33b9d4217a84976a",
+      "triagem": "comparacao-editorial-pendente",
+      "identicos_em_bytes": [],
+      "mesmo_texto_sem_espacamento": [],
+      "revisao": null
+    },
+    {
+      "id": "S021",
+      "caminho": "scripts/referencias/pitch-mt.md",
+      "sha256": "b8f84b523aecf520fbc5d553df75681a0097db58555dcb4cc76fcac1d054270e",
+      "triagem": "comparacao-editorial-pendente",
+      "identicos_em_bytes": [],
+      "mesmo_texto_sem_espacamento": [],
+      "revisao": null
+    },
+    {
+      "id": "S022",
+      "caminho": "midias/audios/captacao/01-apresentacao.mp4",
+      "sha256": "855ffc40b44865f927a6b37521e2b293afcbbc32ea8b122e5de5ef6efe5e3850",
+      "triagem": "comparacao-editorial-pendente",
+      "identicos_em_bytes": [],
+      "mesmo_texto_sem_espacamento": [],
+      "revisao": null
+    },
+    {
+      "id": "S023",
+      "caminho": "midias/audios/captacao/02-quem-somos-opcao-1.mp4",
+      "sha256": "1d152ec5ca74af70e7c67c7521f5409565de85be3c17576f4b52cd883c1c2ec2",
+      "triagem": "identico-em-bytes",
+      "identicos_em_bytes": [
+        "S024"
+      ],
+      "mesmo_texto_sem_espacamento": [],
+      "revisao": null
+    },
+    {
+      "id": "S024",
+      "caminho": "midias/audios/captacao/02-quem-somos-opcao-2.mp4",
+      "sha256": "1d152ec5ca74af70e7c67c7521f5409565de85be3c17576f4b52cd883c1c2ec2",
+      "triagem": "identico-em-bytes",
+      "identicos_em_bytes": [
+        "S023"
+      ],
+      "mesmo_texto_sem_espacamento": [],
+      "revisao": null
+    },
+    {
+      "id": "S025",
+      "caminho": "midias/audios/captacao/03-acao-opcao-1.mp4",
+      "sha256": "575f4df05e3c9df881bc08495be22cc5ba53849f4cf09405dfa1c226a44d62ec",
+      "triagem": "comparacao-editorial-pendente",
+      "identicos_em_bytes": [],
+      "mesmo_texto_sem_espacamento": [],
+      "revisao": null
+    },
+    {
+      "id": "S026",
+      "caminho": "midias/audios/captacao/03-acao-opcao-2.mp4",
+      "sha256": "986a2d730f67a357b3bf19d5a599b4e8206bb473f17bcd5af414335c242d06a5",
+      "triagem": "comparacao-editorial-pendente",
+      "identicos_em_bytes": [],
+      "mesmo_texto_sem_espacamento": [],
+      "revisao": null
+    },
+    {
+      "id": "S027",
+      "caminho": "midias/audios/captacao/04-reservar.mp4",
+      "sha256": "2a33966cb26e06ccdc7e6b696a2a0fb0477df0530ee54ca07b768e2f8e0826c1",
+      "triagem": "comparacao-editorial-pendente",
+      "identicos_em_bytes": [],
+      "mesmo_texto_sem_espacamento": [],
+      "revisao": null
+    },
+    {
+      "id": "S028",
+      "caminho": "midias/audios/captacao/05-pedir-whatsapp.mp4",
+      "sha256": "6357b360178e70d934d98a45f5832e2df22da6dae9f2faea372821e4c3b4e459",
+      "triagem": "comparacao-editorial-pendente",
+      "identicos_em_bytes": [],
+      "mesmo_texto_sem_espacamento": [],
+      "revisao": null
+    },
+    {
+      "id": "S029",
+      "caminho": "scripts/referencias/modelos-de-script.pdf",
+      "sha256": "e38b9f1d258c0f1914e9389286f65ce5b1850b5e43c868db6b72204751a41671",
+      "triagem": "comparacao-editorial-pendente",
+      "identicos_em_bytes": [],
+      "mesmo_texto_sem_espacamento": [],
+      "revisao": null
+    },
+    {
+      "id": "S030",
+      "caminho": "scripts/whatsapp/legado/principal-exportacao-20251016192456.md",
+      "sha256": "f00bde13d0fb3c887dcbb119dc5a32fce08bcf66630a956c4140e53ce8664e51",
+      "triagem": "comparacao-editorial-pendente",
+      "identicos_em_bytes": [],
+      "mesmo_texto_sem_espacamento": [],
+      "revisao": null
+    },
+    {
+      "id": "S031",
+      "caminho": "apoio/objecoes/prospeccao.xlsx",
+      "sha256": "0dac6889127d664965e64dd4c5eb38f4b4d950a474274a98325281e1f90d8083",
+      "triagem": "comparacao-editorial-pendente",
+      "identicos_em_bytes": [],
+      "mesmo_texto_sem_espacamento": [],
+      "revisao": null
+    },
+    {
+      "id": "S032",
+      "caminho": "apoio/objecoes/principais-objecoes.xlsx",
+      "sha256": "d3e8a3617743fc9dc58fefecaf9f492b7ff93ca2cd16c8af4398012c1d9a76fe",
+      "triagem": "comparacao-editorial-pendente",
+      "identicos_em_bytes": [],
+      "mesmo_texto_sem_espacamento": [],
+      "revisao": null
+    },
+    {
+      "id": "S033",
+      "caminho": "scripts/whatsapp/follow-up/tres-roteiros-sem-resposta.pdf",
+      "sha256": "c1946099731e5c12182a5a4979eccf3c931f5773e6b3a5a841713a4dd3444bff",
+      "triagem": "comparacao-editorial-pendente",
+      "identicos_em_bytes": [],
+      "mesmo_texto_sem_espacamento": [],
+      "revisao": null
+    },
+    {
+      "id": "S034",
+      "caminho": "scripts/referencias/nova-legiao.pdf",
+      "sha256": "e3e4d72bd7c96b3e1d80201ed5760cad68069c1b9fbe63a57f8dbf490e187308",
+      "triagem": "identico-em-bytes",
+      "identicos_em_bytes": [
+        "S055"
+      ],
+      "mesmo_texto_sem_espacamento": [],
+      "revisao": null
+    },
+    {
+      "id": "S035",
+      "caminho": "scripts/whatsapp/abordagem/publico-morno-quente.pdf",
+      "sha256": "099f68a3adf248da31315cef80e8e7d07501a4f22b152f21dbdcad790e87318f",
+      "triagem": "comparacao-editorial-pendente",
+      "identicos_em_bytes": [],
+      "mesmo_texto_sem_espacamento": [],
+      "revisao": null
+    },
+    {
+      "id": "S036",
+      "caminho": "scripts/whatsapp/fechamento/script-fechamento-exportacao.md",
+      "sha256": "3e77184d13acf35d671cbce49e3c1394d9d66f3bc93d066dd2f6e2dd58b61fce",
+      "triagem": "comparacao-editorial-pendente",
+      "identicos_em_bytes": [],
+      "mesmo_texto_sem_espacamento": [],
+      "revisao": {
+        "id": "S036",
+        "sha256": "3e77184d13acf35d671cbce49e3c1394d9d66f3bc93d066dd2f6e2dd58b61fce",
+        "evidencia": "Fechamento em dez etapas: abordagem, autoridade, pesquisa, desejo, desafios, solução, transição e oferta; S038 reformata a sequência.",
+        "encaminhamento": "Agrupar com S038 para extração; retirar exemplos de terceiros da futura seleção Metha, preservando a fonte."
+      }
+    },
+    {
+      "id": "S037",
+      "caminho": "scripts/whatsapp/fechamento/script-fechamento.pdf",
+      "sha256": "27fbbb1f8ecdca455a5822321f7fd55b2bc47531acfeadd964b46f4cc46e1ac9",
+      "triagem": "comparacao-editorial-pendente",
+      "identicos_em_bytes": [],
+      "mesmo_texto_sem_espacamento": [],
+      "revisao": null
+    },
+    {
+      "id": "S038",
+      "caminho": "scripts/whatsapp/fechamento/script-fechamento.md",
+      "sha256": "264555b586e482c23b8fdb1c220138341893d6a0c065bcab23a28e179d177612",
+      "triagem": "comparacao-editorial-pendente",
+      "identicos_em_bytes": [],
+      "mesmo_texto_sem_espacamento": [],
+      "revisao": {
+        "id": "S038",
+        "sha256": "264555b586e482c23b8fdb1c220138341893d6a0c065bcab23a28e179d177612",
+        "evidencia": "Mesma sequência comercial de S036; Markdown muda formatação e numeração da resposta Não.",
+        "encaminhamento": "Usar um representante na comparação com a matriz; não contar como novo roteiro apenas pelo formato."
+      }
+    },
+    {
+      "id": "S039",
+      "caminho": "scripts/whatsapp/fechamento/closes-de-vendas.md",
+      "sha256": "db181702284f92aa324d366d6007ab7a534a84445b29b8c7b73a0f41ca35f1bc",
+      "triagem": "comparacao-editorial-pendente",
+      "identicos_em_bytes": [],
+      "mesmo_texto_sem_espacamento": [],
+      "revisao": null
+    },
+    {
+      "id": "S040",
+      "caminho": "scripts/whatsapp/follow-up/follow-up.md",
+      "sha256": "5252290e83f562c080ac5c2bb39756d480fcbb567e080eada581151ff93172a3",
+      "triagem": "comparacao-editorial-pendente",
+      "identicos_em_bytes": [],
+      "mesmo_texto_sem_espacamento": [],
+      "revisao": {
+        "id": "S040",
+        "sha256": "5252290e83f562c080ac5c2bb39756d480fcbb567e080eada581151ff93172a3",
+        "evidencia": "Follow-up por visualização, depoimentos e resposta de desinteresse; contém repetição de títulos, datas antigas e proposta de continuar após recusa.",
+        "encaminhamento": "Candidato após revisão; futura seleção deve respeitar interrupção por resposta/remoção e conferir provas."
+      }
+    },
+    {
+      "id": "S041",
+      "caminho": "scripts/whatsapp/funis/funil-b-dica-de-ouro.md",
+      "sha256": "ee716997a7605180491bf8bea0cba5c555b9d67a64e59b711b1c6ed7babf7e82",
+      "triagem": "comparacao-editorial-pendente",
+      "identicos_em_bytes": [],
+      "mesmo_texto_sem_espacamento": [],
+      "revisao": null
+    },
+    {
+      "id": "S042",
+      "caminho": "scripts/whatsapp/funis/funil-c-dica-de-ouro-rascunho.md",
+      "sha256": "ff28e75c25e10999c5246e60a129e5df738542c52855c1963a5fd5e8070a4da8",
+      "triagem": "comparacao-editorial-pendente",
+      "identicos_em_bytes": [],
+      "mesmo_texto_sem_espacamento": [],
+      "revisao": null
+    },
+    {
+      "id": "S043",
+      "caminho": "scripts/whatsapp/funis/funil-d-direto-e-cru.md",
+      "sha256": "a81e4c6b01c7e9914536d8daced1d6ba24adb1f611ca38b49089a925c9cd5b6f",
+      "triagem": "comparacao-editorial-pendente",
+      "identicos_em_bytes": [],
+      "mesmo_texto_sem_espacamento": [],
+      "revisao": null
+    },
+    {
+      "id": "S044",
+      "caminho": "scripts/whatsapp/follow-up/cliente-sem-resposta.md",
+      "sha256": "c18e8c0c5d4b1e3cde5541886cc1b26380f65d7ada6aa264ecf7a242385fae1d",
+      "triagem": "comparacao-editorial-pendente",
+      "identicos_em_bytes": [],
+      "mesmo_texto_sem_espacamento": [],
+      "revisao": null
+    },
+    {
+      "id": "S045",
+      "caminho": "scripts/whatsapp/legado/comercial-2025-08-27.md",
+      "sha256": "49e581a95e191a20a85434c9509c639b2ce605942749f5199a06ad4cacb5856f",
+      "triagem": "comparacao-editorial-pendente",
+      "identicos_em_bytes": [],
+      "mesmo_texto_sem_espacamento": [],
+      "revisao": null
+    },
+    {
+      "id": "S046",
+      "caminho": "scripts/whatsapp/legado/comercial-2025-08-27-exportacao.md",
+      "sha256": "8642e3c679a81b9b790f085395060ef964fa0684a1af9a3cbdfcd2c0ad1e451d",
+      "triagem": "comparacao-editorial-pendente",
+      "identicos_em_bytes": [],
+      "mesmo_texto_sem_espacamento": [],
+      "revisao": null
+    },
+    {
+      "id": "S047",
+      "caminho": "scripts/whatsapp/fechamento/perguntou-preco.md",
+      "sha256": "50cf946c740374ef7d531e1e358cde0bb44db2172bd237da0a45e3f64290d395",
+      "triagem": "comparacao-editorial-pendente",
+      "identicos_em_bytes": [],
+      "mesmo_texto_sem_espacamento": [],
+      "revisao": {
+        "id": "S047",
+        "sha256": "50cf946c740374ef7d531e1e358cde0bb44db2172bd237da0a45e3f64290d395",
+        "evidencia": "Tratamento de preço com diagnóstico, proposta posterior e formulário; compartilha um convite de 20 minutos com S049, mas acrescenta condições próprias.",
+        "encaminhamento": "Candidato para cenário de preço; confirmar oferta, processo e disponibilidade do diagnóstico."
+      }
+    },
+    {
+      "id": "S048",
+      "caminho": "scripts/whatsapp/recesso-forense/pre-recesso-2024.md",
+      "sha256": "2ce68efbf28040ef8610e9e77bfe7a80cfc0d9125b5d236d0dd227c37316abd6",
+      "triagem": "comparacao-editorial-pendente",
+      "identicos_em_bytes": [],
+      "mesmo_texto_sem_espacamento": [],
+      "revisao": null
+    },
+    {
+      "id": "S049",
+      "caminho": "scripts/whatsapp/fechamento/reuniao.md",
+      "sha256": "fa039427058dab722ae65792a6e9e1cbe90813db5639bc23842ceb71f5b41638",
+      "triagem": "comparacao-editorial-pendente",
+      "identicos_em_bytes": [],
+      "mesmo_texto_sem_espacamento": [],
+      "revisao": {
+        "id": "S049",
+        "sha256": "fa039427058dab722ae65792a6e9e1cbe90813db5639bc23842ceb71f5b41638",
+        "evidencia": "Contém convite consultivo, horários alternativos, confirmação do agendamento e lembretes; além do trecho de convite compartilhado com S047.",
+        "encaminhamento": "Priorizar comparação com a matriz por etapa; só afirmar envio de convite depois da execução real."
+      }
+    },
+    {
+      "id": "S050",
+      "caminho": "scripts/whatsapp/abordagem/todos-os-nichos.md",
+      "sha256": "57fe767e946a80eec6a936b4f2d2d4fc62284f164d03af5542de65cedc2f4670",
+      "triagem": "comparacao-editorial-pendente",
+      "identicos_em_bytes": [],
+      "mesmo_texto_sem_espacamento": [],
+      "revisao": null
+    },
+    {
+      "id": "S051",
+      "caminho": "scripts/whatsapp/abordagem/com-permissao.md",
+      "sha256": "8f12a6ca15c31faa9f904259428dd250b35687b8c0eab8a14d3c8709b87bca7a",
+      "triagem": "comparacao-editorial-pendente",
+      "identicos_em_bytes": [],
+      "mesmo_texto_sem_espacamento": [],
+      "revisao": {
+        "id": "S051",
+        "sha256": "8f12a6ca15c31faa9f904259428dd250b35687b8c0eab8a14d3c8709b87bca7a",
+        "evidencia": "Abertura com permissão, opções vazias e trecho sobre preço; oferta histórica de 180 dias difere dos 120 dias de S011/S012.",
+        "encaminhamento": "Manter como rascunho histórico; completar opções e reconciliar oferta antes de considerar extração."
+      }
+    },
+    {
+      "id": "S052",
+      "caminho": "scripts/referencias/instagram-mentores.md",
+      "sha256": "9ba0c52ca5535acf04147770f55f606dd937ed312114090f25bde97a08eb837e",
+      "triagem": "comparacao-editorial-pendente",
+      "identicos_em_bytes": [],
+      "mesmo_texto_sem_espacamento": [],
+      "revisao": null
+    },
+    {
+      "id": "S053",
+      "caminho": "scripts/whatsapp/recesso-forense/script-cru.md",
+      "sha256": "68ef0bf50ca1332e804692949dedfdd2cbab4c384080b8d5ad7d062f710335a7",
+      "triagem": "comparacao-editorial-pendente",
+      "identicos_em_bytes": [],
+      "mesmo_texto_sem_espacamento": [],
+      "revisao": null
+    },
+    {
+      "id": "S054",
+      "caminho": "scripts/referencias/scripts-validados-na-fonte.pdf",
+      "sha256": "dcef7f93a0e46de93654d9db0d2515ad0b99906a71b88b0dbdfe0939e46e5459",
+      "triagem": "comparacao-editorial-pendente",
+      "identicos_em_bytes": [],
+      "mesmo_texto_sem_espacamento": [],
+      "revisao": null
+    },
+    {
+      "id": "S055",
+      "caminho": "scripts/referencias/variacoes-de-script.pdf",
+      "sha256": "e3e4d72bd7c96b3e1d80201ed5760cad68069c1b9fbe63a57f8dbf490e187308",
+      "triagem": "identico-em-bytes",
+      "identicos_em_bytes": [
+        "S034"
+      ],
+      "mesmo_texto_sem_espacamento": [],
+      "revisao": null
+    },
+    {
+      "id": "S056",
+      "caminho": "apoio/estrategia/plano-estruturacao-2025-20k30d.md",
+      "sha256": "b6ae222017258a40c6eea04f07f51cb315483fd1e3c15d7e8ef219231fab280a",
+      "triagem": "comparacao-editorial-pendente",
+      "identicos_em_bytes": [],
+      "mesmo_texto_sem_espacamento": [],
+      "revisao": null
+    },
+    {
+      "id": "S057",
+      "caminho": "apoio/estrategia/economia-direito-do-trabalho.pdf",
+      "sha256": "c50c8888afc61fd596f9febc9492c42cb931971cc47e7e092fb86931a71839eb",
+      "triagem": "comparacao-editorial-pendente",
+      "identicos_em_bytes": [],
+      "mesmo_texto_sem_espacamento": [],
+      "revisao": null
+    },
+    {
+      "id": "S058",
+      "caminho": "apoio/estrategia/sete-pecados-advogado-trabalhista.md",
+      "sha256": "89bddd8565666e5c447ad2807287005170c9fd904a191e39597a1802a66c3cce",
+      "triagem": "comparacao-editorial-pendente",
+      "identicos_em_bytes": [],
+      "mesmo_texto_sem_espacamento": [],
+      "revisao": null
+    },
+    {
+      "id": "S059",
+      "caminho": "scripts/whatsapp/funis/funil-2-otimizado.pdf",
+      "sha256": "d1389c8f0d239d67c2dbaf982e70c8edcf079d66d89837bee0093bf0a04fd460",
+      "triagem": "comparacao-editorial-pendente",
+      "identicos_em_bytes": [],
+      "mesmo_texto_sem_espacamento": [],
+      "revisao": null
+    },
+    {
+      "id": "S060",
+      "caminho": "scripts/whatsapp/recesso-forense/script-longo.md",
+      "sha256": "0ae6e7d555a405ef9b2333493e09ecdc646b7816891bf0a3bc75a47a559b7197",
+      "triagem": "comparacao-editorial-pendente",
+      "identicos_em_bytes": [],
+      "mesmo_texto_sem_espacamento": [],
+      "revisao": null
+    },
+    {
+      "id": "S061",
+      "caminho": "scripts/whatsapp/legado/prospeccao-ativa-fragmento.md",
+      "sha256": "29863c68fe05c3d0d3a1147cee7cf6d0a12c21db5537710358624c97e3a79bba",
+      "triagem": "comparacao-editorial-pendente",
+      "identicos_em_bytes": [],
+      "mesmo_texto_sem_espacamento": [],
+      "revisao": null
+    },
+    {
+      "id": "S062",
+      "caminho": "scripts/whatsapp/abordagem/publico-morno-quente.md",
+      "sha256": "0effbf765aeb33c14dbd7aedd3be8c2391a1fd691ce42c34e53d3354136f96dd",
+      "triagem": "comparacao-editorial-pendente",
+      "identicos_em_bytes": [],
+      "mesmo_texto_sem_espacamento": [],
+      "revisao": null
+    },
+    {
+      "id": "S106",
+      "caminho": "scripts/whatsapp/legado/script-janeiro-20k30d.md",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "triagem": "vazio",
+      "identicos_em_bytes": [],
+      "mesmo_texto_sem_espacamento": [],
+      "revisao": null
+    },
+    {
+      "id": "S107",
+      "caminho": "roteiros-internos/originais/mej-roteiro-para-audios-79vyeq.docx",
+      "sha256": "084b1fd076490c4326e880f9bec77b0bc09b6639c426298eee9ff4236537d60a",
+      "triagem": "comparacao-editorial-pendente",
+      "identicos_em_bytes": [],
+      "mesmo_texto_sem_espacamento": [],
+      "revisao": null
+    },
+    {
+      "id": "S108",
+      "caminho": "roteiros-internos/originais/mej-script-whatsapp-fmypdd.docx",
+      "sha256": "35d599621056eec22475ab99ee3640685e79fd16488a8de36a06ffe3f272a89c",
+      "triagem": "comparacao-editorial-pendente",
+      "identicos_em_bytes": [],
+      "mesmo_texto_sem_espacamento": [],
+      "revisao": null
+    },
+    {
+      "id": "S109",
+      "caminho": "roteiros-internos/originais/mensagens-para-o-cliente-que-te-deixou-dsjdte.docx",
+      "sha256": "57ca480fab20b3c230cd0451441e4af7f77d06d3cd1673a69850603faf4e19ec",
+      "triagem": "comparacao-editorial-pendente",
+      "identicos_em_bytes": [],
+      "mesmo_texto_sem_espacamento": [],
+      "revisao": null
+    },
+    {
+      "id": "S110",
+      "caminho": "roteiros-internos/originais/mt-pitch-5r4mzh.docx",
+      "sha256": "af11bee08823cf85a4daa7936d14919f0b1ee0a13b4e007c3cb369a1d2dba382",
+      "triagem": "comparacao-editorial-pendente",
+      "identicos_em_bytes": [],
+      "mesmo_texto_sem_espacamento": [],
+      "revisao": null
+    },
+    {
+      "id": "S111",
+      "caminho": "roteiros-internos/originais/script-de-atend-para-adv-shlmc4.docx",
+      "sha256": "430f8c52d25332a148790f372175b1ded27fda0ffb3927a93f3687f4cd585656",
+      "triagem": "comparacao-editorial-pendente",
+      "identicos_em_bytes": [],
+      "mesmo_texto_sem_espacamento": [],
+      "revisao": null
+    },
+    {
+      "id": "S112",
+      "caminho": "roteiros-internos/originais/script-de-fechamento-2025050305314065-wihrxc.docx",
+      "sha256": "467ac1bdbbfddc439a000754b5a2e08e407e349ba443875e993322908b6e265e",
+      "triagem": "comparacao-editorial-pendente",
+      "identicos_em_bytes": [],
+      "mesmo_texto_sem_espacamento": [],
+      "revisao": null
+    },
+    {
+      "id": "S113",
+      "caminho": "roteiros-internos/originais/script-introdutorio-01-scshao.docx",
+      "sha256": "f2e24f30dead71fc90b6e0bb2d7058b6f81c96fa006e68e272ee17aca437a353",
+      "triagem": "comparacao-editorial-pendente",
+      "identicos_em_bytes": [],
+      "mesmo_texto_sem_espacamento": [],
+      "revisao": null
+    },
+    {
+      "id": "S114",
+      "caminho": "roteiros-internos/originais/script-recesso-forense-completo-consultoria-estrategica-fkiqfu.docx",
+      "sha256": "aee7ebac7de2089820d708702fc184bae3140a98064f45848b06c9a6aead9042",
+      "triagem": "comparacao-editorial-pendente",
+      "identicos_em_bytes": [],
+      "mesmo_texto_sem_espacamento": [],
+      "revisao": null
+    },
+    {
+      "id": "S115",
+      "caminho": "roteiros-internos/originais/script-recesso-forense-teipcg.docx",
+      "sha256": "bbb2b27d51545593f3c1537ec055bb1929abc6dfc8097faa7531a0f40581845a",
+      "triagem": "comparacao-editorial-pendente",
+      "identicos_em_bytes": [],
+      "mesmo_texto_sem_espacamento": [],
+      "revisao": null
+    },
+    {
+      "id": "S116",
+      "caminho": "roteiros-internos/originais/script-whatsapp-v2-spfpil.docx",
+      "sha256": "c8d12f996e51fb387187cc01bc5fd770e4fafe2d1dd54f3190b67f824a6a76ab",
+      "triagem": "comparacao-editorial-pendente",
+      "identicos_em_bytes": [],
+      "mesmo_texto_sem_espacamento": [],
+      "revisao": null
+    },
+    {
+      "id": "S117",
+      "caminho": "roteiros-internos/originais/scripts-rav-2-0-word-versao-somente-scripts-za5mxz.docx",
+      "sha256": "71f0d64258a7dc11064d37101fbb60455f0cbec067f26a942d7f9d9729ae3b73",
+      "triagem": "comparacao-editorial-pendente",
+      "identicos_em_bytes": [],
+      "mesmo_texto_sem_espacamento": [],
+      "revisao": null
+    }
+  ]
+}

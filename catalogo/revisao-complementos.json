@@ -1,0 +1,66 @@
+{
+  "data": "2026-10-29",
+  "escopo": "Dez fontes lidas integralmente; comparação editorial local, sem aprovação de uso.",
+  "revisoes": [
+    {
+      "id": "S007",
+      "sha256": "a25901fcdaf5b97eaa21a2710cf44f9938e8eed8a69dd80b34cb2f855d92faf8",
+      "evidencia": "Recesso: apresentação, sazonalidade e convite para reunião. S008 repete o texto com diferença de espaços.",
+      "encaminhamento": "Agrupar S007/S008; revisar datas de 2024, percentuais e provas antes de selecionar."
+    },
+    {
+      "id": "S008",
+      "sha256": "7972ec89c6be7d1ed6e69780b1ef8a878191ba684168df2c7580f0734512f7ca",
+      "evidencia": "Mesmo texto de S007 após normalização de espaços; identidade de origem preservada.",
+      "encaminhamento": "Referenciar S007 na fila; preservar ambos os originais."
+    },
+    {
+      "id": "S011",
+      "sha256": "7474d5ebdc6688c37f2b2a727a689776438de5153e1ee40a96b075b05912dab3",
+      "evidencia": "Introdução com projeto de 120 dias e escopo marketing, vendas, tecnologia e comunicação; S012 encurta essa frase para marketing.",
+      "encaminhamento": "Comparar variantes; não fundir como equivalentes. Confirmar escopo, promessas e oferta atual."
+    },
+    {
+      "id": "S012",
+      "sha256": "71a2bde343b0a6f8a664d984a587e75d7ce06bd9851f18d68d2b56e0ada6d20d",
+      "evidencia": "Variante de S011 com omissão de vendas, tecnologia e comunicação na frase da equipe dedicada.",
+      "encaminhamento": "Preservar a diferença de escopo e conferir se a matriz já contém essa versão."
+    },
+    {
+      "id": "S036",
+      "sha256": "3e77184d13acf35d671cbce49e3c1394d9d66f3bc93d066dd2f6e2dd58b61fce",
+      "evidencia": "Fechamento em dez etapas: abordagem, autoridade, pesquisa, desejo, desafios, solução, transição e oferta; S038 reformata a sequência.",
+      "encaminhamento": "Agrupar com S038 para extração; retirar exemplos de terceiros da futura seleção Metha, preservando a fonte."
+    },
+    {
+      "id": "S038",
+      "sha256": "264555b586e482c23b8fdb1c220138341893d6a0c065bcab23a28e179d177612",
+      "evidencia": "Mesma sequência comercial de S036; Markdown muda formatação e numeração da resposta Não.",
+      "encaminhamento": "Usar um representante na comparação com a matriz; não contar como novo roteiro apenas pelo formato."
+    },
+    {
+      "id": "S040",
+      "sha256": "5252290e83f562c080ac5c2bb39756d480fcbb567e080eada581151ff93172a3",
+      "evidencia": "Follow-up por visualização, depoimentos e resposta de desinteresse; contém repetição de títulos, datas antigas e proposta de continuar após recusa.",
+      "encaminhamento": "Candidato após revisão; futura seleção deve respeitar interrupção por resposta/remoção e conferir provas."
+    },
+    {
+      "id": "S047",
+      "sha256": "50cf946c740374ef7d531e1e358cde0bb44db2172bd237da0a45e3f64290d395",
+      "evidencia": "Tratamento de preço com diagnóstico, proposta posterior e formulário; compartilha um convite de 20 minutos com S049, mas acrescenta condições próprias.",
+      "encaminhamento": "Candidato para cenário de preço; confirmar oferta, processo e disponibilidade do diagnóstico."
+    },
+    {
+      "id": "S049",
+      "sha256": "fa039427058dab722ae65792a6e9e1cbe90813db5639bc23842ceb71f5b41638",
+      "evidencia": "Contém convite consultivo, horários alternativos, confirmação do agendamento e lembretes; além do trecho de convite compartilhado com S047.",
+      "encaminhamento": "Priorizar comparação com a matriz por etapa; só afirmar envio de convite depois da execução real."
+    },
+    {
+      "id": "S051",
+      "sha256": "8f12a6ca15c31faa9f904259428dd250b35687b8c0eab8a14d3c8709b87bca7a",
+      "evidencia": "Abertura com permissão, opções vazias e trecho sobre preço; oferta histórica de 180 dias difere dos 120 dias de S011/S012.",
+      "encaminhamento": "Manter como rascunho histórico; completar opções e reconciliar oferta antes de considerar extração."
+    }
+  ]
+}

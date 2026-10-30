@@ -144,6 +144,11 @@ def update() -> None:
 
 def validate() -> None:
     errors = []
+    import complementos
+    for name, content in complementos.gerar().items():
+        p = ROOT / name
+        if not p.exists() or p.read_bytes() != content.encode('utf-8'):
+            errors.append('Triagem desatualizada: ' + name)
     data = json.loads(MANIFEST.read_text(encoding='utf-8'))
     files = data['arquivos']
     for field in ['id', 'caminho']:
